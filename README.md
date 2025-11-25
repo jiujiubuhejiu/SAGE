@@ -203,15 +203,6 @@ results/
 3. Use GPT-4o with LogProbs to predict token-level activations
 4. Calculate Pearson correlation between predicted and actual activations
 
-## Token Usage & Cost Tracking
-
-SAGE automatically tracks token usage and costs for all LLM API calls:
-
-- **GPT-5**: $0.625/1M input, $5.00/1M output
-- **GPT-4o**: $1.25/1M input, $5.00/1M output
-- Cached tokens are tracked separately with reduced pricing
-
-Results are saved to `token_usage.json` and displayed in terminal output.
 
 ## Supported Models
 
@@ -306,9 +297,7 @@ python scripts/evaluate.py \
 - Reduce `--batch_size` and `--max_samples`
 - Consider using API mode instead
 
-### Token Tracking Not Working
-- Ensure `tools/token_tracker.py` exists and is importable
-- Check that the module is correctly imported in `main.py` and `core/agent.py`
+
 
 ## Contributing
 
