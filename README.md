@@ -1,6 +1,6 @@
 # SAGE: SAE Automated Generation of Explanations
 
-SAGE (formerly SAIA) is an automated interpretability system for analyzing Sparse Autoencoder (SAE) features using agentic LLM workflows. The system can automatically generate natural language explanations for SAE features through iterative hypothesis testing and refinement.
+SAGE is an automated interpretability system for analyzing Sparse Autoencoder (SAE) features using agentic LLM workflows. The system can automatically generate natural language explanations for SAE features through iterative hypothesis testing and refinement.
 
 ## Features
 
@@ -9,7 +9,6 @@ SAGE (formerly SAIA) is an automated interpretability system for analyzing Spars
 - 📊 **Dual Activation Modes**: 
   - **API Mode**: Use Neuronpedia API (no model loading required)
   - **Local Mode**: Load models from Hugging Face and SAE Lens
-- 💰 **Token Usage Tracking**: Automatic tracking of LLM API costs (GPT-5, GPT-4o)
 - 📈 **Evaluation Framework**: Compare SAGE explanations against Neuronpedia baselines
 - 🎯 **Multiple Evaluation Methods**:
   - Generation Evaluation (LLM generates examples from explanations)
