@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # SAGE: SAE Automated Generation of Explanations
 
 SAGE (formerly SAIA) is an automated interpretability system for analyzing Sparse Autoencoder (SAE) features using agentic LLM workflows. The system can automatically generate natural language explanations for SAE features through iterative hypothesis testing and refinement.
@@ -312,23 +311,6 @@ python scripts/evaluate.py \
 - Ensure `tools/token_tracker.py` exists and is importable
 - Check that the module is correctly imported in `main.py` and `core/agent.py`
 
-## Citation
-
-If you use SAGE in your research, please cite:
-
-```bibtex
-@software{sage2024,
-  title={SAGE: SAE Automated Generation of Explanations},
-  author={Your Name},
-  year={2024},
-  url={https://github.com/yourusername/sage}
-}
-```
-
-## License
-
-[Your License Here]
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -337,7 +319,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 - [SAE Lens](https://github.com/jbloomAus/SAELens) for SAE infrastructure
 - [Neuronpedia](https://neuronpedia.org) for activation data and API
-- OpenAI, Anthropic, and Google for LLM APIs
-=======
-# SAGE
->>>>>>> 0f776dd2917eef5a27e3b2c3841f73c4e64384a5
