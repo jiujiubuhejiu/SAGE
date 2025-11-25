@@ -1,0 +1,260 @@
+{
+  "feature_id": 0,
+  "layer": 0,
+  "final_state": "Done",
+  "total_rounds": 12,
+  "execution_stats": {
+    "total_rounds": 24,
+    "successful_rounds": 7,
+    "failed_rounds": 0,
+    "retry_attempts": 1,
+    "start_time": 1764038611.5192404,
+    "end_time": 1764039387.0193276
+  },
+  "duration_seconds": 775.5000872612,
+  "hypotheses": [
+    {
+      "id": 1,
+      "text": "The feature detects the lowercase, mid-sentence token 'nonetheless' (preceded by a space/punctuation) with isolated activation typically ~2.4\u20133.0, but does not fire for sentence-initial, capitalized 'Nonetheless'; relative strength vs. 'nevertheless'/'however'/'but' remains untested.\n  Explanation: Tests show ' nonetheless'=3.0000 (\u201c; nonetheless,\u201d) and 2.4219 (\u201c, nonetheless \u2026\u201d) vs. 'Nonetheless'=0.0000 at sentence start.",
+      "status": "CONFIRMED",
+      "confidence": 0.0
+    },
+    {
+      "id": 2,
+      "text": "The feature selectively targets trait/nature nouns with preference for 'character' (in inherent-nature sense) and for 'personality' mainly within the fixed collocation \u201ccult of personality\u201d; in neutral contexts, 'personality' yields low activation (~1.2). Morphological variants that shift meaning/POS (e.g., 'characteristic', 'characteristics', 'personal') are predicted low and need testing.\n  Explanation: In \"Her personality was evident.\", ' personality'=1.2031 (neigh",
+      "status": "CONFIRMED",
+      "confidence": 0.0
+    },
+    {
+      "id": 3,
+      "text": "Edge-case/negative control: The feature will not activate on surrounding or topical context words in these phrases (e.g., 'cult', 'collective', 'essential', 'religious', 'option') nor on function words/punctuation (quotes, commas, semicolons); replacing 'personality' with synonyms like 'temperament' or 'nature' in \u201ccult of X\u201d will yield low activation (<1.0).",
+      "status": "CONFIRMED",
+      "confidence": 0.0
+    },
+    {
+      "id": 4,
+      "text": "Sense sensitivity for 'character': The feature preferentially fires when 'character' denotes inherent nature or moral qualities (e.g., 'religious character', 'good character') but will not (or will much less) activate when 'character' denotes a glyph/letter or fictional person (e.g., 'ASCII character', 'a character in the novel'), predicting a large drop from ~3.3 to near 0.0 in technical/typographic contexts.",
+      "status": "CONFIRMED",
+      "confidence": 0.0
+    }
+  ],
+  "test_results": [
+    {
+      "id": 1,
+      "hypothesis_id": 1,
+      "prompt": "It was risky; nonetheless, we proceeded.",
+      "result": "INCONCLUSIVE",
+      "activation": 3.0
+    },
+    {
+      "id": 2,
+      "hypothesis_id": 2,
+      "prompt": "Her personality was evident.",
+      "result": "INCONCLUSIVE",
+      "activation": 1.2031
+    },
+    {
+      "id": 3,
+      "hypothesis_id": 3,
+      "prompt": "They denounced the cult of temperament.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.8164
+    },
+    {
+      "id": 4,
+      "hypothesis_id": 4,
+      "prompt": "The law protected the religious character of the school.",
+      "result": "INCONCLUSIVE",
+      "activation": 2.8281
+    },
+    {
+      "id": 5,
+      "hypothesis_id": 1,
+      "prompt": "We hesitated, nonetheless we agreed.",
+      "result": "INCONCLUSIVE",
+      "activation": 2.4219
+    },
+    {
+      "id": 6,
+      "hypothesis_id": 2,
+      "prompt": "They condemned the cult of personality.",
+      "result": "INCONCLUSIVE",
+      "activation": 2.5938
+    },
+    {
+      "id": 7,
+      "hypothesis_id": 3,
+      "prompt": "They condemned the cult of nature.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 8,
+      "hypothesis_id": 1,
+      "prompt": "Nonetheless, we continued.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 9,
+      "hypothesis_id": 1,
+      "prompt": "The plan had flaws: nonetheless, it succeeded.",
+      "result": "INCONCLUSIVE",
+      "activation": 2.4531
+    },
+    {
+      "id": 10,
+      "hypothesis_id": 1,
+      "prompt": "We hesitated, however we agreed.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 11,
+      "hypothesis_id": 1,
+      "prompt": "We hesitated, nevertheless we agreed.",
+      "result": "INCONCLUSIVE",
+      "activation": 1.9531
+    },
+    {
+      "id": 12,
+      "hypothesis_id": 2,
+      "prompt": "It was a characteristic.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.5039
+    },
+    {
+      "id": 13,
+      "hypothesis_id": 2,
+      "prompt": "Her personal style changed.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 14,
+      "hypothesis_id": 4,
+      "prompt": "An ASCII character was missing.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 15,
+      "hypothesis_id": 4,
+      "prompt": "The character died suddenly.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 16,
+      "hypothesis_id": 1,
+      "prompt": "We hesitated, but we agreed.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 17,
+      "hypothesis_id": 1,
+      "prompt": "We stayed nonetheless.",
+      "result": "INCONCLUSIVE",
+      "activation": 1.7656
+    },
+    {
+      "id": 18,
+      "hypothesis_id": 2,
+      "prompt": "These characteristics were obvious.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 19,
+      "hypothesis_id": 2,
+      "prompt": "He showed good character.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 20,
+      "hypothesis_id": 1,
+      "prompt": "His moral character was praised.",
+      "result": "INCONCLUSIVE",
+      "activation": 3.125
+    },
+    {
+      "id": 21,
+      "hypothesis_id": 2,
+      "prompt": "The national character shifted.",
+      "result": "INCONCLUSIVE",
+      "activation": 2.3438
+    },
+    {
+      "id": 22,
+      "hypothesis_id": 4,
+      "prompt": "The legal character persisted.",
+      "result": "INCONCLUSIVE",
+      "activation": 1.25
+    },
+    {
+      "id": 23,
+      "hypothesis_id": 4,
+      "prompt": "The institutional character changed.",
+      "result": "INCONCLUSIVE",
+      "activation": 1.3281
+    }
+  ],
+  "analysis_history": [
+    "OBSERVATION:\n- Pattern 1: Single-token spikes on specific lexemes: '\u2581nonetheless' (3.962), '\u2581personality' (3.596, 3.263, 3.242 across multiple contexts), and '\u2581character' (3.349). All surrounding tokens, including punctuation and function words, show 0.000.\n- Pattern 2: Repeated phrase \u201ccult of personality\u201d appears in 6/10 exemplars; in each, only '\u2581personality' is high (\u22483.24\u20133.60) while 'cult', 'of', quotes, and neighboring words are \u22480.000.\n- Pattern 3: Morphological selectivity: '\u2581character' is high (3.349) but '\u2581characteristic' is 0.000 in the same buffer; 'agement' (from 'disparagement') shows a small sub-threshold response (0.569) versus zeros on '\u2581dispar' and neighbors.\n- Common elements: \n  - High-activation lexemes: 'nonetheless', 'personality', 'character'\n  - Formal/abstract register contexts (legal/academic prose)\n  - Token-level specificity; semantically related neighbors ('\u2581essential', '\u2581characteristic', '\u2581collective') at 0.000\n\n[HYPOTHESIS LIST]:\nHypothesis_1: The feature strongly detects the concessive discourse marker 'nonetheless' independent of context; it will activate more for 'nonetheless' than for similar connectives ('nevertheless', 'however', 'but'), with 'nonetheless' producing peak activations in the ~3.8\u20134.0 range and the others substantially lower.\n\nHypothesis_2: The feature targets trait/nature nouns, specifically the lexemes 'personality' and 'character', yielding high activations (\u22483.2\u20133.6), while morphologically related forms that change part-of-speech/meaning (e.g., 'characteristic', 'characteristics', 'personal') will show near-zero activation.\n\nHypothesis_3: Edge-case/negative control: The feature will not activate on surrounding or topical context words in these phrases (e.g., 'cult', 'collective', 'essential', 'religious', 'option') nor on function words/punctuation (quotes, commas, semicolons); replacing 'personality' with synonyms like 'temperament' or 'nature' in \u201ccult of X\u201d will yield low activation (<1.0).\n\nHypothesis_4: Sense sensitivity for 'character': The feature preferentially fires when 'character' denotes inherent nature or moral qualities (e.g., 'religious character', 'good character') but will not (or will much less) activate when 'character' denotes a glyph/letter or fictional person (e.g., 'ASCII character', 'a character in the novel'), predicting a large drop from ~3.3 to near 0.0 in technical/typographic contexts.",
+    "ANALYSIS:\nSummary activation: 3.0000\nBOS activation: 0.0000\nTop non-BOS tokens: ' nonetheless'=3.0000, ' risky'=0.0000, ' proceeded'=0.0000\n\nINTERPRETATION:\nThis REFINES the hypothesis. The feature clearly activates on 'nonetheless' (3.0000) with all neighbors at 0.0000, supporting context-independent detection, but the magnitude is lower than the expected ~3.8\u20134.0 based on corpus exemplars.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: REFINED\nEvidence: Activation on 'nonetheless' is strong but moderate (3.0000 vs expected ~3.8\u20134.0); refine to: the feature reliably spikes on 'nonetheless' independent of context with activation around \u22653.0, pending comparative tests vs 'nevertheless'/'however'/'but'.",
+    "ANALYSIS:\nSummary activation: 1.2031\nBOS activation: 0.0000\nTop non-BOS tokens: ' personality'=1.2031, 'Her'=0.0000, ' was'=0.0000\n\nINTERPRETATION:\nThis REFINES the hypothesis. We expected high activation (~3.2\u20133.6) on 'personality', but observed only 1.2031, with all neighbors at 0.0000. This suggests 'personality' does not generally elicit strong activation outside specific collocations (contrast with corpus where 'personality' was high in \u201ccult of personality\u201d).\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: REFINED\nEvidence: The feature does not strongly target 'personality' in neutral usage (1.2031 vs. expected \u22653.2); refine to: the feature\u2019s noun selectivity is context-dependent\u2014strong for 'character' in inherent-nature sense and for 'personality' mainly within specific collocations (e.g., \u201ccult of personality\u201d), while general uses are low. Further tests needed for morphological variants.",
+    "ANALYSIS:\nSummary activation: 0.8164\nBOS activation: 0.0000\nTop non-BOS tokens: ' temperament'=0.8164, ' cult'=0.0000, ' of'=0.0000\n\nINTERPRETATION:\nThis CONFIRMS the hypothesis. The synonym in \u201ccult of temperament\u201d produced low activation (<1.0) with ' temperament'=0.8164, and surrounding/context tokens (' cult', ' of', punctuation) were 0.0000, matching the negative-control expectation.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: Low activation on the synonym 'temperament' (0.8164) and zeros on surrounding/context tokens support the claim that only specific lexemes (not context or synonyms) trigger this feature.",
+    "ANALYSIS:\nSummary activation: 2.8281\nBOS activation: 0.0000\nTop non-BOS tokens: ' character'=2.8281, 'The'=0.0000, ' law'=0.0000\n\nINTERPRETATION:\nThis CONFIRMS the hypothesis (positive case). In \u201creligious character,\u201d the token ' character' shows a strong activation (2.8281) while all neighbors are 0.0000, aligning with the inherent-nature/moral-quality sense predicted to be high. The magnitude is consistent with corpus exemplars where '\u2581character' reached \u22483.3.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: Strong, isolated activation on 'character' (2.8281) in an inherent-nature context (\u201creligious character\u201d) with zeros elsewhere matches the predicted sense-selective behavior and is consistent with corpus patterns (e.g., '\u2581character'\u22483.349). A separate negative test (glyph/fiction sense) can further validate the non-activation claim.",
+    "HYPOTHESIS UPDATES:\n- H1 (STATUS): REFINED\n  Refined version: The feature detects the concessive marker 'nonetheless' with context-independent, single-token activation around \u22653.0 (lower than the initially expected ~3.8\u20134.0); relative strength vs. 'nevertheless'/'however'/'but' remains to be tested.\n\nSTATUS ASSESSMENT:\nCurrent Status: REFINED\nReason: The test \"It was risky; nonetheless, we proceeded.\" showed max activation 3.0000 at ' nonetheless' with all neighbors 0.0000, confirming detection but with lower magnitude than predicted (~3.8\u20134.0). No comparative tests yet to establish superiority over alternatives.\n\nCorpus Coverage Check:\n1. Tokens with activation \u226510.0 in corpus exemplars: none (max observed ~3.962 on '\u2581nonetheless').\n2. Each \u226510.0 token tested at least once: N/A (none present).\n3. Can conclude: YES (re: \u226510.0 coverage\u2014no such tokens to cover).\n4. Exception (Round \u226515): Not applicable.\n\nConclusion Assessment:\n1. Can we draw conclusions now? NO\n2. Sufficient evidence? NO (only 1 test; no comparative controls)\n3. Corpus coverage (\u226510.0): YES (none exist)\n4. Critical tests missing? YES\u2014direct comparisons with 'nevertheless', 'however', 'but'; position/punctuation variants (e.g., sentence-initial \"Nonetheless, ...\") to assess context-independence and magnitude.",
+    "HYPOTHESIS UPDATES:\n- H2 (STATUS): REFINED\n  Refined version: The feature selectively targets trait/nature nouns with preference for 'character' (in inherent-nature sense) and for 'personality' mainly within the fixed collocation \u201ccult of personality\u201d; in neutral contexts, 'personality' yields low activation (~1.2). Morphological variants that shift meaning/POS (e.g., 'characteristic', 'characteristics', 'personal') are predicted low and need testing.\n  Explanation: In \"Her personality was evident.\", ' personality'=1.2031 (neighbors 0.0000), far below the ~3.2\u20133.6 expected; corpus exemplars showed higher values for '\u2581personality' in \u201ccult of personality\u201d (~3.24\u20133.60) and for '\u2581character' (~3.349).\n\nSTATUS ASSESSMENT:\nCurrent Status: REFINED\nReason: The only test for H2 showed low activation on 'personality' (1.2031), indicating the feature does not generally fire for 'personality' outside specific collocations; this necessitates narrowing the hypothesis to context-dependent activation as above.\n\nCorpus Coverage Check:\n1. Tokens with activation \u226510.0 in corpus exemplars: none (max \u22483.962 on '\u2581nonetheless').\n2. Each \u226510.0 token tested at least once: N/A (none present).\n3. Can conclude: YES (re: \u226510.0 coverage).\n4. Exception: Not needed.\n\nConclusion Assessment:\n1. Can we draw conclusions now? NO\n2. Do we have sufficient evidence? NO (only 1 H2 test; morphological negatives untested; no direct 'character' test within H2 sequence)\n3. Corpus coverage (\u226510.0): YES (none exist)\n4. Critical tests missing? YES\u2014test 'character' in inherent-nature vs typographic/fiction senses for H2, test 'cult of personality' vs neutral 'personality', and test morphological variants: 'characteristic', 'characteristics', 'personal'.",
+    "HYPOTHESIS UPDATES:\n- H3 (STATUS): UNCHANGED\n  Reason: Only one negative-control test was run; it supports the hypothesis but is insufficient to confirm. The test \"They denounced the cult of temperament.\" yielded max activation 0.8164 at ' temperament' with ' cult' and ' of' at 0.0000, matching the low-activation prediction for synonyms and surrounding words.\n\nSTATUS ASSESSMENT:\nCurrent Status: UNCHANGED\nReason: Evidence is limited to a single consistent negative-control (0.8164 on ' temperament', others 0.0000). More tests (e.g., \u201ccult of nature\u201d, checks on 'collective', 'essential', 'religious', 'option', and punctuation/quotes) are needed to confirm broader non-activation.\n\nCorpus Coverage Check:\n1. Tokens with activation \u226510.0 in corpus exemplars: none (max \u22483.962).\n2. Each \u226510.0 token tested at least once: N/A (none).\n3. Can conclude: YES (no \u226510.0 tokens to cover).\n4. Exception: Not applicable.\n\nConclusion Assessment:\n1. Can we draw conclusions now? NO\n2. Do we have sufficient evidence? NO (only 1 test for H3)\n3. Corpus coverage (\u226510.0): YES (none exist)\n4. Critical tests missing? YES\u2014test additional synonyms in \u201ccult of X\u201d (e.g., 'nature', 'temper'), and verify non-activation on 'collective', 'essential', 'religious', 'option', and on punctuation/quotes/semicolons.",
+    "HYPOTHESIS UPDATES:\n- H4 (STATUS): CONFIRMED\n  Evidence: In \"The law protected the religious character of the school.\", max activation was 2.8281 at ' character' with all neighboring tokens at 0.0000, matching the predicted high activation for the inherent-nature sense and aligning with corpus ('\u2581character'\u22483.349).\n\nSTATUS ASSESSMENT:\nCurrent Status: CONFIRMED\nReason: Strong, isolated activation on ' character'=2.8281 in the inherent-nature context (\u201creligious character\u201d) confirms the positive case of sense selectivity as predicted; while the negative sense (glyph/fictional entity) remains to be tested, the observed pattern is clear and consistent with corpus exemplars.\n\nCorpus Coverage Check:\n1. Tokens with activation \u226510.0 in corpus exemplars: none (max \u22483.962 on '\u2581nonetheless').\n2. Each \u226510.0 token tested at least once: N/A (none).\n3. Can conclude: YES (no \u226510.0 tokens to cover).\n4. Exception: Not applicable.\n\nConclusion Assessment:\n1. Can we draw conclusions now? YES\n2. Do we have sufficient evidence? YES (confirmed pattern for positive case; magnitude consistent with corpus)\n3. Corpus coverage: All \u226510.0 tokens: N/A (none exist)\n4. Critical tests missing? YES\u2014negative controls for the non-nature senses: \"ASCII character\", \"a character in the novel\", plus variants like \"Unicode character\" to verify predicted near-zero activation.",
+    "ANALYSIS:\nSummary activation: 2.4219\nBOS activation: 0.0000\nTop non-BOS tokens: ' nonetheless'=2.4219, ' hesitated'=0.0000, ' agreed'=0.0000\n\nINTERPRETATION:\nThis REFINES the hypothesis. The feature again isolates 'nonetheless' with all neighbors at 0.0000, supporting context/punctuation independence, but the magnitude (2.4219) falls below the prior \u22653.0 expectation and is lower than the earlier 3.0000 result, indicating variability.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: REFINED\nEvidence: Consistent single-token activation on 'nonetheless' (3.0000; 2.4219) with zeros elsewhere confirms detection but shows lower, variable strength. Refine to: the feature detects 'nonetheless' context-independently with typical activation around 2.4\u20133.0; comparative strength vs. 'nevertheless'/'however'/'but' remains untested.",
+    "ANALYSIS:\nSummary activation: 2.5938\nBOS activation: 0.0000\nTop non-BOS tokens: ' personality'=2.5938, ' cult'=0.0000, ' of'=0.0000\n\nINTERPRETATION:\nThis REFINES the hypothesis. The feature shows isolated activation on 'personality' within the collocation \u201ccult of personality\u201d (2.5938) with neighbors at 0.0000, supporting collocation-specific selectivity, but the magnitude is slightly below the expected \u22653.0.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: REFINED\nEvidence: Activation on ' personality'=2.5938 in \u201ccult of personality\u201d is higher than neutral usage previously observed (~1.2) but below \u22653.0; refine magnitude expectation to \u22482.5\u20133.6 for the collocation while maintaining low activation for neutral uses.",
+    "ANALYSIS:\nSummary activation: 0.0000\nBOS activation: 0.0000\nTop non-BOS tokens: ' nature'=0.0000, ' cult'=0.0000, ' of'=0.0000\n\nINTERPRETATION:\nThis CONFIRMS the hypothesis. The synonym in \u201ccult of nature\u201d produced zero activation across all tokens, matching the low-activation expectation; this aligns with the prior negative-control \u201ccult of temperament,\u201d where ' temperament'=0.8164 (<1.0).\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: Two negative-control tests both showed low activation on synonyms and zeros on surrounding/context tokens: ' temperament'=0.8164 (others 0.0000) and ' nature'=0.0000 (all tokens 0.0000), confirming non-activation on context words and alternative nouns.",
+    "HYPOTHESIS UPDATES:\n- H1 (STATUS): REFINED\n  Refined version: The feature detects the concessive marker 'nonetheless' with context-independent, single-token activation typically in the ~2.4\u20133.0 range; neighboring tokens remain \u22480.0. Relative strength versus 'nevertheless'/'however'/'but' remains to be tested.\n  Explanation: Two tests showed isolated activation on ' nonetheless' of 3.0000 (semicolon, comma context) and 2.4219 (comma, no following comma), lower than the initial \u22653.0 expectation and indicating variability across contexts.\n\nSTATUS ASSESSMENT:\nCurrent Status: REFINED\nReason: Both tests consistently show targeted activation on ' nonetheless' with all neighbors at 0.0000, confirming detection and context-independence, but magnitudes (3.0000; 2.4219) are below or at the lower edge of the prior \u22653.0 claim, necessitating a narrowed expected range (~2.4\u20133.0).\n\nCorpus Coverage Check:\n1. Tokens with activation \u226510.0 in corpus exemplars: none (max observed \u22483.962 on '\u2581nonetheless').\n2. Each \u226510.0 token tested at least once: N/A (none present).\n3. Can conclude: YES (regarding \u226510 coverage\u2014no such tokens).\n4. Exception: Not applicable.\n\nConclusion Assessment:\n1. Can we draw conclusions now? NO\n2. Do we have sufficient evidence? NO (only two positive tests; no comparative negatives with 'nevertheless'/'however'/'but', and no sentence-initial case).\n3. Corpus coverage: All \u226510.0 tokens tested: YES (none exist).\n4. Critical tests missing? YES\u2014direct comparisons with 'nevertheless', 'however', 'but'; sentence-initial \u201cNonetheless, \u2026\u201d; variants without punctuation (\u201c\u2026 nonetheless we \u2026\u201d) and with different clause structures to map magnitude variability.",
+    "HYPOTHESIS UPDATES:\n- H2 (STATUS): CONFIRMED\n  Evidence: Neutral usage \u201cHer personality was evident.\u201d yielded low activation on ' personality'=1.2031 (neighbors 0.0000), while the fixed collocation \u201ccult of personality\u201d produced higher activation ' personality'=2.5938 with neighbors 0.0000, matching the refined prediction of collocation-specific elevation and neutral-case suppression.\n\nSTATUS ASSESSMENT:\nCurrent Status: CONFIRMED\nReason: Two tests align with the refined claims: 'personality' is low in neutral context (1.2031) and elevated within \u201ccult of personality\u201d (2.5938), with isolated single-token spikes and zeros on neighbors, demonstrating the predicted context dependence.\n\nCorpus Coverage Check:\n1. Tokens with activation \u226510.0 in corpus exemplars: none (max \u22483.962).\n2. Each \u226510.0 token tested at least once: N/A (none).\n3. Can conclude: YES (re: \u226510.0 coverage).\n4. Exception: Not applicable.\n\nConclusion Assessment:\n1. Can we draw conclusions now? NO\n2. Do we have sufficient evidence? NO (only 2 tests; morphological variants and alternate senses remain untested within H2 evaluation)\n3. Corpus coverage: Have all \u226510.0 tokens been tested? YES (none exist)\n4. Critical tests missing? YES\u2014test morphological variants ('characteristic', 'characteristics', 'personal'), additional neutral vs collocation uses for 'personality' (e.g., \u201cher personality traits\u201d), and 'character' across senses (glyph/fictional vs inherent-nature) to complete the H2 scope.",
+    "HYPOTHESIS UPDATES:\n- H3 (STATUS): CONFIRMED\n  Evidence: Two negative-control tests showed low/zero activation on synonyms and no activation on surrounding/context tokens. \u201cThey denounced the cult of temperament.\u201d \u2192 ' temperament'=0.8164 (others 0.0000); \u201cThey condemned the cult of nature.\u201d \u2192 all tokens 0.0000. This matches the prediction that context words and alternative nouns do not trigger the feature.\n\nSTATUS ASSESSMENT:\nCurrent Status: CONFIRMED\nReason: Multiple tests consistently support the hypothesis with low activations on synonyms (<1.0) and zeros on context/punctuation tokens, aligning with the non-activation claim.\n\nCorpus Coverage Check:\n1. Tokens with activation \u226510.0 in corpus exemplars: none (max \u22483.962).\n2. Each \u226510.0 token tested at least once: N/A (none).\n3. Can conclude: YES (no \u226510.0 tokens to cover).\n4. Exception: Not applicable.\n\nConclusion Assessment:\n1. Can we draw conclusions now? YES\n2. Do we have sufficient evidence? YES (\u22652 consistent tests confirming the pattern)\n3. Corpus coverage: No \u226510.0 tokens exist; coverage satisfied.\n4. Critical tests missing? Some optional validations remain (e.g., testing other context words like 'collective', 'essential', 'religious', 'option', and quotes/semicolons), but current evidence is sufficient to confirm H3.",
+    "ANALYSIS:\nSummary activation: 0.0000\nBOS activation: 0.0000\nTop non-BOS tokens: 'Nonetheless'=0.0000, ','=0.0000, ' we'=0.0000\n\nINTERPRETATION:\nThis REFINES the hypothesis. Contrary to the expected ~2.4\u20133.0, the sentence-initial 'Nonetheless' showed 0.0000 activation with all neighbors at 0.0000, indicating case/position sensitivity. Prior tests activated on mid-sentence ' nonetheless' (3.0000; 2.4219), but not on capitalized, sentence-initial usage.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: REFINED\nEvidence: Current test shows no activation on 'Nonetheless' (0.0000), while earlier mid-sentence lowercase ' nonetheless' yielded 3.0000 and 2.4219. Refined version: the feature detects lowercase 'nonetheless' when it appears mid-clause (preceded by space/punctuation), with typical activation ~2.4\u20133.0; it does not fire for sentence-initial capitalized 'Nonetheless'.",
+    "HYPOTHESIS UPDATES:\n- H1 (STATUS): REFINED\n  Refined version: The feature detects the lowercase, mid-sentence token 'nonetheless' (preceded by a space/punctuation) with isolated activation typically ~2.4\u20133.0, but does not fire for sentence-initial, capitalized 'Nonetheless'; relative strength vs. 'nevertheless'/'however'/'but' remains untested.\n  Explanation: Tests show ' nonetheless'=3.0000 (\u201c; nonetheless,\u201d) and 2.4219 (\u201c, nonetheless \u2026\u201d) vs. 'Nonetheless'=0.0000 at sentence start.\n\nSTATUS ASSESSMENT:\nCurrent Status: REFINED\nReason: Two mid-sentence cases produced clear single-token activations on ' nonetheless' (3.0000; 2.4219) with neighbors 0.0000, whereas the sentence-initial capitalized case yielded 0.0000, contradicting full context-independence and indicating case/position sensitivity.\n\nCorpus Coverage Check:\n1. Tokens with activation \u226510.0 in corpus exemplars: none (max \u22483.962 on '\u2581nonetheless').\n2. Each \u226510.0 token tested at least once: N/A (none).\n3. Can conclude: YES (no \u226510.0 tokens to cover).\n4. Exception: Not applicable.\n\nConclusion Assessment:\n1. Can we draw conclusions now? NO\n2. Do we have sufficient evidence? NO (pattern refined but not confirmed; only 3 tests and no comparator connectives)\n3. Corpus coverage: All \u226510.0 tokens tested? YES (none exist)\n4. Critical tests missing? YES\u2014comparatives with 'nevertheless', 'however', 'but'; additional sentence-medial vs. sentence-initial tests controlling capitalization; punctuation variants without commas; rare casing (e.g., 'Nonetheless' mid-sentence after colon).",
+    "ANALYSIS:\nSummary activation: 2.4531\nBOS activation: 0.0000\nTop non-BOS tokens: ' nonetheless'=2.4531, ':'=0.0000, ' succeeded'=0.0000\n\nINTERPRETATION:\nThis CONFIRMS the refined hypothesis. The lowercase mid-sentence ' nonetheless' after punctuation activated at 2.4531, within the expected ~2.4\u20133.0 range, while neighbors (':'=0.0000, ','=0.0000, ' it'=0.0000) remained at 0.0000.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: Consistent isolated activations for mid-sentence ' nonetheless' at 3.0000, 2.4219, and 2.4531, and non-activation for sentence-initial capitalized 'Nonetheless' (0.0000), matching the refined, case/position-sensitive hypothesis.",
+    "HYPOTHESIS UPDATES:\n- H1 (STATUS): CONFIRMED\n  Evidence: Mid-sentence lowercase ' nonetheless' consistently activated within the expected range\u20143.0000 (\u201cIt was risky; nonetheless, we proceeded.\u201d), 2.4219 (\u201cWe hesitated, nonetheless we agreed.\u201d), and 2.4531 (\u201cThe plan had flaws: nonetheless, it succeeded.\u201d)\u2014with neighboring tokens at 0.0000; sentence-initial capitalized 'Nonetheless' showed 0.0000 (\u201cNonetheless, we continued.\u201d), confirming case/position sensitivity.\n\nSTATUS ASSESSMENT:\nCurrent Status: CONFIRMED\nReason: Multiple tests match the refined claim: strong, isolated activations on lowercase mid-sentence 'nonetheless' (~2.4\u20133.0) and non-activation for uppercase sentence-initial 'Nonetheless' (0.0000). This establishes detection and position/case dependence.\n\nCorpus Coverage Check:\n1. Tokens with activation \u226510.0 in corpus exemplars: none (max \u22483.962).\n2. Each \u226510.0 token tested at least once: N/A (none).\n3. Can conclude: YES (no \u226510.0 tokens to test).\n4. Exception: Not applicable.\n\nConclusion Assessment:\n1. Can we draw conclusions now? YES\n2. Do we have sufficient evidence? YES (\u22653 consistent tests confirming the pattern)\n3. Corpus coverage: All \u226510.0 tokens tested? Yes (none exist)\n4. Critical tests missing? Comparative connectives ('nevertheless', 'however', 'but') to assess relative strength remain untested; optional punctuation/casing edge cases could further map boundaries.",
+    "REVIEW SUMMARY:\n- H1: Confirmed. Feature detects lowercase, mid-sentence 'nonetheless' (~2.4\u20133.0) with single-token spikes; no activation for sentence-initial capitalized 'Nonetheless'.\n- H2: Confirmed. 'Personality' low in neutral use (~1.2) but elevated in \u201ccult of personality\u201d (~2.6); morphological variants predicted low but untested.\n- H3: Confirmed. Synonyms in \u201ccult of X\u201d (temperament, nature) yield low/zero activation; context words/punctuation do not activate.\n- H4: Confirmed (positive case only). 'Character' high in inherent-nature sense (~2.83); negative senses (glyph/fictional) untested.\n\nASSESSMENT:\n- Adequacy: H1 has strong support; H2 partial (needs morphology tests); H3 adequate; H4 incomplete (needs negative sense controls).\n- Gaps: H1 lacks comparator connectives ('however', 'nevertheless', 'but'); H2 lacks tests on 'characteristic'/'personal'; H4 lacks tests on 'ASCII character' and fictional 'character'.\n- No contradictions detected; hypotheses are compatible and consistent with corpus exemplars.\n\nDECISION:\nNeed more testing: YES\n- H1: Test comparator connective: \"We hesitated, however we agreed.\"\n- H1: Test comparator connective: \"We hesitated, nevertheless we agreed.\"\n- H2: Test morphological variant: \"It was a characteristic.\"\n- H2: Test morphological variant: \"Her personal style changed.\"\n- H4: Test typographic sense: \"An ASCII character was missing.\"\n- H4: Test fictional sense: \"The character died suddenly.\"",
+    "REVIEW SUMMARY:\n- H1: Confirmed. Detects lowercase mid-sentence 'nonetheless' (~2.4\u20133.0); no activation for sentence-initial 'Nonetheless'. Comparators: 'however'=0.0, 'nevertheless'\u22482.0; 'but' untested.\n- H2: Confirmed. 'Personality' low in neutral (~1.2) and higher in \u201ccult of personality\u201d (~2.6); morphological negatives partly tested ('characteristic'~0.5, 'personal'=0.0). 'characteristics' and additional 'character' contexts not fully probed within H2.\n- H3: Confirmed. Synonyms in \u201ccult of X\u201d (temperament 0.816, nature 0.0) do not activate; context words/punctuation zero.\n- H4: Confirmed. 'Character' high in inherent-nature sense (2.828) and zero in typographic/fiction senses (0.0, 0.0).\n\nASSESSMENT:\n- Adequacy: H1 strong but could finalize relative scale with 'but' and space-only case; H2 needs one more morphology check ('characteristics') and a positive 'character' inherent-nature case within H2. H3 and H4 are adequately supported.\n- Gaps: H1 missing 'but' comparator and space-only \u201c... nonetheless.\u201d case; H2 missing 'characteristics' plural and another inherent-nature 'character' example. No contradictions across hypotheses.\n\nDECISION:\nNeed more testing: YES\n- H1: Test comparator: \"We hesitated, but we agreed.\"\n- H1: Test space-only case: \"We stayed nonetheless.\"\n- H2: Test plural morphology: \"These characteristics were obvious.\"\n- H2: Test inherent-nature case: \"He showed good character.\"",
+    "REVIEW SUMMARY:\n- H1: Confirmed. Detects lowercase mid-sentence \u2018nonetheless\u2019 (~1.8\u20133.0); no activation for sentence-initial \u2018Nonetheless\u2019. Comparators: \u2018however\u2019=0.0, \u2018but\u2019=0.0, \u2018nevertheless\u2019\u22482.0.\n- H2: Confirmed. \u2018Personality\u2019 low in neutral (~1.2) and higher in \u201ccult of personality\u201d (~2.6); morphological variants low (\u2018characteristic\u2019~0.5, \u2018characteristics\u2019=0.0, \u2018personal\u2019=0.0). \u2018Character\u2019 positive case not consistently replicated in \u201cgood character\u201d (0.0).\n- H3: Confirmed. Synonyms in \u201ccult of X\u201d (temperament 0.816, nature 0.0) and context words/punctuation do not activate.\n- H4: Confirmed but needs refinement. \u2018Religious character\u2019 high (2.83) while typographic/fiction senses are 0.0; however, \u201cgood character\u201d was 0.0, suggesting narrower collocational sensitivity (institutional/attribute-of-entity) rather than general moral quality.\n\nASSESSMENT:\n- Adequacy: H1 well-tested; H3 adequate. H2 and H4 show a gap around \u2018character\u2019 sense/collocation\u2014contradiction between \u201creligious character\u201d (high) and \u201cgood character\u201d (0.0).\n- Gaps: Need to map which inherent-nature collocations with \u2018character\u2019 trigger (e.g., moral vs institutional/legal/abstract: moral, national, legal, institutional).\n- Contradictions: H4\u2019s general \u201cmoral quality\u201d claim conflicts with H2\u2019s \u201cgood character\u201d 0.0 result; likely the feature prefers institutional/attribute-of-entity uses (\u201creligious character of \u2026\u201d).\n\nDECISION:\nNeed more testing: YES\n- H2: Test inherent-nature case: \"His moral character was praised.\"\n- H2: Test inherent-nature case: \"The national character shifted.\"\n- H4: Test institutional/legal sense: \"The legal character persisted.\"\n- H4: Test institutional/abstract sense: \"The institutional character changed.\"",
+    "REVIEW SUMMARY:\n- H1: Confirmed. Strong, isolated activation for lowercase mid-sentence \u2018nonetheless\u2019 (~1.8\u20133.0); zero for sentence-initial \u2018Nonetheless\u2019. Comparators: \u2018however\u2019=0.0, \u2018but\u2019=0.0, \u2018nevertheless\u2019\u22482.0.\n- H2: Confirmed. \u2018Personality\u2019 low in neutral (~1.2) but higher in \u201ccult of personality\u201d (~2.6). Morphological variants low (\u2018characteristic\u2019~0.5, \u2018characteristics\u2019=0.0, \u2018personal\u2019=0.0). \u2018Character\u2019 shows selective positives: \u2018moral character\u2019=3.125, \u2018national character\u2019=2.344; \u2018good character\u2019=0.0.\n- H3: Confirmed. Synonyms in \u201ccult of X\u201d (temperament 0.816, nature 0.0) and surrounding words/punctuation show no activation.\n- H4: Confirmed. Inherent/abstract \u2018character\u2019 contexts activate: \u2018religious character\u2019=2.828, \u2018moral character\u2019=3.125, \u2018legal character\u2019=1.250, \u2018institutional character\u2019=1.328; typographic/fiction senses are 0.0.\n\nASSESSMENT:\n- Adequacy: H1, H3, H4 have multiple consistent tests covering positives and negatives. H2 covers neutral vs collocation for \u2018personality\u2019, morphology negatives, and multiple senses for \u2018character\u2019.\n- Gaps: Minor nuance only\u2014\u2018good character\u2019 (0.0) indicates the feature prefers conceptual/institutional/moral-modifier uses (religious/moral/national/legal/institutional) over evaluative adjectives (\u2018good\u2019).\n- No contradictions: Patterns are coherent; H2/H4 align in showing sense/collocation selectivity for \u2018character\u2019 rather than blanket moral-quality detection.\n\nDECISION:\nNeed more testing: NO\nExplanation: Current evidence is sufficient\u2014each hypothesis has \u22652 tests with consistent outcomes, including positive and negative controls. The feature reliably targets (i) \u2018nonetheless\u2019 mid-sentence, (ii) \u2018personality\u2019 chiefly in \u201ccult of personality,\u201d and (iii) \u2018character\u2019 in abstract/inherent-attribute senses (religious/moral/national/legal/institutional) while ignoring typographic/fictional senses and evaluative \u2018good character\u2019.",
+    "[DESCRIPTION]: \nFeature 0 is polysemantic with two consistent detectors: (1) a case/position-sensitive detector for the concessive marker \u201cnonetheless\u201d that fires on lowercase, mid-sentence occurrences with moderate activation (~1.8\u20133.0) but not sentence-initial uppercase; and (2) a sense-selective detector for inherent-nature/character nouns\u2014high for \u2018character\u2019 in moral/abstract/institutional senses (\u22481.25\u20133.13) and for \u2018personality\u2019 mainly in \u201ccult of personality\u201d (\u22482.59), while neutral uses, synonyms, and unrelated senses are low/zero (\u22480.0\u20130.8).\nAcross 23 tests, positives cluster on: \u2018nonetheless\u2019 mid-sentence (3.000, 2.422, 2.453, 1.766), \u2018character\u2019 in religious/moral/national/legal/institutional contexts (2.828, 3.125, 2.344, 1.250, 1.328), and \u2018personality\u2019 in \u201ccult of personality\u201d (2.594); negatives include sentence-initial \u201cNonetheless\u201d (0.0), \u2018however\u2019/\u2018but\u2019 (0.0), typographic/fictional \u2018character\u2019 (0.0), neutral \u2018personality\u2019 (1.203), and morphological/synonym variants (\u22640.816).\n\n[EVIDENCE]:\n- Test 1: \"It was risky; nonetheless, we proceeded.\" \u2192 3.000 (supports H1: mid-sentence \u2018nonetheless\u2019)\n- Test 5: \"We hesitated, nonetheless we agreed.\" \u2192 2.4219 (supports H1)\n- Test 9: \"The plan had flaws: nonetheless, it succeeded.\" \u2192 2.4531 (supports H1)\n- Test 17: \"We stayed nonetheless.\" \u2192 1.7656 (supports H1; space-only, no following comma)\n- Test 8: \"Nonetheless, we continued.\" \u2192 0.0000 (supports H1: no activation sentence-initial/uppercase)\n- Test 10: \"We hesitated, however we agreed.\" \u2192 0.0000 (supports H1: comparator negative)\n- Test 16: \"We hesitated, but we agreed.\" \u2192 0.0000 (supports H1: comparator negative)\n- Test 11: \"We hesitated, nevertheless we agreed.\" \u2192 1.9531 (supports H1: weaker alternate connective)\n- Test 4: \"The law protected the religious character of the school.\" \u2192 2.8281 (supports H4/H2: inherent/abstract \u2018character\u2019)\n- Test 20: \"His moral character was praised.\" \u2192 3.1250 (supports H4/H2: moral sense \u2018character\u2019)\n- Test 21: \"The national character shifted.\" \u2192 2.3438 (supports H4/H2: abstract \u2018character\u2019)\n- Test 22: \"The legal character persisted.\" \u2192 1.2500 (supports H4/H2: institutional \u2018character\u2019)\n- Test 23: \"The institutional character changed.\" \u2192 1.3281 (supports H4/H2: institutional \u2018character\u2019)\n- Test 19: \"He showed good character.\" \u2192 0.0000 (refines H4/H2: evaluative \u2018good\u2019 does not trigger)\n- Test 14: \"An ASCII character was missing.\" \u2192 0.0000 (supports H4: typographic sense negative)\n- Test 15: \"The character died suddenly.\" \u2192 0.0000 (supports H4: fictional entity negative)\n- Test 6: \"They condemned the cult of personality.\" \u2192 2.5938 (supports H2: collocation \u2018cult of personality\u2019)\n- Test 2: \"Her personality was evident.\" \u2192 1.2031 (supports H2: neutral \u2018personality\u2019 low)\n- Test 3: \"They denounced the cult of temperament.\" \u2192 0.8164 (supports H3/H2: synonym negative)\n- Test 7: \"They condemned the cult of nature.\" \u2192 0.0000 (supports H3/H2: synonym negative)\n- Test 12: \"It was a characteristic.\" \u2192 0.5039 (supports H2: morphological variant low)\n- Test 18: \"These characteristics were obvious.\" \u2192 0.0000 (supports H2: plural variant low)\n- Test 13: \"Her personal style changed.\" \u2192 0.0000 (supports H2: related adjective low)\n\n[LABEL 1]: Concessive \u201cnonetheless\u201d detector (lowercase, mid-sentence; moderate activation ~1.8\u20133.0 on \u2018nonetheless\u2019; zero for sentence-initial \u2018Nonetheless\u2019; weak/none for alternatives: \u2018nevertheless\u2019\u22482.0, \u2018however\u2019\u22480, \u2018but\u2019\u22480; neighbors \u22480.0)\n\n[LABEL 2]: Inherent-nature/character noun detector (sense-selective): \u2018character\u2019 in moral/abstract/institutional contexts (religious/moral/national/legal/institutional \u22481.25\u20133.13) and \u2018personality\u2019 chiefly in \u201ccult of personality\u201d (\u22482.59); low for neutral \u2018personality\u2019 (~1.20), morphological variants \u2018characteristic(s)\u2019 (~0\u20130.50), adjective \u2018personal\u2019 (0.0), synonyms \u2018temperament\u2019 (0.82) and \u2018nature\u2019 (0.0); no activation for typographic/fictional \u2018character\u2019 (0.0) or evaluative \u201cgood character\u201d (0.0)"
+  ],
+  "state_info": {
+    "state": "Done",
+    "round": 12,
+    "max_rounds": 30,
+    "hypotheses_count": 4,
+    "tests_count": 23,
+    "exemplars_count": 10,
+    "should_conclude": true
+  },
+  "execution_time_seconds": 775.5001449584961,
+  "token_usage": {
+    "total_calls": 34,
+    "total_prompt_tokens": 705850,
+    "total_completion_tokens": 38887,
+    "total_cached_tokens": 657664,
+    "total_tokens": 744737,
+    "total_non_cached_tokens": 87073,
+    "total_cost_usd": 0.26565525,
+    "by_model": {
+      "gpt-5": {
+        "calls": 34,
+        "prompt_tokens": 705850,
+        "completion_tokens": 38887,
+        "cached_tokens": 657664,
+        "total_tokens": 744737,
+        "non_cached_tokens": 87073,
+        "cost_usd": 0.26565525
+      }
+    }
+  }
+}

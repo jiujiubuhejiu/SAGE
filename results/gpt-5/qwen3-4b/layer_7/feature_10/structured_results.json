@@ -1,0 +1,195 @@
+{
+  "feature_id": 10,
+  "layer": 7,
+  "final_state": "\u5b8c\u6210",
+  "total_rounds": 12,
+  "execution_stats": {
+    "total_rounds": 18,
+    "successful_rounds": 7,
+    "failed_rounds": 0,
+    "retry_attempts": 0,
+    "start_time": 1763385569.3602672,
+    "end_time": 1763386256.0084257
+  },
+  "duration_seconds": 686.6481585502625,
+  "hypotheses": [
+    {
+      "id": 1,
+      "text": "The feature encodes the lexical concept of the plural noun \u201cresults\u201d (outcomes) and will strongly activate on the token \u201cresults\u201d across domains. Prediction: Sentences with \u201c\u2026 results \u2026\u201d (e.g., \u201cexperimental results\u201d, \u201csearch results\u201d, \u201cproduce results\u201d) will elicit high activation on the \u201cresults\u201d token, typically >2.5 and potentially ~3.5\u20133.9 based on exemplars (max 3.906 observed).",
+      "status": "CONFIRMED",
+      "confidence": 0.0
+    },
+    {
+      "id": 2,
+      "text": "The feature responds strongly to the noun \u201cresult\u201d as well as \u201cresults\u201d; activation magnitude is context-dependent (e.g., determiners/negation), and plurality alone does not guarantee higher activation for \u201cresults\u201d.\n  Explanation: In a comparable \u201csearch returned X\u201d frame, singular ' result'=3.0938 exceeded plural ' results'=2.7031, contradicting the predicted weaker singular and indicating context modulation.",
+      "status": "CONFIRMED",
+      "confidence": 0.0
+    },
+    {
+      "id": 3,
+      "text": "Negative control \u2014 The feature is selective for the noun sense and will not strongly activate for the verb \u201cresult\u201d (\u201cmay result in \u2026\u201d) or the idiom \u201cas a result\u201d. Prediction: In \u201cThis may result in delays.\u201d and \u201cAs a result, \u2026\u201d, activation on \u201cresult\u201d will be low (<0.5), substantially below noun-usage cases.",
+      "status": "CONFIRMED",
+      "confidence": 0.0
+    },
+    {
+      "id": 4,
+      "text": "Production/measurement context boosts activation relative to neutral contexts. Prediction: When \u201cresults\u201d is the direct object of verbs like \u201cyield/produce/return/give/get\u201d (e.g., \u201cyielded no results\u201d, \u201creturn different results\u201d), activation will be higher than in copular or static contexts (e.g., \u201cThe results are posted.\u201d or \u201cThese are the results.\u201d). Expect measurable elevation (e.g., \u201cproduce/return/yield + results\u201d > \u201cresults are \u2026\u201d).",
+      "status": "CONFIRMED",
+      "confidence": 0.0
+    },
+    {
+      "id": 5,
+      "text": "The feature is wordform-specific and will not strongly activate for near-synonyms lacking the \u201cresult(s)\u201d string (e.g., \u201coutcomes\u201d, \u201cfindings\u201d). Prediction: \u201cThe outcomes were inconclusive.\u201d and \u201cThe findings were inconclusive.\u201d will show low activation on those tokens, far below \u201cThe results were inconclusive.\u201d",
+      "status": "CONFIRMED",
+      "confidence": 0.0
+    }
+  ],
+  "test_results": [
+    {
+      "id": 1,
+      "hypothesis_id": 1,
+      "prompt": "The search returned no results.",
+      "result": "INCONCLUSIVE",
+      "activation": 2.7031
+    },
+    {
+      "id": 2,
+      "hypothesis_id": 2,
+      "prompt": "The search returned a result.",
+      "result": "INCONCLUSIVE",
+      "activation": 3.0938
+    },
+    {
+      "id": 3,
+      "hypothesis_id": 3,
+      "prompt": "This may result in delays.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 4,
+      "hypothesis_id": 4,
+      "prompt": "The experiment yielded consistent results.",
+      "result": "INCONCLUSIVE",
+      "activation": 4.3438
+    },
+    {
+      "id": 5,
+      "hypothesis_id": 5,
+      "prompt": "The outcomes were inconclusive.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 6,
+      "hypothesis_id": 2,
+      "prompt": "The experiment produced a result.",
+      "result": "INCONCLUSIVE",
+      "activation": 4.25
+    },
+    {
+      "id": 7,
+      "hypothesis_id": 4,
+      "prompt": "The results are posted.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 8,
+      "hypothesis_id": 5,
+      "prompt": "The findings were inconclusive.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 9,
+      "hypothesis_id": 1,
+      "prompt": "Marketing produces results.",
+      "result": "INCONCLUSIVE",
+      "activation": 1.8594
+    },
+    {
+      "id": 10,
+      "hypothesis_id": 1,
+      "prompt": "The algorithm returns results.",
+      "result": "INCONCLUSIVE",
+      "activation": 3.7812
+    },
+    {
+      "id": 11,
+      "hypothesis_id": 3,
+      "prompt": "As a result, we left.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 12,
+      "hypothesis_id": 1,
+      "prompt": "Clinical trial results were promising.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 13,
+      "hypothesis_id": 1,
+      "prompt": "Experimental results confirmed the theory.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 14,
+      "hypothesis_id": 1,
+      "prompt": "We analyzed the results.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 15,
+      "hypothesis_id": 1,
+      "prompt": "These results were published.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 16,
+      "hypothesis_id": 1,
+      "prompt": "No results were found.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    }
+  ],
+  "analysis_history": [
+    "OBSERVATION:\n- Pattern 1: The maximally activating token is consistently the noun \u201cresult(s)\u201d. In all 15 exemplars, only the token \u201c result\u201d or \u201c results\u201d carries high activation (others in the \u00b15-token buffer are ~0.000). Peak examples: \u201c results\u201d at 3.906 (Ex. 1\u20132), 3.672 (Ex. 3\u20134); \u201c result\u201d at 2.734 (Ex. 5\u20136), 2.688 (Ex. 7\u20138).\n- Pattern 2: Plural > singular activation. \u201cresults\u201d dominates 11/15 exemplars with activations 2.500\u20133.906; \u201cresult\u201d occurs in 4/15 with activations 2.688\u20132.734. The top plural (3.906) notably exceeds the top singular (2.734) by ~1.17.\n- Pattern 3: Strong co-occurrence with \u201cproduction/return\u201d verbs immediately to the left: \u201cproduce/produced\u201d (Ex. 1\u20132, 9), \u201cyielded/yielded no\u201d (Ex. 3\u20134, 10\u201313), \u201creturn\u201d (Ex. 14\u201315), \u201cgave/getting\u201d (Ex. 5, 7\u20138). Despite this, only the noun \u201cresult(s)\u201d token spikes.\n- Pattern 4: Frequent quality/quantity modifiers adjacent to \u201cresult(s)\u201d: \u201cdifferent\u201d (Ex. 3\u20134, 14\u201315), \u201cdisappointing\u201d (Ex. 9), \u201cno\u201d (Ex. 10\u201311), \u201cinconsistent/inconclusive\u201d (Ex. 12\u201313), \u201cgood/right\u201d (Ex. 5, 7\u20138). These do not themselves activate.\n- Common elements: noun \u201cresult(s)\u201d denoting outcomes; appears as object/complement of verbs like yield/produce/return/give/get; often modified by evaluative/quantifier adjectives; cross-domain usage (science, computing/search, business aphorism); activation localized strictly to the \u201cresult(s)\u201d token.\n\n[HYPOTHESIS LIST]:\nHypothesis_1: The feature encodes the lexical concept of the plural noun \u201cresults\u201d (outcomes) and will strongly activate on the token \u201cresults\u201d across domains. Prediction: Sentences with \u201c\u2026 results \u2026\u201d (e.g., \u201cexperimental results\u201d, \u201csearch results\u201d, \u201cproduce results\u201d) will elicit high activation on the \u201cresults\u201d token, typically >2.5 and potentially ~3.5\u20133.9 based on exemplars (max 3.906 observed).\n\nHypothesis_2: The feature also responds to the singular noun \u201cresult\u201d but more weakly than the plural. Prediction: Minimal pairs (\u201cThis produced results.\u201d vs \u201cThis produced a result.\u201d) will show higher activation on \u201cresults\u201d than on \u201cresult\u201d by ~0.7\u20131.2 on average (exemplar top: 3.906 vs 2.734).\n\nHypothesis_3: Negative control \u2014 The feature is selective for the noun sense and will not strongly activate for the verb \u201cresult\u201d (\u201cmay result in \u2026\u201d) or the idiom \u201cas a result\u201d. Prediction: In \u201cThis may result in delays.\u201d and \u201cAs a result, \u2026\u201d, activation on \u201cresult\u201d will be low (<0.5), substantially below noun-usage cases.\n\nHypothesis_4: Production/measurement context boosts activation relative to neutral contexts. Prediction: When \u201cresults\u201d is the direct object of verbs like \u201cyield/produce/return/give/get\u201d (e.g., \u201cyielded no results\u201d, \u201creturn different results\u201d), activation will be higher than in copular or static contexts (e.g., \u201cThe results are posted.\u201d or \u201cThese are the results.\u201d). Expect measurable elevation (e.g., \u201cproduce/return/yield + results\u201d > \u201cresults are \u2026\u201d).\n\nHypothesis_5: The feature is wordform-specific and will not strongly activate for near-synonyms lacking the \u201cresult(s)\u201d string (e.g., \u201coutcomes\u201d, \u201cfindings\u201d). Prediction: \u201cThe outcomes were inconclusive.\u201d and \u201cThe findings were inconclusive.\u201d will show low activation on those tokens, far below \u201cThe results were inconclusive.\u201d",
+    "ANALYSIS:\nSummary activation: 2.7031\nBOS activation: 0.0000\nTop non-BOS tokens: ' results'=2.7031, ' returned'=0.0000, ' no'=0.0000\n\nINTERPRETATION:\nCONFIRMS the hypothesis. The token ' results' shows high activation (2.7031), exceeding the expected >2.5 threshold for plural noun \u201cresults\u201d in a search/return context. All other tokens are ~0.0000, indicating selective activation on the target wordform.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: In \"The search returned no results.\", the feature\u2019s maximum activation is on ' results' (2.7031), aligning with the prediction that plural \u201cresults\u201d elicits strong activation.",
+    "ANALYSIS:\nSummary activation: 3.0938\nBOS activation: 0.0000\nTop non-BOS tokens: ' result'=3.0938, ' returned'=0.0000, ' a'=0.0000\n\nINTERPRETATION:\nREFINES the hypothesis. The feature strongly activates on the singular noun: ' result'=3.0938. However, compared to the plural test in a similar frame (\u201cThe search returned no results.\u201d \u2192 ' results'=2.7031), the singular here is higher, contradicting the \u201cweaker than plural\u201d prediction. This suggests context (e.g., negation \u201cno\u201d vs determiner \u201ca\u201d) can modulate magnitude more than number.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: REFINED\nEvidence: Strong activation on singular (' result'=3.0938) shows responsiveness, but it is not reliably weaker than plural (plural in similar prompt was 2.7031). Refined: The feature responds strongly to both \u201cresult\u201d and \u201cresults\u201d; relative strength depends on context (e.g., negation) rather than strictly on plurality.",
+    "ANALYSIS:\nSummary activation: 0.0000\nBOS activation: 0.0000\nTop non-BOS tokens: ' result'=0.0000, ' may'=0.0000, ' delays'=0.0000\n\nINTERPRETATION:\nCONFIRMS the hypothesis. The verb usage in \"This may result in delays.\" shows no activation on ' result' (0.0000), matching the prediction of low (<0.5) activation for non-noun senses. All tokens remain at 0.0000.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: Zero activation on the verb token ' result' (0.0000) in a \u201cmay result in \u2026\u201d construction supports selectivity for the noun sense and not the verb/idiom usage.",
+    "ANALYSIS:\nSummary activation: 4.3438\nBOS activation: 0.0000\nTop non-BOS tokens: ' results'=4.3438, ' yielded'=0.0000, ' consistent'=0.0000\n\nINTERPRETATION:\nCONFIRMS the hypothesis. In a production/measurement verb-object context (\u201cyielded \u2026 results\u201d), the token ' results' shows very high activation (4.3438), well above the expected >2.5 threshold and higher than other tested contexts, indicating boosted activation when \u201cresults\u201d is produced/yielded.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: The sentence \u201cThe experiment yielded consistent results.\u201d yields ' results'=4.3438, supporting that production/measurement contexts boost activation on \u201cresults\u201d relative to more neutral uses.",
+    "ANALYSIS:\nSummary activation: 0.0000\nBOS activation: 0.0000\nTop non-BOS tokens: ' outcomes'=0.0000, ' were'=0.0000, ' incon'=0.0000\n\nINTERPRETATION:\nCONFIRMS the hypothesis. The near-synonym ' outcomes' shows no activation (0.0000), consistent with the prediction that the feature is specific to the wordform \u201cresult(s)\u201d and should not respond to alternatives like \u201coutcomes\u201d.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: In \"The outcomes were inconclusive.\", the target near-synonym ' outcomes' receives 0.0000 activation, indicating wordform specificity to \u201cresult(s)\u201d rather than general semantic synonyms.",
+    "HYPOTHESIS UPDATES:\n- H1 (STATUS): CONFIRMED\n  Evidence: In \"The search returned no results.\", the token ' results' activated at 2.7031 (>2.5 threshold), with other tokens at ~0.0000, matching the prediction that plural \u201cresults\u201d elicits strong, localized activation.\n\nSTATUS ASSESSMENT:\nCurrent Status: CONFIRMED\nReason: The single targeted test shows selective high activation on the plural noun ' results'=2.7031, consistent with corpus exemplars where 'results' is the max-activation token (2.5\u20133.906). Corpus coverage check: No exemplar tokens \u226510.0 (range tops at 3.906), so high-activation coverage is satisfied for this feature. Further tests could broaden domains, but current evidence aligns with H1\u2019s claim.",
+    "HYPOTHESIS UPDATES:\n- H2 (STATUS): REFINED\n  Refined version: The feature responds strongly to the noun \u201cresult\u201d as well as \u201cresults\u201d; activation magnitude is context-dependent (e.g., determiners/negation), and plurality alone does not guarantee higher activation for \u201cresults\u201d.\n  Explanation: In a comparable \u201csearch returned X\u201d frame, singular ' result'=3.0938 exceeded plural ' results'=2.7031, contradicting the predicted weaker singular and indicating context modulation.\n\nSTATUS ASSESSMENT:\nCurrent Status: REFINED\nReason: The single test for singular shows strong activation (' result'=3.0938), but it is higher than the plural comparator (' results'=2.7031), opposing the \u201cweaker than plural\u201d prediction. This necessitates refining H2 to emphasize strong response to both forms with context-driven magnitude. Corpus coverage check: No exemplar tokens \u226510.0 (max ~3.9), and both key forms (\u201cresult(s)\u201d) are tested.",
+    "HYPOTHESIS UPDATES:\n- H3 (STATUS): CONFIRMED\n  Evidence: In \"This may result in delays.\", the verb token ' result' activated at 0.0000 (<0.5), with all other tokens at 0.0000, matching the prediction that non-noun usages should not activate.\n\nSTATUS ASSESSMENT:\nCurrent Status: CONFIRMED\nReason: The negative-control test shows zero activation on the verb ' result' (0.0000), substantially below noun-usage levels seen in corpus exemplars (typically 2.5\u20133.9). Corpus coverage check: No exemplar tokens \u226510.0 (max \u22483.9), so high-activation coverage is satisfied; evidence is sufficient to confirm selectivity against verb/idiom usage.",
+    "HYPOTHESIS UPDATES:\n- H4 (STATUS): UNCHANGED\n  Reason: Single strong positive in a production/measurement context (' results'=4.3438 in \"The experiment yielded consistent results.\") supports high activation but H4 is a comparative claim (boost vs neutral). No neutral/copular baseline was tested yet to verify the relative elevation.\n\nSTATUS ASSESSMENT:\nCurrent Status: UNCHANGED\nReason: Evidence shows very high activation in a yield+results context (4.3438), consistent with the \u201cproduction\u201d side of H4, but we lack a matched neutral/copular case (\u201cThe results are \u2026\u201d) to test the predicted boost. Corpus coverage check: No exemplar tokens \u226510.0 (range tops at 3.906), and the key token 'results' is tested. Conclusion cannot be drawn on the comparative aspect until a neutral baseline is added.",
+    "HYPOTHESIS UPDATES:\n- H5 (STATUS): UNCHANGED\n  Reason: A single negative-control test supports the claim but is insufficient to conclude definitively. In \"The outcomes were inconclusive.\", the token ' outcomes' had 0.0000 activation, consistent with wordform specificity to \u201cresult(s)\u201d.\n\nSTATUS ASSESSMENT:\nCurrent Status: UNCHANGED\nReason: Evidence so far shows zero activation on a near-synonym (' outcomes'=0.0000), aligning with the hypothesis that the feature is specific to \u201cresult(s)\u201d. However, with only one test and no complementary checks on other synonyms (e.g., \u201cfindings\u201d, \u201coutcomes\u201d in varied contexts) or direct contrasts against \u201cresults\u201d in the same frame, confirmation would be premature. Corpus coverage: No exemplar tokens \u226510.0 (max \u22483.9), so high-activation coverage is satisfied; more tests are needed to confirm wordform specificity across synonyms and contexts.",
+    "ANALYSIS:\nSummary activation: 4.2500\nBOS activation: 0.0000\nTop non-BOS tokens: ' result'=4.2500, ' produced'=0.0000, ' experiment'=0.0000\n\nINTERPRETATION:\nCONFIRMS the refined hypothesis. The noun ' result' in a production verb-object context shows very high activation (4.2500), demonstrating strong responsiveness to the singular form. This magnitude aligns with context dependence: it is comparable to plural in a production context (' results'=4.3438) and exceeds non-production frames (e.g., ' result'=3.0938; ' results'=2.7031).\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: In \"The experiment produced a result.\", ' result'=4.2500 with all other tokens \u22480.0000, confirming strong activation for singular \u201cresult\u201d and supporting context-dependent magnitude rather than a simple plural>singular rule.",
+    "ANALYSIS:\nSummary activation: 0.0000\nBOS activation: 0.0000\nTop non-BOS tokens: ' results'=0.0000, ' are'=0.0000, ' posted'=0.0000\n\nINTERPRETATION:\nCONFIRMS the hypothesis. Neutral/copular usage shows no activation on ' results' (0.0000), as expected. Compared to the production/measurement context previously tested (' results'=4.3438 in \u201cThe experiment yielded consistent results.\u201d), this demonstrates a clear boost in production contexts over neutral ones.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: Production context: ' results'=4.3438 (\u201cThe experiment yielded consistent results.\u201d) vs neutral/copular: ' results'=0.0000 (\u201cThe results are posted.\u201d), confirming higher activation in production/measurement contexts relative to neutral uses.",
+    "ANALYSIS:\nSummary activation: 0.0000\nBOS activation: 0.0000\nTop non-BOS tokens: ' findings'=0.0000, ' were'=0.0000, ' incon'=0.0000\n\nINTERPRETATION:\nCONFIRMS the hypothesis. The near-synonym ' findings' shows zero activation (0.0000), matching the prediction that the feature is specific to the wordform \u201cresult(s)\u201d and should not respond to alternatives.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: In \"The findings were inconclusive.\", ' findings'=0.0000. Combined with prior synonym test (' outcomes'=0.0000) and strong activations on \u201cresult(s)\u201d in other tests, this supports wordform specificity.",
+    "HYPOTHESIS UPDATES:\n- H2 (STATUS): CONFIRMED\n  Evidence: Strong activations on the singular noun across contexts: ' result'=3.0938 in \"The search returned a result.\" and ' result'=4.2500 in \"The experiment produced a result.\", demonstrating robust response to \u201cresult\u201d and context-dependent magnitude.\n\nSTATUS ASSESSMENT:\nCurrent Status: CONFIRMED\nReason: Two tests on singular \u201cresult\u201d both show high activation (>3.0), with higher activation in a production context (4.2500) than in a neutral-return context (3.0938), confirming the refined claim that the feature responds strongly to both \u201cresult\u201d and \u201cresults\u201d and that magnitude depends on context rather than plurality alone.",
+    "HYPOTHESIS UPDATES:\n- H4 (STATUS): CONFIRMED\n  Evidence: Production/measurement context shows high activation on ' results' (4.3438) in \"The experiment yielded consistent results.\", while neutral/copular context shows none (0.0000) in \"The results are posted.\", matching the predicted boost.\n\nSTATUS ASSESSMENT:\nCurrent Status: CONFIRMED\nReason: We have one strong positive in a production context (' results'=4.3438) and one neutral baseline with no activation (' results'=0.0000), demonstrating the expected elevation in production/measurement frames over copular uses. Corpus coverage: No exemplar tokens \u226510.0 (max \u22483.906), and the key token 'results' is tested in both contexts; evidence is sufficient to conclude.",
+    "HYPOTHESIS UPDATES:\n- H5 (STATUS): CONFIRMED\n  Evidence: Near-synonyms without the \u201cresult(s)\u201d string show zero activation: \"The outcomes were inconclusive.\" \u2192 ' outcomes'=0.0000; \"The findings were inconclusive.\" \u2192 ' findings'=0.0000. This is far below the strong activations observed on \u201cresult(s)\u201d tokens.\n\nSTATUS ASSESSMENT:\nCurrent Status: CONFIRMED\nReason: Two independent negative-control tests on near-synonyms both yielded 0.0000 activation, supporting strict wordform specificity. Corpus coverage check: No exemplar tokens \u226510.0 (max \u22483.906), and key synonyms have been tested. Evidence is sufficient to conclude wordform-specific behavior.",
+    "REVIEW SUMMARY:\n- H1: CONFIRMED by 1 direct test; additionally supported by high activation on \u201cresults\u201d in production context (tested under H4).\n- H2: CONFIRMED by 2 tests; strong activation on singular \u201cresult\u201d with context-dependent magnitude.\n- H3: CONFIRMED by 1 test; verb usage showed zero activation.\n- H4: CONFIRMED by 2 tests; strong boost in production vs zero in neutral/copular.\n- H5: CONFIRMED by 2 tests; near-synonyms (\u201coutcomes\u201d, \u201cfindings\u201d) show zero activation.\n\nASSESSMENT:\n- Adequacy: H2, H4, H5 have sufficient evidence (\u22652 tests). H1 and H3 each have only 1 direct test; more targeted tests would strengthen conclusions.\n- Gaps: H1 needs an additional domain/context check on plural \u201cresults\u201d beyond the \u201csearch returned\u201d frame; H3 needs an idiom check (\u201cas a result\u201d).\n- Contradictions: None. All hypotheses are mutually consistent: noun-specific, wordform-specific, and production-context boosting align.\n\nDECISION:\nNeed more testing: YES\n- H1: \"Marketing produces results.\"\n- H1: \"The algorithm returns results.\"\n- H3: \"As a result, we left.\"",
+    "REVIEW SUMMARY:\n- H1: CONFIRMED; plural \u201cresults\u201d activates across contexts, though magnitude varies (1.859\u20133.781).\n- H2: CONFIRMED; strong activation on singular \u201cresult\u201d with context-dependent magnitude (3.094, 4.250).\n- H3: CONFIRMED; verb/idiom uses show zero activation (0.000).\n- H4: CONFIRMED; strong boost in production contexts (4.344) vs neutral/copular (0.000).\n- H5: CONFIRMED; near-synonyms (\u201coutcomes\u201d, \u201cfindings\u201d) show zero activation (0.000).\n\nASSESSMENT:\n- Adequacy: H2, H3, H4, H5 are well supported (\u22652 tests each). H1 has 3 tests and is generally supported, but one case is below the >2.5 expectation, suggesting context variability; additional domain coverage would strengthen it.\n- Gaps: H1\u2019s \u201ctypically >2.5\u201d claim needs broader domain/structure sampling (e.g., scientific/reporting contexts, subject position).\n- Contradictions: None; hypotheses are consistent (noun-specific, wordform-specific, and production-context boosting).\n\nDECISION:\nNeed more testing: YES\n- H1: \"Clinical trial results were promising.\"\n- H1: \"Experimental results confirmed the theory.\"",
+    "REVIEW SUMMARY:\n- H1: CONFIRMED but variable; plural \u201cresults\u201d activates strongly in some contexts (2.703\u20133.781) but shows 0.000 in scientific/reporting subject-NP uses.\n- H2: CONFIRMED; singular \u201cresult\u201d activates strongly with context-dependent magnitude (3.094, 4.250).\n- H3: CONFIRMED; verb/idiom \u201cresult\u201d shows zero activation (0.000).\n- H4: CONFIRMED; production/measurement contexts show strong boost (4.344) vs neutral/copular (0.000).\n- H5: CONFIRMED; near-synonyms (\u201coutcomes\u201d, \u201cfindings\u201d) show zero activation (0.000).\n\nASSESSMENT:\n- Adequacy: H2, H3, H4, H5 have sufficient coverage with consistent results. H1 shows mixed outcomes across domains/structures; additional targeted tests needed to delineate when plural \u201cresults\u201d activates (object-of-production vs subject/neutral uses).\n- Gaps: H1\u2019s \u201ctypically >2.5 across domains\u201d is contradicted by two zero-activation scientific/reporting contexts; need tests for subject vs object, passive-find frames.\n- Contradictions: No direct contradictions among H2\u2013H5. H1\u2019s broad claim conflicts with observed zeros, but this aligns with H4\u2019s context-boost pattern, suggesting H1 needs refinement.\n\nDECISION:\nNeed more testing: YES\n- H1: \"We analyzed the results.\"\n- H1: \"These results were published.\"\n- H1: \"No results were found.\"",
+    "REVIEW SUMMARY:\n- H1: Mixed evidence for plural \u201cresults\u201d: high in production/return contexts (up to 3.781) but zero in several neutral/subject/copular/reporting frames; current wording (\u201cacross domains, typically >2.5\u201d) is too broad.\n- H2: Confirmed strong activation for singular \u201cresult\u201d; magnitude is context-dependent (3.094; 4.250).\n- H3: Confirmed selectivity against verb/idiom uses; zero activation (0.000).\n- H4: Confirmed production/measurement boost vs neutral/copular (4.344 vs 0.000).\n- H5: Confirmed wordform specificity; near-synonyms (\u201coutcomes\u201d, \u201cfindings\u201d) show 0.000.\n\nASSESSMENT:\n- Adequacy: H2, H3, H4, H5 are adequately tested with consistent results. H1 has ample tests (8) showing clear context dependence rather than uniform activation; it should be refined rather than further tested.\n- Gaps: None critical; H1\u2019s claim should be narrowed to production/return/yield object contexts.\n- Contradictions: None between hypotheses; H1\u2019s broad \u201cacross domains\u201d claim conflicts with observed zeros but aligns with H4\u2019s context-boost pattern.\n\nDECISION:\nNeed more testing: NO\nCurrent evidence is sufficient: We have multiple positives and negatives delineating the feature\u2019s selectivity\u2014strong activation on \u201cresult(s)\u201d in production/return/yield object contexts; zero for verb/idiom uses and near-synonyms; zero in neutral/subject/copular frames. This supports refining H1 and confirms H2\u2013H5 without additional tests.",
+    "[DESCRIPTION]: \nSAE Feature 10 (Layer 7) detects the outcome noun \u201cresult(s)\u201d with strongest activation when it appears as the direct object of production/return/yield-style verbs (e.g., yield/produce/return), and shows near-zero activation for verb/idiom uses, near-synonyms, and many neutral/subject/reporting frames. Observed activations peak at 4.3438 on \u201cresults\u201d and 4.2500 on \u201cresult\u201d; moderate values appear in some return/produce contexts (1.859\u20133.781), while numerous neutral/reporting contexts are 0.000, indicating strong context dependence rather than uniform activation across all domains.\n\n[EVIDENCE]:\n- Test 1: \"The search returned no results.\" \u2192 activation 2.7031 on 'results' (supports H1/H4)\n- Test 2: \"The search returned a result.\" \u2192 activation 3.0938 on 'result' (supports H2/H4)\n- Test 3: \"This may result in delays.\" \u2192 activation 0.0000 on 'result' (supports H3)\n- Test 4: \"The experiment yielded consistent results.\" \u2192 activation 4.3438 on 'results' (supports H1/H4)\n- Test 5: \"The outcomes were inconclusive.\" \u2192 activation 0.0000 on 'outcomes' (supports H5)\n- Test 6: \"The experiment produced a result.\" \u2192 activation 4.2500 on 'result' (supports H2/H4)\n- Test 7: \"The results are posted.\" \u2192 activation 0.0000 on 'results' (supports H4 boundary; refines H1)\n- Test 8: \"The findings were inconclusive.\" \u2192 activation 0.0000 on 'findings' (supports H5)\n- Test 9: \"Marketing produces results.\" \u2192 activation 1.8594 on 'results' (partial support H1/H4; lower magnitude)\n- Test 10: \"The algorithm returns results.\" \u2192 activation 3.7812 on 'results' (supports H1/H4)\n- Test 11: \"As a result, we left.\" \u2192 activation 0.0000 on 'result' (supports H3)\n- Test 12: \"Clinical trial results were promising.\" \u2192 activation 0.0000 on 'results' (contradicts broad H1; shows context specificity)\n- Test 13: \"Experimental results confirmed the theory.\" \u2192 activation 0.0000 on 'results' (contradicts broad H1; context specificity)\n- Test 14: \"We analyzed the results.\" \u2192 activation 0.0000 on 'results' (refines H1/H4: not all objects, only production/return-like)\n- Test 15: \"These results were published.\" \u2192 activation 0.0000 on 'results' (refines H1)\n- Test 16: \"No results were found.\" \u2192 activation 0.0000 on 'results' (refines H4 toward select verbs: return/yield/produce, not 'find')\n\n[LABEL 1]: Outcome noun \u201cresult(s)\u201d in production/return/yield contexts (noun-only, wordform-specific; excludes verb/idiom and near-synonyms)"
+  ],
+  "state_info": {
+    "state": "\u5b8c\u6210",
+    "round": 12,
+    "max_rounds": 30,
+    "hypotheses_count": 5,
+    "tests_count": 16,
+    "exemplars_count": 15,
+    "should_conclude": true
+  },
+  "execution_time_seconds": 686.6482274532318
+}

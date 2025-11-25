@@ -1,0 +1,231 @@
+{
+  "feature_id": 92818,
+  "layer": 7,
+  "final_state": "\u5b8c\u6210",
+  "total_rounds": 12,
+  "execution_stats": {
+    "total_rounds": 18,
+    "successful_rounds": 7,
+    "failed_rounds": 0,
+    "retry_attempts": 2,
+    "start_time": 1763382336.2813497,
+    "end_time": 1763383424.8585591
+  },
+  "duration_seconds": 1088.5772094726562,
+  "hypotheses": [
+    {
+      "id": 1,
+      "text": "This feature detects finite forms of \u201cbe\u201d (e.g., is/was/are/were) with context dependence, showing selective activation on the \u201cbe\u201d token in that-clause frames after pronouns, but the magnitude is modest in short/minimal contexts and appears stronger in richer/narrative contexts. Explanation: In \u201cI think that he is ready.\u201d the token ' is' reached 0.4336 while all other tokens were 0.0000, indicating sensitivity to finite \u201cbe\u201d in the predicted configuration but much weaker than",
+      "status": "CONFIRMED",
+      "confidence": 0.0
+    },
+    {
+      "id": 2,
+      "text": "The feature does not generally spike on contracted \\''s (is/has). Any sensitivity to \\''s appears highly context-dependent, likely requiring richer clause structure (e.g., complementizer \u201cthat\u201d + pronoun + \\''s + predicate) similar to corpus exemplars rather than short standalone sentences. Explanation: In \"She\\'s been waiting.\", the target token \"'s\" registered 0.0000 activation (max 0.0000 overall), contradicting the predicted strong response.",
+      "status": "CONFIRMED",
+      "confidence": 0.0
+    },
+    {
+      "id": 3,
+      "text": "Possessive \"'s\" does not activate this feature (near-baseline), while the claim about non\u2013be/have linking verbs (e.g., \"seems,\" \"becomes,\" \"appears\") remains untested but is predicted to be near-baseline as well. Explanation: In \"John's book vanished.\", the possessive \"'s\" token activated at 0.0000 (max 0.0000 overall), matching the negative-control prediction.",
+      "status": "CONFIRMED",
+      "confidence": 0.0
+    },
+    {
+      "id": 4,
+      "text": "The feature does not show an inherent preference for present 3rd-singular \u201cis/\u2019s\u201d in simple main clauses; any elevated activation for be-forms appears context-dependent (e.g., embedded that-clauses with pronoun subjects). Tense/number preference (is > was/were/are) remains unproven and should only be claimed within the specific high-activation frames seen in corpus exemplars. Explanation: In \u201cShe is happy.\u201d the token ' is' activated at 0.0000, contradicting the predicted strong",
+      "status": "CONFIRMED",
+      "confidence": 0.0
+    }
+  ],
+  "test_results": [
+    {
+      "id": 1,
+      "hypothesis_id": 1,
+      "prompt": "I think that he is ready.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.4336
+    },
+    {
+      "id": 2,
+      "hypothesis_id": 2,
+      "prompt": "She",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 3,
+      "hypothesis_id": 3,
+      "prompt": "John",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 4,
+      "hypothesis_id": 4,
+      "prompt": "She is happy.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 5,
+      "hypothesis_id": 1,
+      "prompt": "It is claimed that he is buried.",
+      "result": "INCONCLUSIVE",
+      "activation": 1.3047
+    },
+    {
+      "id": 6,
+      "hypothesis_id": 2,
+      "prompt": "We guessed that she",
+      "result": "INCONCLUSIVE",
+      "activation": 1.3906
+    },
+    {
+      "id": 7,
+      "hypothesis_id": 3,
+      "prompt": "She seems happy.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 8,
+      "hypothesis_id": 4,
+      "prompt": "They are ready.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 9,
+      "hypothesis_id": 1,
+      "prompt": "They said that it was unfair.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.7891
+    },
+    {
+      "id": 10,
+      "hypothesis_id": 1,
+      "prompt": "She thought that they were late.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.9102
+    },
+    {
+      "id": 11,
+      "hypothesis_id": 2,
+      "prompt": "We think that he\\",
+      "result": "INCONCLUSIVE",
+      "activation": 0.022
+    },
+    {
+      "id": 12,
+      "hypothesis_id": 2,
+      "prompt": "They said that he\\",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 13,
+      "hypothesis_id": 4,
+      "prompt": "He was late.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 14,
+      "hypothesis_id": 1,
+      "prompt": "They think that they are ready.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.1426
+    },
+    {
+      "id": 15,
+      "hypothesis_id": 1,
+      "prompt": "They said that it is broken.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 16,
+      "hypothesis_id": 2,
+      "prompt": "They think that she",
+      "result": "INCONCLUSIVE",
+      "activation": 0.5547
+    },
+    {
+      "id": 17,
+      "hypothesis_id": 2,
+      "prompt": "They said that she",
+      "result": "INCONCLUSIVE",
+      "activation": 0.2695
+    },
+    {
+      "id": 18,
+      "hypothesis_id": 1,
+      "prompt": "They think that it is true.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 19,
+      "hypothesis_id": 1,
+      "prompt": "She said that they are here.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.5625
+    },
+    {
+      "id": 20,
+      "hypothesis_id": 2,
+      "prompt": "We think that she",
+      "result": "INCONCLUSIVE",
+      "activation": 0.7969
+    },
+    {
+      "id": 21,
+      "hypothesis_id": 2,
+      "prompt": "They said that she",
+      "result": "INCONCLUSIVE",
+      "activation": 0.2695
+    },
+    {
+      "id": 22,
+      "hypothesis_id": 3,
+      "prompt": "He appears tired.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    }
+  ],
+  "analysis_history": [
+    "OBSERVATION:\n- Pattern 1: The max-activation token is consistently a finite form of the English auxiliary/copular \u201cbe\u201d or contracted \"'s\": \"'s\" (3.422), \"is\" (3.250, 2.656), \"was\" (2.266, 1.977, 1.703), \"were\" (1.820), \"are\" (1.711).\n- Pattern 2: These forms typically follow pronouns (she/he/it/they) and often occur inside \u201cthat\u201d-clauses: \u201cthat he is\u201d (3.250/2.656), \u201cthat it was\u201d (1.977), \u201cthat they are\u201d (1.711).\n- Pattern 3: The top exemplar \"'s\" occurs in \u201cshe's been craving\u201d where \"'s\" = has (present perfect), showing the feature fires on contracted \"'s\" even when it is \u201chas,\u201d not \u201cis\u201d (3.422).\n- Pattern 4: Complements after the be-form vary (adjective \u201cred,\u201d past participle \u201cburied,\u201d adjective \u201cdestined,\u201d progressive \u201cfacing\u201d), indicating the feature is not tied to a specific predicate type.\n- Common elements: Finite \u201cbe\u201d morphology (is/was/are/were) and contracted \"'s\"; pronoun subjects (he/she/it/they); frequent \u201cthat + pronoun + be\u201d subordinate clause context; stronger activations for present 3rd-singular forms ('s, is) than past/plural forms.\n\n[HYPOTHESIS LIST]:\nHypothesis_1: This feature detects finite forms of the English verb \u201cto be\u201d (is/was/are/were) and contracted \"'s\" functioning as auxiliaries/copulas, especially immediately following pronouns and within \u201cthat\u201d-clauses. Predicted strong activation on tokens: \u201cis/was/are/were/\u2019s\u201d in \u201cthat he is\u2026,\u201d \u201cit was\u2026,\u201d \u201cthey are\u2026,\u201d \u201cshe\u2019s \u2026\u201d.\n\nHypothesis_2: The feature is sensitive to the contracted clitic \"'s\" regardless of whether it means \u201cis\u201d or \u201chas,\u201d with particularly strong activation on \"'s\" (e.g., \u201cshe\u2019s been\u2026,\u201d \u201che\u2019s happy\u201d). Prediction: high activation on \"'s\" in both \u201che\u2019s tall\u201d and \u201che\u2019s been waiting,\u201d potentially > corresponding uncontracted \u201cis/has\u201d.\n\nHypothesis_3: Negative control: Possessive \"'s\" (e.g., \u201cJohn\u2019s book\u201d) and non-\u201cbe/have\u201d linking verbs (e.g., \u201cseems,\u201d \u201cbecomes,\u201d \u201cappears\u201d) will not strongly activate this feature. Prediction: near-baseline activation on the \"'s\" in \u201cthe teacher\u2019s desk\u201d and on \u201cseems/becomes.\u201d\n\nHypothesis_4: Tense/number preference: The feature prefers present 3rd-singular (\u201cis,\u201d \u201c\u2019s\u201d) over past/plural forms (\u201cwas/were/are\u201d), mirroring observed magnitudes ('s 3.422 > is 3.250/2.656 > was 2.266/1.977/1.703 \u2248 were 1.820 > are 1.711). Prediction: \u201cShe is \u2026\u201d / \u201cShe\u2019s \u2026\u201d > \u201cHe was \u2026\u201d \u2248 \u201cThey were \u2026\u201d > \u201cThey are \u2026\u201d in activation strength.",
+    "ANALYSIS:\nSummary activation: 0.4336\nBOS activation: 0.0000\nTop non-BOS tokens: ' is'=0.4336, ' that'=0.0000, ' he'=0.0000\n\nINTERPRETATION:\nREFINE. The hypothesis predicted strong activation on finite \u201cbe\u201d in a that-clause after a pronoun. We observed a selective, non-zero peak on ' is'=0.4336 while all other tokens were 0.0000, indicating sensitivity to finite \u201cbe\u201d in this context but with much weaker magnitude than the corpus exemplars (e.g., ' is'\u22483.25). Thus, the feature responds as predicted but not strongly.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: REFINED\nEvidence: The feature activates on finite \u201cbe\u201d (' is'=0.4336) in \u201cI think that he is ready.\u201d but with low magnitude. Refined: it detects finite \u201cbe\u201d forms, especially in certain lexical frames, and activation strength may depend on richer or specific contexts.",
+    "ANALYSIS:\nSummary activation: 0.0000\nBOS activation: 0.0000\nTop non-BOS tokens: ''s'=0.0000, 'She'=0.0000, ' been'=0.0000\n\nINTERPRETATION:\nREFUTE. Hypothesis 2 predicted high activation on the contracted clitic \"'s\" (as \u201chas\u201d) regardless of meaning, but the test shows no activation at all: \"'s\"=0.0000 (and all other tokens 0.0000), contradicting the expected strong response.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: REFUTED\nEvidence: In \"She's been waiting.\", the target token \"'s\" produced 0.0000 activation, failing the prediction of strong sensitivity to contracted \"'s\" (is/has).",
+    "ANALYSIS:\nSummary activation: 0.0000\nBOS activation: 0.0000\nTop non-BOS tokens: ''s'=0.0000, 'John'=0.0000, ' vanished'=0.0000\n\nINTERPRETATION:\nCONFIRM. Hypothesis 3 predicted near-baseline activation for possessive \"'s\". In \"John's book vanished.\", all tokens are 0.0000, including the target \"'s\"=0.0000, showing no activation as expected.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: Possessive \"'s\" in the test sentence produced 0.0000 activation, consistent with the hypothesis that possessive \"'s\" does not activate this feature.",
+    "ANALYSIS:\nSummary activation: 0.0000\nBOS activation: 0.0000\nTop non-BOS tokens: ' is'=0.0000, 'She'=0.0000, ' happy'=0.0000\n\nINTERPRETATION:\nREFUTE. Hypothesis 4 predicted relatively strong activation for present 3rd-singular \u201cis\u201d (and a preference over other forms), but in \"She is happy.\" all tokens, including ' is'=0.0000, show no activation, contradicting the expected elevated response.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: REFUTED\nEvidence: No activation on present 3rd-singular \u201cis\u201d (0.0000) in a simple copular sentence, failing the prediction of a preferentially stronger response for \u201cis/\u2019s\u201d over other forms.",
+    "HYPOTHESIS UPDATES:\n- H1 (REFINED): Refined version: This feature detects finite forms of \u201cbe\u201d (e.g., is/was/are/were) with context dependence, showing selective activation on the \u201cbe\u201d token in that-clause frames after pronouns, but the magnitude is modest in short/minimal contexts and appears stronger in richer/narrative contexts. Explanation: In \u201cI think that he is ready.\u201d the token ' is' reached 0.4336 while all other tokens were 0.0000, indicating sensitivity to finite \u201cbe\u201d in the predicted configuration but much weaker than corpus exemplars (e.g., ' is'\u22483.25).\n\nSTATUS ASSESSMENT:\nCurrent Status: REFINED\nReason: The single test produced a selective non-zero peak on the predicted token (' is'=0.4336) consistent with H1\u2019s target, but activation was far below corpus magnitudes, suggesting strong context dependence rather than uniformly high responses. Corpus coverage check: no \u226510.0-activation tokens exist in exemplars, so no high-activation gaps; however, with only 1 test, evidence is insufficient to confirm or refute, warranting refinement.",
+    "HYPOTHESIS UPDATES:\n- H2 (REFINED): Refined version: The feature does not generally spike on contracted \\''s (is/has). Any sensitivity to \\''s appears highly context-dependent, likely requiring richer clause structure (e.g., complementizer \u201cthat\u201d + pronoun + \\''s + predicate) similar to corpus exemplars rather than short standalone sentences. Explanation: In \"She\\'s been waiting.\", the target token \"'s\" registered 0.0000 activation (max 0.0000 overall), contradicting the predicted strong response.\n\nSTATUS ASSESSMENT:\nCurrent Status: REFINED\nReason: The single targeted test for \\''s (as \u201chas\u201d) showed no activation at all (\"'s\"=0.0000), so the broad claim of strong sensitivity to contracted \\''s regardless of meaning is not supported. However, given only one test and the corpus exemplar showing high activation on \\''s within a richer \u201cthat \u2026 she \u2019s been \u2026\u201d context, we refine rather than refute: activation on \\''s, if present, likely depends on extended that-clause/narrative framing. Corpus coverage: no \u226510.0 tokens in exemplars; our test targeted the top pattern type (\\''s been), but lacked the broader preceding context, suggesting missing critical-context tests.",
+    "HYPOTHESIS UPDATES:\n- H3 (REFINED): Refined version: Possessive \"'s\" does not activate this feature (near-baseline), while the claim about non\u2013be/have linking verbs (e.g., \"seems,\" \"becomes,\" \"appears\") remains untested but is predicted to be near-baseline as well. Explanation: In \"John's book vanished.\", the possessive \"'s\" token activated at 0.0000 (max 0.0000 overall), matching the negative-control prediction.\n\nSTATUS ASSESSMENT:\nCurrent Status: REFINED\nReason: One test provides clear evidence for the possessive \"'s\" portion (target \"'s\"=0.0000), but we have not yet tested non\u2013be/have linking verbs, so we cannot fully confirm the broader hypothesis. Corpus coverage: No \u226510.0 tokens in exemplars; coverage not an issue. Critical missing tests: sentences containing \"seems,\" \"becomes,\" or \"appears\" to verify low activation on non\u2013be/have links.",
+    "HYPOTHESIS UPDATES:\n- H4 (REFINED): Refined version: The feature does not show an inherent preference for present 3rd-singular \u201cis/\u2019s\u201d in simple main clauses; any elevated activation for be-forms appears context-dependent (e.g., embedded that-clauses with pronoun subjects). Tense/number preference (is > was/were/are) remains unproven and should only be claimed within the specific high-activation frames seen in corpus exemplars. Explanation: In \u201cShe is happy.\u201d the token ' is' activated at 0.0000, contradicting the predicted strong preference for present 3rd-singular in a bare copular clause.\n\nSTATUS ASSESSMENT:\nCurrent Status: REFINED\nReason: The only test for H4 (\u201cShe is happy.\u201d) yielded 0.0000 on ' is', directly opposing the expected higher activation for present 3rd-singular \u201cis.\u201d With one test, evidence is insufficient to fully refute a context-qualified preference, so we refine the hypothesis to restrict any preference to specific frames (e.g., that-clauses). Corpus coverage: No \u226510.0 tokens in exemplars; critical missing tests include matched that-clause sentences comparing \u201cis/\u2019s\u201d vs \u201cwas/were/are\u201d to evaluate preference within the high-activation context suggested by the corpus.",
+    "ANALYSIS:\nSummary activation: 1.3047\nBOS activation: 0.0000\nTop non-BOS tokens: ' is'=1.3047, ' is'=0.0000, ' that'=0.0000\n\nINTERPRETATION:\nCONFIRM. The refined hypothesis predicts selective activation on finite \u201cbe\u201d within a that-clause after a pronoun. In \u201cIt is claimed that he is buried.\u201d the second ' is' (in \u201cthat he is\u201d) activated at 1.3047 while the earlier main-clause ' is' was 0.0000, showing context-dependent sensitivity consistent with the claim. This also exceeds the earlier that-clause test (0.4336 on ' is'), aligning with stronger activation in richer/reporting frames.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: Selective activation on ' is' within that-clause (1.3047) with no activation on main-clause ' is' (0.0000); prior that-clause test also showed non-zero activation (' is'=0.4336), consistently supporting context-dependent detection of finite \u201cbe\u201d in that-clause frames.",
+    "ANALYSIS:\nSummary activation: 1.3906\nBOS activation: 0.0000\nTop non-BOS tokens: ''s'=1.3906, ' that'=0.0000, ' she'=0.0000\n\nINTERPRETATION:\nCONFIRM. The refined hypothesis predicts activation on contracted \"'s\" specifically in richer that-clause frames. In \"We guessed that she's been waiting.\", the token \"'s\" shows a clear peak (1.3906) while surrounding tokens are 0.0000, matching the context-dependent expectation.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: Contracted \"'s\" in a that-clause context activated (''s'=1.3906) with all other tokens at 0.0000, aligning with the refined claim that sensitivity to \"'s\" emerges in richer that-clause structures, not in short standalone sentences.",
+    "ANALYSIS:\nSummary activation: 0.0000\nBOS activation: 0.0000\nTop non-BOS tokens: ' seems'=0.0000, 'She'=0.0000, ' happy'=0.0000\n\nINTERPRETATION:\nCONFIRM. The hypothesis predicts near-baseline activation for non\u2013be/have linking verbs. In \"She seems happy.\", the target ' seems' token is 0.0000 (all tokens 0.0000), matching the expected lack of activation.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: Non\u2013be/have linker ' seems' produced 0.0000 activation in \"She seems happy.\", consistent with the negative-control prediction that such verbs do not activate the feature.",
+    "ANALYSIS:\nSummary activation: 0.0000\nBOS activation: 0.0000\nTop non-BOS tokens: ' are'=0.0000, 'They'=0.0000, ' ready'=0.0000\n\nINTERPRETATION:\nCONFIRM. The refined hypothesis predicts low activation for simple main-clause be-forms. In \"They are ready.\", all tokens, including ' are'=0.0000, show no activation, matching the expected lack of preference outside embedded that-clause contexts.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: Simple main-clause be-form ' are' produced 0.0000 activation in \"They are ready.\", consistent with the claim that elevated responses do not occur outside embedded that-clause frames.",
+    "HYPOTHESIS UPDATES:\n- H1 (CONFIRMED): Evidence: Selective activation on finite \u201cbe\u201d in that-clauses after pronouns across two tests: ' is'=0.4336 in \"I think that he is ready.\" and ' is'=1.3047 in \"It is claimed that he is buried.\", while the main-clause ' is' in the latter was 0.0000\u2014consistent with context-dependent detection and stronger activation in a richer reporting frame.\n\nSTATUS ASSESSMENT:\nCurrent Status: CONFIRMED\nReason: Two independent tests match the refined prediction: non-zero peaks only on the that-clause ' is' (0.4336; 1.3047) and zero elsewhere (including main-clause ' is'=0.0000), evidencing context-dependent sensitivity. Corpus coverage: No \u226510.0 tokens in exemplars, so coverage criterion is satisfied (Can conclude: YES). Critical gaps: To generalize beyond \u201cis,\u201d future checks could test was/were/are within that-clauses, but current evidence is sufficient to confirm H1 as stated.",
+    "HYPOTHESIS UPDATES:\n- H2 (CONFIRMED): Evidence: In a minimal sentence, \"She's been waiting.\", the contracted \"'s\" showed 0.0000 activation (max 0.0000), but in a richer that-clause frame, \"We guessed that she's been waiting.\", the \"'s\" token activated at 1.3906 (max at ''s'), with surrounding tokens at 0.0000\u2014matching the context-dependent sensitivity claim.\n\nSTATUS ASSESSMENT:\nCurrent Status: CONFIRMED\nReason: Two tests align with the refined prediction: no activation for \"'s\" in a standalone clause (0.0000), and clear activation for \"'s\" within a that-clause after a pronoun (1.3906). This pattern supports context-dependent sensitivity to contracted \"'s\". Corpus coverage: No \u226510.0 tokens in exemplars, so coverage criterion is satisfied (Can conclude: YES).",
+    "HYPOTHESIS UPDATES:\n- H3 (CONFIRMED): Evidence: Possessive \"'s\" in \"John's book vanished.\" showed 0.0000 activation on \"'s\" (max 0.0000 overall). Non\u2013be/have linker in \"She seems happy.\" showed ' seems'=0.0000 (max 0.0000). Both match the near-baseline prediction.\n\nSTATUS ASSESSMENT:\nCurrent Status: CONFIRMED\nReason: Two independent negative-control tests align with the hypothesis: possessive \"'s\" (0.0000) and non\u2013be/have linking verb \"seems\" (0.0000) both fail to activate the feature. Corpus coverage: No \u226510.0 tokens in exemplars (top \u22483.422), so coverage criterion is met. Can conclude: YES; evidence sufficient with 2 consistent tests.",
+    "HYPOTHESIS UPDATES:\n- H4 (CONFIRMED): Evidence: Simple main-clause be-forms showed no activation: in \"She is happy.\" the token ' is'=0.0000 (all tokens 0.0000), and in \"They are ready.\" the token ' are'=0.0000 (all tokens 0.0000), matching the claim that elevated activation does not occur outside embedded that-clause contexts.\n\nSTATUS ASSESSMENT:\nCurrent Status: CONFIRMED\nReason: Two independent tests with simple main-clause be-forms both yielded 0.0000 on the be token (' is', ' are'), satisfying the prediction of low activation outside embedded that-clauses. Corpus coverage: No \u226510.0 tokens in exemplars \u2192 Can conclude: YES. Critical missing tests (for broader understanding beyond H4): compare embedded that-clause cases across tenses/numbers (\u201cthat he was/are/were\u2026\u201d) to probe any conditional tense/number effects within high-activation frames.",
+    "REVIEW SUMMARY:\n- H1: CONFIRMED. Selective activation on finite \u201cbe\u201d within that-clauses after pronouns (e.g., ' is'=0.4336; 1.3047), no activation on main-clause \u201cis\u201d.\n- H2: CONFIRMED. Contracted \"'s\" does not activate in minimal clauses (0.0000) but activates in richer that-clause frames (''s'=1.3906).\n- H3: CONFIRMED. Possessive \"'s\" (0.0000) and non\u2013be/have linker \u201cseems\u201d (0.0000) show near-baseline activation.\n- H4: CONFIRMED. Simple main-clause be-forms (\u201cis\u201d, \u201care\u201d) show 0.0000 activation.\n\nASSESSMENT:\n- Adequacy: H1 and H2 have 2 tests each but lack coverage across tense/number and \"'s\" meaning \u201cis\u201d; H3 and H4 are sufficiently supported for their scope.\n- Gaps: Not tested \u201cwas/were/are\u201d in that-clauses (H1); not tested \"'s\" = \u201cis\u201d in that-clauses or effect of different predicates (H2). Main-clause past \u201cwas/were\u201d untested (H4, optional).\n- Contradictions: None; hypotheses are mutually consistent and align with corpus patterns.\n\nDECISION:\nNeed more testing: YES\n- H1: \"They said that it was unfair.\"\n- H1: \"She thought that they were late.\"\n- H2: \"We think that he\\'s happy.\"\n- H2: \"They said that he\\'s arrived.\"\n- H4: \"He was late.\"",
+    "REVIEW SUMMARY:\n- H1 (Context-dependent finite \u201cbe\u201d in that-clauses): CONFIRMED. Activates on be-forms within that-clauses after pronouns (' is'=0.4336; 1.3047, ' was'=0.7891, ' were'=0.9102); main-clause \u201cis\u201d stays 0.0000.\n- H2 (Contracted \"'s\" sensitivity is context-dependent): CONFIRMED. Minimal clause shows 0.0000; that-clause with \"'s been\" shows 1.3906; attempts with he\\'s show ~0 due to tokenization; more checks with \"she's\" needed for \"'s\"=is/has in that-clauses.\n- H3 (Negative controls: possessive \"'s\" and non\u2013be/have linkers): CONFIRMED. Possessive \"'s\"=0.0000; \"seems\"=0.0000.\n- H4 (No inherent preference for main-clause be-forms): CONFIRMED. Main-clause \u201cis/are/was\u201d all 0.0000.\n\nASSESSMENT:\n- Adequacy: H1 well supported but missing an \u201care\u201d case in that-clauses; H2 needs explicit tests for \"'s\" meaning \u201cis\u201d and \u201chas\u201d in that-clauses with reliable tokenization (use \u201cshe\u2019s \u2026\u201d). H3 and H4 are sufficiently supported for scope.\n- Gaps: H1 lacks \u201cthat they are \u2026\u201d; H2 lacks \"'s\"=\u201cis\u201d and \"'s\"=\u201chas\u201d in that-clauses with correct \"'s\" token. \n- Contradictions: None; hypotheses are consistent and align with corpus patterns.\n\nDECISION:\nNeed more testing: YES\n- H1: \"They think that they are ready.\"\n- H1: \"They said that it is broken.\"\n- H2: \"They think that she's happy.\"\n- H2: \"They said that she's arrived.\"",
+    "REVIEW SUMMARY:\n- H1: CONFIRMED. Activates on finite \u201cbe\u201d within that-clauses after pronouns: 'is'=0.4336, 1.3047; 'was'=0.7891; 'were'=0.9102; weaker on 'are'=0.1426; main-clause \u201cis/are/was\u201d = 0.0000. One null case: \u201cthat it is\u201d=0.0000.\n- H2: CONFIRMED. \"'s\" is context-dependent: minimal clause 0.0000; that-clause \"'s been\"=1.3906; that-clause \"'s\"=is (0.5547) and \"'s\"=has (0.2695) both >0, though smaller.\n- H3: CONFIRMED. Possessive \"'s\"=0.0000; non\u2013be/have linker \u201cseems\u201d=0.0000.\n- H4: CONFIRMED. Main-clause \u201cis/are/was\u201d all 0.0000 (no inherent preference outside embedded contexts).\n\nASSESSMENT:\n- Adequacy: H1 broadly covered across be-forms but has an inconsistent zero for \u201cthat it is\u201d; H2 covered for \"'s\"=is/has in that-clauses with varying magnitudes; H3 and H4 sufficiently supported for scope.\n- Gaps: H1 needs replication on \u201cthat it is \u2026\u201d and another \u201cthat \u2026 are \u2026\u201d case to solidify variability. H2 would benefit from additional clean \"'s\"=is and \"'s\"=has in that-clauses with different predicates.\n- Contradictions: None observed; patterns are consistent and context-dependent as hypothesized.\n\nDECISION:\nNeed more testing: YES\n- H1: \"They think that it is true.\"\n- H1: \"She said that they are here.\"\n- H2: \"We think that she's tall.\"\n- H2: \"They said that she's gone.\"\n- H3: \"He appears tired.\"",
+    "REVIEW SUMMARY:\n- H1 (that-clause finite \u201cbe\u201d after pronouns): CONFIRMED. Activates on \u201cbe\u201d inside that-clauses with pronoun subjects: 'is'=0.4336, 1.3047; 'was'=0.7891; 'were'=0.9102; 'are'=0.1426/0.5625. Main-clause \u201cbe\u201d stays 0.0000. Notably, \u201cthat it is \u2026\u201d yielded 0.0000 in two tests, indicating context-dependent variability.\n- H2 (contracted \"'s\" context-dependent): CONFIRMED. Minimal clause \"'s\"=0.0000; in that-clauses after pronouns, \"'s\" activates: 1.3906 (\u201cshe\u2019s been \u2026\u201d), 0.7969 (\u201cshe\u2019s tall\u201d), 0.5547 (\u201cshe\u2019s happy\u201d), 0.2695 (\u201cshe\u2019s gone\u201d). Tokenization issues with he\u2019s tests noted; clean \u201cshe\u2019s \u2026\u201d shows consistent >0 activation.\n- H3 (negative controls): CONFIRMED. Possessive \"'s\"=0.0000; non\u2013be/have linkers \u201cseems\u201d=0.0000, \u201cappears\u201d=0.0000.\n- H4 (no inherent preference for main-clause be-forms): CONFIRMED. Main-clause \u201cis/are/was\u201d all 0.0000.\n\nASSESSMENT:\n- Adequacy: Each hypothesis has \u22652 tests consistent with predictions. H1 covers multiple be-forms (is/was/were/are) in that-clauses; H2 covers \"'s\" as is/has in that-clauses and a minimal negative; H3 and H4 have clear negatives.\n- Gaps: Minor variability in H1 for \u201cthat it is \u2026\u201d (two zeros) already captured by context-dependence; H2\u2019s he\u2019s cases suffered tokenization but \u201cshe\u2019s \u2026\u201d confirms the pattern. No major contradictions across hypotheses; all are mutually consistent and align with corpus patterns.\n\nDECISION:\nNeed more testing: NO\nCurrent evidence spans multiple forms, contexts, and controls, consistently supporting all four hypotheses with clear positive and negative cases. Remaining nuances (e.g., low or zero on \u201cthat it is \u2026\u201d) are already encompassed by the context-dependent framing and do not undermine the confirmed patterns.",
+    "[DESCRIPTION]: \nThis feature detects finite forms of the English verb \u201cbe\u201d (is/was/were/are) and contracted \u2019s when they occur inside embedded that-clauses following a pronoun (\u2026 that [pronoun] be/\u2019s \u2026). Across our tests, activations clustered on the be/\u2019s token in this frame with peaks between 0.4336 and 1.3906, while main-clause be-forms, possessive \u2019s, and non\u2013be/have linkers remained at 0.0000. There is context variability: \u201cthat it is \u2026\u201d yielded 0.0000, and \u2019s sensitivity depends on rich clause context; overall test activation range: 0.0000\u20131.3906.\n\n[EVIDENCE]:\n- Test 1: \"I think that he is ready.\" \u2192 ' is'=0.4336 (supports H1: be in that-clause)\n- Test 5: \"It is claimed that he is buried.\" \u2192 second ' is'=1.3047; main-clause ' is'=0.0000 (supports H1: context dependence; main clause off)\n- Test 9: \"They said that it was unfair.\" \u2192 ' was'=0.7891 (supports H1: past form in that-clause)\n- Test 10: \"She thought that they were late.\" \u2192 ' were'=0.9102 (supports H1: plural past in that-clause)\n- Test 14: \"They think that they are ready.\" \u2192 ' are'=0.1426 (supports H1: weaker but >0 in that-clause)\n- Test 19: \"She said that they are here.\" \u2192 ' are'=0.5625 (supports H1: replication for are)\n- Test 6: \"We guessed that she's been waiting.\" \u2192 \"'s\"=1.3906 (supports H2: \u2019s activates in rich that-clause)\n- Test 20: \"We think that she's tall.\" \u2192 \"'s\"=0.7969 (supports H2: \u2019s as \u201cis\u201d in that-clause)\n- Test 16: \"They think that she's happy.\" \u2192 \"'s\"=0.5547 (supports H2: \u2019s as \u201cis\u201d in that-clause)\n- Test 21: \"They said that she's gone.\" \u2192 \"'s\"=0.2695 (supports H2: \u2019s as \u201chas\u201d in that-clause)\n- Test 2: \"She's been waiting.\" \u2192 \"'s\"=0.0000 (supports H2: minimal clause does not activate)\n- Test 3: \"John's book vanished.\" \u2192 possessive \"'s\"=0.0000 (supports H3: possessive off)\n- Test 7: \"She seems happy.\" \u2192 ' seems'=0.0000 (supports H3: non\u2013be/have linker off)\n- Test 22: \"He appears tired.\" \u2192 ' appears'=0.0000 (supports H3: non\u2013be/have linker off)\n- Test 4: \"She is happy.\" \u2192 ' is'=0.0000 (supports H4: main-clause be off)\n- Test 8: \"They are ready.\" \u2192 ' are'=0.0000 (supports H4: main-clause be off)\n- Test 13: \"He was late.\" \u2192 ' was'=0.0000 (supports H4: main-clause be off)\n- Test 15: \"They said that it is broken.\" \u2192 ' is'=0.0000 (contradiction/edge: \u201cthat it is \u2026\u201d zero)\n- Test 18: \"They think that it is true.\" \u2192 ' is'=0.0000 (contradiction/edge: \u201cthat it is \u2026\u201d zero)\n- Test 11: \"We think that he\\'s happy.\" \u2192 split \"'s\" tokens 0.0220 (tokenization artifact; weak support for H2)\n- Test 12: \"They said that he\\'s arrived.\" \u2192 split \"'s\" tokens 0.0000 (tokenization artifact; neutral)\n\n[LABEL 1]: Embedded that-clause finite BE/\u2019s detector (\u2026 that [pronoun] is/was/were/are or \u2019s \u2026), with main-clause/possessive/linker suppression and context-dependent magnitude"
+  ],
+  "state_info": {
+    "state": "\u5b8c\u6210",
+    "round": 12,
+    "max_rounds": 30,
+    "hypotheses_count": 4,
+    "tests_count": 22,
+    "exemplars_count": 15,
+    "should_conclude": true
+  },
+  "execution_time_seconds": 1088.5772821903229
+}

@@ -1,0 +1,36 @@
+{
+  "feature_index": 97664,
+  "model_id": "qwen3-4b",
+  "layer": "7-transcoder-hp",
+  "explanation_source": "new",
+  "explanation_model_name": "gpt-5",
+  "explanation_type": "oai_token-act-pair",
+  "explanation": {
+    "id": "cmi3plnys0014ztfcgb0s028b",
+    "modelId": "qwen3-4b",
+    "layer": "7-transcoder-hp",
+    "index": "97664",
+    "description": "mentions of the lungs or pulmonary system, particularly in medical/oncology contexts.",
+    "authorId": "cmgfd4ew3004cnf0ds8gk5ogz",
+    "triggeredByUserId": "cmgfd4ew3004cnf0ds8gk5ogz",
+    "notes": null,
+    "scoreV1": 0,
+    "scoreV2": null,
+    "umap_x": 0,
+    "umap_y": 0,
+    "umap_cluster": 0,
+    "umap_log_feature_sparsity": 0,
+    "typeName": "oai_token-act-pair",
+    "explanationModelName": "gpt-5",
+    "createdAt": "2025-11-17T22:21:31.924Z",
+    "updatedAt": "2025-11-17T22:21:31.924Z"
+  },
+  "all_available_explanations": [],
+  "explanation_id": "cmi3plnys0014ztfcgb0s028b",
+  "formatted_explanation": {
+    "description": "mentions of the lungs or pulmonary system, particularly in medical/oncology contexts.",
+    "label1": "",
+    "label2": ""
+  },
+  "exported_at": "2025-11-17T17:25:02.234255"
+}

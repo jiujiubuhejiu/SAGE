@@ -1,0 +1,47 @@
+{
+  "feature_index": 21717,
+  "model_id": "qwen3-4b",
+  "layer": "7-transcoder-hp",
+  "explanation_source": "existing",
+  "explanation_model_name": "gpt-5",
+  "explanation_type": "oai_token-act-pair",
+  "explanation": {
+    "id": "cmi40svbp000jnssh25aggb5a",
+    "description": "mentions of hats, especially the exact word or its plural, including when embedded in longer terms or phrases.",
+    "explanationModelName": "gpt-5",
+    "typeName": "oai_token-act-pair",
+    "scores": [],
+    "triggeredByUser": {
+      "id": "cmgfd4ew3004cnf0ds8gk5ogz",
+      "name": "liuliujiujiu05"
+    }
+  },
+  "all_available_explanations": [
+    {
+      "id": "fqmck97isw7dn43o3uqc65s2n",
+      "description": "hat",
+      "explanationModelName": "gemini-2.0-flash",
+      "typeName": "np_max-act",
+      "scores": [],
+      "triggeredByUser": null
+    },
+    {
+      "id": "cmi40svbp000jnssh25aggb5a",
+      "description": "mentions of hats, especially the exact word or its plural, including when embedded in longer terms or phrases.",
+      "explanationModelName": "gpt-5",
+      "typeName": "oai_token-act-pair",
+      "scores": [],
+      "triggeredByUser": {
+        "id": "cmgfd4ew3004cnf0ds8gk5ogz",
+        "name": "liuliujiujiu05"
+      }
+    }
+  ],
+  "explanation_id": "cmi40svbp000jnssh25aggb5a",
+  "formatted_explanation": {
+    "description": "mentions of hats, especially the exact word or its plural, including when embedded in longer terms or phrases.",
+    "label1": "",
+    "label2": ""
+  },
+  "exported_at": "2025-11-17T22:38:53.481202"
+}

@@ -1,0 +1,61 @@
+{
+  "feature_index": 0,
+  "model_id": "gemma-2-2b",
+  "layer": "0-gemmascope-mlp-16k",
+  "explanation_source": "existing",
+  "explanation_model_name": "gpt-5",
+  "explanation_type": "oai_token-act-pair",
+  "explanation": {
+    "id": "cmidg1i7v0005i7zr1hiwjvzi",
+    "description": "formal, institutional language—especially abstract nouns and titles tied to legal or religious authority, often accompanied by concessive transitions like nonetheless or nevertheless",
+    "explanationModelName": "gpt-5",
+    "typeName": "oai_token-act-pair",
+    "scores": [],
+    "triggeredByUser": {
+      "id": "cmgfd4ew3004cnf0ds8gk5ogz",
+      "name": "liuliujiujiu05"
+    }
+  },
+  "all_available_explanations": [
+    {
+      "id": "b3jdib7n3x3do2pbbvb37g7ft",
+      "description": " references to authority and leadership within the context of personality and beliefs",
+      "explanationModelName": "gpt-4o-mini",
+      "typeName": "oai_token-act-pair",
+      "scores": [],
+      "triggeredByUser": {
+        "id": "cljgamm90000076zdchicy6zj",
+        "name": "bot"
+      }
+    },
+    {
+      "id": "n5vw86gps1m4qgb32jkknfkkm",
+      "description": " terms related to authority and the influence of individual personalities",
+      "explanationModelName": "gpt-4o-mini",
+      "typeName": "oai_token-act-pair",
+      "scores": [],
+      "triggeredByUser": {
+        "id": "cljgamm90000076zdchicy6zj",
+        "name": "bot"
+      }
+    },
+    {
+      "id": "cmidg1i7v0005i7zr1hiwjvzi",
+      "description": "formal, institutional language—especially abstract nouns and titles tied to legal or religious authority, often accompanied by concessive transitions like nonetheless or nevertheless",
+      "explanationModelName": "gpt-5",
+      "typeName": "oai_token-act-pair",
+      "scores": [],
+      "triggeredByUser": {
+        "id": "cmgfd4ew3004cnf0ds8gk5ogz",
+        "name": "liuliujiujiu05"
+      }
+    }
+  ],
+  "explanation_id": "cmidg1i7v0005i7zr1hiwjvzi",
+  "formatted_explanation": {
+    "description": "formal, institutional language—especially abstract nouns and titles tied to legal or religious authority, often accompanied by concessive transitions like nonetheless or nevertheless",
+    "label1": "",
+    "label2": ""
+  },
+  "exported_at": "2025-11-25T00:11:19.926713"
+}

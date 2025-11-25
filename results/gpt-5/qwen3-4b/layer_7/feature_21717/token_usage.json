@@ -1,0 +1,195 @@
+{
+  "summary": {
+    "total_calls": 19,
+    "total_prompt_tokens": 326304,
+    "total_completion_tokens": 22659,
+    "total_cached_tokens": 289408,
+    "total_tokens": 348963,
+    "total_non_cached_tokens": 59555,
+    "total_cost_usd": 0.154443,
+    "by_model": {
+      "gpt-5": {
+        "calls": 19,
+        "prompt_tokens": 326304,
+        "completion_tokens": 22659,
+        "cached_tokens": 289408,
+        "total_tokens": 348963,
+        "non_cached_tokens": 59555,
+        "cost_usd": 0.15444299999999997
+      }
+    }
+  },
+  "detailed_history": [
+    {
+      "model": "gpt-5",
+      "prompt_tokens": 2377,
+      "completion_tokens": 3966,
+      "cached_tokens": 0,
+      "total_tokens": 6343,
+      "non_cached_tokens": 6343,
+      "timestamp": "2025-11-17T21:55:50.950721"
+    },
+    {
+      "model": "gpt-5",
+      "prompt_tokens": 4628,
+      "completion_tokens": 718,
+      "cached_tokens": 0,
+      "total_tokens": 5346,
+      "non_cached_tokens": 5346,
+      "timestamp": "2025-11-17T21:56:03.839801"
+    },
+    {
+      "model": "gpt-5",
+      "prompt_tokens": 6353,
+      "completion_tokens": 731,
+      "cached_tokens": 4608,
+      "total_tokens": 7084,
+      "non_cached_tokens": 2476,
+      "timestamp": "2025-11-17T21:56:17.218436"
+    },
+    {
+      "model": "gpt-5",
+      "prompt_tokens": 8080,
+      "completion_tokens": 924,
+      "cached_tokens": 6272,
+      "total_tokens": 9004,
+      "non_cached_tokens": 2732,
+      "timestamp": "2025-11-17T21:56:35.449195"
+    },
+    {
+      "model": "gpt-5",
+      "prompt_tokens": 9747,
+      "completion_tokens": 655,
+      "cached_tokens": 8064,
+      "total_tokens": 10402,
+      "non_cached_tokens": 2338,
+      "timestamp": "2025-11-17T21:56:49.722127"
+    },
+    {
+      "model": "gpt-5",
+      "prompt_tokens": 10945,
+      "completion_tokens": 1084,
+      "cached_tokens": 9728,
+      "total_tokens": 12029,
+      "non_cached_tokens": 2301,
+      "timestamp": "2025-11-17T21:57:14.079375"
+    },
+    {
+      "model": "gpt-5",
+      "prompt_tokens": 12213,
+      "completion_tokens": 691,
+      "cached_tokens": 10880,
+      "total_tokens": 12904,
+      "non_cached_tokens": 2024,
+      "timestamp": "2025-11-17T21:57:28.219705"
+    },
+    {
+      "model": "gpt-5",
+      "prompt_tokens": 13395,
+      "completion_tokens": 506,
+      "cached_tokens": 12160,
+      "total_tokens": 13901,
+      "non_cached_tokens": 1741,
+      "timestamp": "2025-11-17T21:57:37.960065"
+    },
+    {
+      "model": "gpt-5",
+      "prompt_tokens": 14587,
+      "completion_tokens": 642,
+      "cached_tokens": 13312,
+      "total_tokens": 15229,
+      "non_cached_tokens": 1917,
+      "timestamp": "2025-11-17T21:57:49.142596"
+    },
+    {
+      "model": "gpt-5",
+      "prompt_tokens": 16303,
+      "completion_tokens": 1300,
+      "cached_tokens": 14464,
+      "total_tokens": 17603,
+      "non_cached_tokens": 3139,
+      "timestamp": "2025-11-17T21:58:12.558564"
+    },
+    {
+      "model": "gpt-5",
+      "prompt_tokens": 18183,
+      "completion_tokens": 947,
+      "cached_tokens": 16256,
+      "total_tokens": 19130,
+      "non_cached_tokens": 2874,
+      "timestamp": "2025-11-17T21:58:30.553164"
+    },
+    {
+      "model": "gpt-5",
+      "prompt_tokens": 19930,
+      "completion_tokens": 973,
+      "cached_tokens": 18048,
+      "total_tokens": 20903,
+      "non_cached_tokens": 2855,
+      "timestamp": "2025-11-17T21:58:48.199547"
+    },
+    {
+      "model": "gpt-5",
+      "prompt_tokens": 21636,
+      "completion_tokens": 767,
+      "cached_tokens": 19840,
+      "total_tokens": 22403,
+      "non_cached_tokens": 2563,
+      "timestamp": "2025-11-17T21:59:08.806038"
+    },
+    {
+      "model": "gpt-5",
+      "prompt_tokens": 23444,
+      "completion_tokens": 856,
+      "cached_tokens": 21504,
+      "total_tokens": 24300,
+      "non_cached_tokens": 2796,
+      "timestamp": "2025-11-17T21:59:25.974404"
+    },
+    {
+      "model": "gpt-5",
+      "prompt_tokens": 24661,
+      "completion_tokens": 862,
+      "cached_tokens": 23424,
+      "total_tokens": 25523,
+      "non_cached_tokens": 2099,
+      "timestamp": "2025-11-17T21:59:44.583629"
+    },
+    {
+      "model": "gpt-5",
+      "prompt_tokens": 26555,
+      "completion_tokens": 831,
+      "cached_tokens": 24576,
+      "total_tokens": 27386,
+      "non_cached_tokens": 2810,
+      "timestamp": "2025-11-17T22:00:12.786356"
+    },
+    {
+      "model": "gpt-5",
+      "prompt_tokens": 28542,
+      "completion_tokens": 2417,
+      "cached_tokens": 26496,
+      "total_tokens": 30959,
+      "non_cached_tokens": 4463,
+      "timestamp": "2025-11-17T22:01:02.910732"
+    },
+    {
+      "model": "gpt-5",
+      "prompt_tokens": 31474,
+      "completion_tokens": 1962,
+      "cached_tokens": 28416,
+      "total_tokens": 33436,
+      "non_cached_tokens": 5020,
+      "timestamp": "2025-11-17T22:01:54.335675"
+    },
+    {
+      "model": "gpt-5",
+      "prompt_tokens": 33251,
+      "completion_tokens": 1827,
+      "cached_tokens": 31360,
+      "total_tokens": 35078,
+      "non_cached_tokens": 3718,
+      "timestamp": "2025-11-17T22:02:30.505788"
+    }
+  ]
+}

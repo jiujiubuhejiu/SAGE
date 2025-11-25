@@ -1,0 +1,36 @@
+{
+  "feature_index": 15411,
+  "model_id": "qwen3-4b",
+  "layer": "7-transcoder-hp",
+  "explanation_source": "new",
+  "explanation_model_name": "gpt-5",
+  "explanation_type": "oai_token-act-pair",
+  "explanation": {
+    "id": "cmi3oqqie000wztfciw434qee",
+    "modelId": "qwen3-4b",
+    "layer": "7-transcoder-hp",
+    "index": "15411",
+    "description": "expressions indicating whether something has ever occurred or not, especially lifetime-experience questions and negations.",
+    "authorId": "cmgfd4ew3004cnf0ds8gk5ogz",
+    "triggeredByUserId": "cmgfd4ew3004cnf0ds8gk5ogz",
+    "notes": null,
+    "scoreV1": 0,
+    "scoreV2": null,
+    "umap_x": 0,
+    "umap_y": 0,
+    "umap_cluster": 0,
+    "umap_log_feature_sparsity": 0,
+    "typeName": "oai_token-act-pair",
+    "explanationModelName": "gpt-5",
+    "createdAt": "2025-11-17T21:57:28.887Z",
+    "updatedAt": "2025-11-17T21:57:28.887Z"
+  },
+  "all_available_explanations": [],
+  "explanation_id": "cmi3oqqie000wztfciw434qee",
+  "formatted_explanation": {
+    "description": "expressions indicating whether something has ever occurred or not, especially lifetime-experience questions and negations.",
+    "label1": "",
+    "label2": ""
+  },
+  "exported_at": "2025-11-17T17:00:46.019575"
+}

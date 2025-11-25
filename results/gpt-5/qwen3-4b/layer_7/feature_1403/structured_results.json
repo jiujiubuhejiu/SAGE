@@ -1,0 +1,281 @@
+{
+  "feature_id": 1403,
+  "layer": 7,
+  "final_state": "\u5b8c\u6210",
+  "total_rounds": 12,
+  "execution_stats": {
+    "total_rounds": 12,
+    "successful_rounds": 6,
+    "failed_rounds": 1,
+    "retry_attempts": 3,
+    "start_time": 1763398109.4651985,
+    "end_time": 1763399121.5525153
+  },
+  "duration_seconds": 1012.0873167514801,
+  "hypotheses": [],
+  "test_results": [
+    {
+      "id": 1,
+      "hypothesis_id": 1,
+      "prompt": "Schindler arrived late.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.1465
+    },
+    {
+      "id": 2,
+      "hypothesis_id": 1,
+      "prompt": "Kessler scored again.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.7109
+    },
+    {
+      "id": 3,
+      "hypothesis_id": 1,
+      "prompt": "Taylor is here.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 4,
+      "hypothesis_id": 2,
+      "prompt": "Angiogenesis was inhibited.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 5,
+      "hypothesis_id": 2,
+      "prompt": "Hemangioma was excised.",
+      "result": "INCONCLUSIVE",
+      "activation": 2.2812
+    },
+    {
+      "id": 6,
+      "hypothesis_id": 2,
+      "prompt": "Angel arrived early.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 7,
+      "hypothesis_id": 3,
+      "prompt": "Wiggins dominated tonight.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.9844
+    },
+    {
+      "id": 8,
+      "hypothesis_id": 3,
+      "prompt": "He is wiggling.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 9,
+      "hypothesis_id": 3,
+      "prompt": "Wagon rolled away.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 10,
+      "hypothesis_id": 4,
+      "prompt": "She left for Paris.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 11,
+      "hypothesis_id": 4,
+      "prompt": "I bought it yesterday.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 12,
+      "hypothesis_id": 4,
+      "prompt": "Dogs bark at night.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 13,
+      "hypothesis_id": 3,
+      "prompt": "Wechsler scores again.",
+      "result": "INCONCLUSIVE",
+      "activation": 3.0312
+    },
+    {
+      "id": 14,
+      "hypothesis_id": 1,
+      "prompt": "Wertheimer wrote a memo.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.8711
+    },
+    {
+      "id": 15,
+      "hypothesis_id": 1,
+      "prompt": "Taylor is here.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 16,
+      "hypothesis_id": 2,
+      "prompt": "Hemangioma was excised.",
+      "result": "INCONCLUSIVE",
+      "activation": 2.2812
+    },
+    {
+      "id": 17,
+      "hypothesis_id": 2,
+      "prompt": "Angiogenesis was inhibited.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 18,
+      "hypothesis_id": 2,
+      "prompt": "Angel arrived early.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 19,
+      "hypothesis_id": 3,
+      "prompt": "Wiggins dominated tonight.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.9844
+    },
+    {
+      "id": 20,
+      "hypothesis_id": 3,
+      "prompt": "Higgins spoke today.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 21,
+      "hypothesis_id": 3,
+      "prompt": "Wagon rolled away.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 22,
+      "hypothesis_id": 4,
+      "prompt": "She left for Paris.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 23,
+      "hypothesis_id": 4,
+      "prompt": "I bought it yesterday.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 24,
+      "hypothesis_id": 1,
+      "prompt": "Wechsler scored again.",
+      "result": "INCONCLUSIVE",
+      "activation": 3.0312
+    },
+    {
+      "id": 25,
+      "hypothesis_id": 1,
+      "prompt": "Wetzel was hired.",
+      "result": "INCONCLUSIVE",
+      "activation": 2.6094
+    },
+    {
+      "id": 26,
+      "hypothesis_id": 1,
+      "prompt": "Taylor is here.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 27,
+      "hypothesis_id": 2,
+      "prompt": "Angiogenesis was inhibited.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 28,
+      "hypothesis_id": 2,
+      "prompt": "Hemangioma was excised.",
+      "result": "INCONCLUSIVE",
+      "activation": 2.2812
+    },
+    {
+      "id": 29,
+      "hypothesis_id": 2,
+      "prompt": "Angel arrived early.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 30,
+      "hypothesis_id": 3,
+      "prompt": "Wiggins dominated tonight.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.9844
+    },
+    {
+      "id": 31,
+      "hypothesis_id": 3,
+      "prompt": "Higgins spoke today.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 32,
+      "hypothesis_id": 3,
+      "prompt": "He kept wiggling.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 33,
+      "hypothesis_id": 4,
+      "prompt": "She left for Paris.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 34,
+      "hypothesis_id": 4,
+      "prompt": "I bought it yesterday.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 35,
+      "hypothesis_id": 4,
+      "prompt": "Dogs bark at night.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    }
+  ],
+  "analysis_history": [
+    "\nOBSERVATION:\n- Pattern 1: [Analysis needed]\n- Pattern 2: [Analysis needed]\n- Common elements: [Analysis needed]\n\nPRELIMINARY HYPOTHESIS:\nThis feature requires further analysis.\n",
+    "REVIEW SUMMARY:\nNo hypotheses are currently available. Based on exemplar patterns (max activations on subword segments like \"ler\"=6.500, \"iggins\"=3.062, \"imer\"=2.984, \"zel\"=2.922, \"angi\"=2.891, \"els\"=2.469), candidate hypothesis themes include: (a) Germanic-sounding surname suffixes (-ler, -heimer, -zel, -els), (b) biomedical morpheme \"angi\" (angi-, -angioma), (c) double-g/\u201c-iggins\u201d style substrings, and (d) general negative controls. No tests have been run.\n\nASSESSMENT:\n- Are all hypotheses adequately tested? No. There are no defined hypotheses or tests.\n- Are there any gaps in evidence? Yes. We lack tests to distinguish between surname-suffix vs biomedical-morpheme explanations and to rule out broad character n-gram confounds.\n- Are there any contradictions between hypotheses? Potential overlap exists (proper nouns vs biomedical terms), requiring discriminative tests.\n\nDECISION:\nNeed more testing: YES\n- H1: Test surname suffix -ler: \"Schindler arrived late.\"\n- H1: Test surname suffix -ssler: \"Kessler scored again.\"\n- H1: Test non-matching surname: \"Taylor is here.\"\n- H2: Test biomedical morpheme: \"Angiogenesis was inhibited.\"\n- H2: Test biomedical morpheme: \"Hemangioma was excised.\"\n- H2: Test near-miss control: \"Angel arrived early.\"\n- H3: Test double-g pattern: \"Wiggins dominated tonight.\"\n- H3: Test double-g variant: \"He is wiggling.\"\n- H3: Test control without gg/gi: \"Wagon rolled away.\"\n- H4: Test general negative: \"She left for Paris.\"\n- H4: Test general negative: \"I bought it yesterday.\"\n- H4: Test general negative: \"Dogs bark at night.\"",
+    "REVIEW SUMMARY:\nNo hypotheses are currently documented. Based on exemplar activations centered on subword segments (\"ler\"=6.500, \"iggins\"=3.062, \"imer\"=2.984, \"zel\"=2.922, \"angi\"=2.891, \"els\"=2.469), candidate hypotheses include:\n- H1: Germanic surname morphemes (-ler, -heimer, -zel, -els) trigger strong activation.\n- H2: Biomedical morpheme \"angi\" (angi-, -angioma) triggers activation.\n- H3: Double-g/-iggins surname or token cluster (e.g., Wiggins/Higgins) triggers activation.\n- H4: Generic sentences without these substrings show low activation (negative controls).\nNo tests have been run yet.\n\nASSESSMENT:\n- Are all hypotheses adequately tested? No, no tests exist.\n- Are there any gaps in evidence? Yes\u2014no discrimination between surname vs biomedical substrings; need near-miss controls (e.g., angel vs angi-), and non-matching surnames (e.g., Taylor).\n- Are there any contradictions between hypotheses? Potential overlap (proper nouns vs biomedical terms), requiring targeted tests to separate.\n\nDECISION:\nNeed more testing: YES\n- H1: Test -ler surname: \"Wechsler scores again.\"\n- H1: Test -heimer surname: \"Wertheimer wrote a memo.\"\n- H1: Test non-matching surname: \"Taylor is here.\"\n- H2: Test biomedical morpheme: \"Hemangioma was excised.\"\n- H2: Test biomedical morpheme: \"Angiogenesis was inhibited.\"\n- H2: Test near-miss control: \"Angel arrived early.\"\n- H3: Test double-g surname: \"Wiggins dominated tonight.\"\n- H3: Test double-g surname: \"Higgins spoke today.\"\n- H3: Test control without gg: \"Wagon rolled away.\"\n- H4: Test general negative: \"She left for Paris.\"\n- H4: Test general negative: \"I bought it yesterday.\"",
+    "REVIEW SUMMARY:\nNo hypotheses are currently documented. From exemplars, activations peak on specific subword segments found mostly in proper names and biomedical terms:\n- Strongest tokens: \"ler\" (6.500 in Wechsler), \"iggins\" (3.062 in Wiggins), \"imer\" (2.984 in Wertheimer), \"zel\" (2.922 in Wetzel), \"angi\" (\u22482.891 in Hemangioblastomas/haemangioma), \"els\" (2.469 in Wesselsbron).\nCandidate hypotheses: H1 (Germanic surname morphemes such as -ler/-heimer/-zel/-els), H2 (biomedical morpheme angi-/-angioma), H3 (double-g/-iggins cluster), H4 (general negatives). No tests have been run.\n\nASSESSMENT:\n- Are all hypotheses adequately tested? No. There are no tests yet.\n- Are there any gaps in evidence? Yes. We need discrimination between surname-suffix vs biomedical-morpheme activation, near-miss controls (angel vs angi-), and checks on non-matching surnames (Taylor).\n- Are there any contradictions between hypotheses? Possible overlap (proper nouns vs biomedical morphemes). Discriminative testing is required.\n\nDECISION:\nNeed more testing: YES\n- H1: Test surname morpheme: \"Wechsler scored again.\"\n- H1: Test surname morpheme: \"Wetzel was hired.\"\n- H1: Test non-matching surname: \"Taylor is here.\"\n- H2: Test biomedical morpheme: \"Angiogenesis was inhibited.\"\n- H2: Test biomedical morpheme: \"Hemangioma was excised.\"\n- H2: Test near-miss control: \"Angel arrived early.\"\n- H3: Test double-g surname: \"Wiggins dominated tonight.\"\n- H3: Test double-g surname: \"Higgins spoke today.\"\n- H3: Test morphological variant: \"He kept wiggling.\"\n- H4: Test general negative: \"She left for Paris.\"\n- H4: Test general negative: \"I bought it yesterday.\"\n- H4: Test general negative: \"Dogs bark at night.\"",
+    "REVIEW SUMMARY:\nNo formal hypotheses recorded. Exemplar activations peak on specific subword segments in proper names and biomedical terms: \"ler\"=6.500 (Wechsler), \"iggins\"=3.062 (Wiggins), \"imer\"=2.984 (Wertheimer), \"zel\"=2.922 (Wetzel), \"angi\"=2.891 (he(m)angi-), \"els\"=2.469 (Wesselsbron). Candidate hypotheses: H1 (Germanic surname morphemes: -ler/-heimer/-zel/-els), H2 (biomedical morpheme angi-/ -angioma), H3 (double-g/-iggins cluster), H4 (general negatives). No test results exist.\n\nASSESSMENT:\n- Are all hypotheses adequately tested? No.\n- Gaps: No discriminative tests between surname-suffix vs biomedical morpheme; need near-miss controls (angel vs angi-), non-matching surnames (Taylor), and checks for character n-gram generalization (wiggling vs wagon).\n- Contradictions: Potential overlap across proper nouns and biomedical terms; could be a general subword n-gram feature. Needs targeted testing.\n\nDECISION:\nNeed more testing: YES\n- H1: Test -ler surname: \"Wechsler scored again.\"\n- H1: Test -zel surname: \"Wetzel was hired.\"\n- H1: Test non-matching surname: \"Taylor is here.\"\n- H2: Test biomedical morpheme: \"Angiogenesis was inhibited.\"\n- H2: Test biomedical morpheme: \"Hemangioma was excised.\"\n- H2: Test near-miss control: \"Angel arrived early.\"\n- H3: Test double-g surname: \"Wiggins dominated tonight.\"\n- H3: Test double-g surname: \"Higgins spoke today.\"\n- H3: Test negative control: \"Wagon rolled away.\"\n- H4: Test general negative: \"She left for Paris.\"\n- H4: Test general negative: \"I bought it yesterday.\"\n- H4: Test general negative: \"Dogs bark at night.\"",
+    "[DESCRIPTION]: \nFeature 1403 (Layer 7) fires on specific subword morphemes found in (a) Germanic-origin surnames, especially those with We- + (-chsler/-tzel/-rtheimer) and related -ssler/-g(g)ins patterns, and (b) biomedical terms of the angioma/angioblastoma family (angi- ... -oma). In our tests, activations ranged from 0.000 to 3.031 (with prior corpus maxima up to 6.500 on \u201cler\u201d in \u201cWechsler\u201d), showing strong selectivity for these substrings and near-zero for unrelated or near-miss forms.\n\n[EVIDENCE]:\n- Test 13/24: \"Wechsler scores/scored again.\" \u2192 3.031 (supports Germanic surname morpheme selectivity; matches corpus max on \u201cler\u201d in Wechsler)\n- Test 25: \"Wetzel was hired.\" \u2192 2.609 (supports Germanic -tzel selectivity; aligns with exemplar Wetzel=2.922 on \u201czel\u201d)\n- Test 16/28: \"Hemangioma was excised.\" \u2192 2.281 (supports angi-...-oma biomedical selectivity; aligns with exemplars on hemangioblastoma/haemangioma)\n- Test 30/7/19: \"Wiggins dominated tonight.\" \u2192 0.984 (partial support for -iggins; weaker than Wechsler/Wetzel)\n- Test 14: \"Wertheimer wrote a memo.\" \u2192 0.871 (supports -heimer pattern; weaker but positive)\n- Test 2: \"Kessler scored again.\" \u2192 0.711 (supports -ssler pattern; moderate activation)\n- Test 1: \"Schindler arrived late.\" \u2192 0.146 (weak activation; indicates not all -ndler forms strongly trigger)\n- Test 20/31: \"Higgins spoke today.\" \u2192 0.000 (contradicts broad -iggins generalization; suggests selectivity for Wiggins or specific segmentation)\n- Test 4/17/27: \"Angiogenesis was inhibited.\" \u2192 0.000 (contradicts broad angi- generalization; indicates preference for angi-...-oma/angioblastoma forms, not angiogenesis)\n- Test 6/18/29: \"Angel arrived early.\" \u2192 0.000 (negative near-miss; supports specificity against 'angi' vs 'angel')\n- Tests 10/11/12/21/22/23/26/32/33/34/35: generic negatives (e.g., \"She left for Paris.\", \"I bought it yesterday.\", \"Dogs bark at night.\") \u2192 0.000 (supports overall selectivity)\n\n[LABEL 1]: Germanic surname subword morphemes (Wechsler/Wetzel/Wertheimer; -chsler/-tzel/-heimer/-ssler; sometimes -iggins)\n[LABEL 2]: Biomedical angioma/angioblastoma substrings (angi- ... -oma) (not angiogenesis)"
+  ],
+  "state_info": {
+    "state": "\u5b8c\u6210",
+    "round": 12,
+    "max_rounds": 30,
+    "hypotheses_count": 0,
+    "tests_count": 35,
+    "exemplars_count": 15,
+    "should_conclude": true
+  },
+  "execution_time_seconds": 1012.0873694419861
+}

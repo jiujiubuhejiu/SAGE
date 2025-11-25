@@ -1,0 +1,241 @@
+{
+  "feature_id": 15411,
+  "layer": 7,
+  "final_state": "\u5b8c\u6210",
+  "total_rounds": 12,
+  "execution_stats": {
+    "total_rounds": 18,
+    "successful_rounds": 7,
+    "failed_rounds": 0,
+    "retry_attempts": 2,
+    "start_time": 1763388286.2395482,
+    "end_time": 1763389222.614843
+  },
+  "duration_seconds": 936.3752946853638,
+  "hypotheses": [
+    {
+      "id": 1,
+      "text": "The feature targets the tokens ' ever'/' never' in present perfect constructions, but observed activation strength can be moderate rather than uniformly high; in \u201cHave you ever \u2026\u201d the token ' ever' activated at 2.250 while surrounding tokens were 0.000, indicating selectivity with variable magnitude.",
+      "status": "CONFIRMED",
+      "confidence": 0.0
+    },
+    {
+      "id": 2,
+      "text": "The detector is primarily lexical for the standalone tokens \u201c ever\u201d/\u201c never\u201d and will also activate outside present perfect (e.g., \u201cever since I moved\u2026\u201d, \u201cIt was ever so quiet\u201d), but with slightly lower activation than the canonical \u201cHave you ever \u2026\u201d/\u201cI have never \u2026\u201d frames.",
+      "status": "REFUTED",
+      "confidence": 0.0
+    },
+    {
+      "id": 3,
+      "text": "Negative control: Present perfect sentences lacking \u201cever/never\u201d (e.g., \u201cI have seen it already.\u201d, \u201cShe has finished.\u201d) will show low activation on all tokens. Also words that contain the substring but are different tokens (e.g., \u201cevery\u201d, \u201cforever\u201d if tokenized as a single token) will not strongly activate.",
+      "status": "CONFIRMED",
+      "confidence": 0.0
+    },
+    {
+      "id": 4,
+      "text": "The feature selectively activates on the token ' ever' in interrogative present perfect templates (e.g., \"Has/Have [pronoun] ever ...\"), but the activation magnitude is modest; the claim that interrogatives are higher than declarative 'never' cases remains unverified.",
+      "status": "CONFIRMED",
+      "confidence": 0.0
+    }
+  ],
+  "test_results": [
+    {
+      "id": 1,
+      "hypothesis_id": 1,
+      "prompt": "Have you ever tried sushi?",
+      "result": "INCONCLUSIVE",
+      "activation": 2.25
+    },
+    {
+      "id": 2,
+      "hypothesis_id": 2,
+      "prompt": "It was ever so quiet.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.167
+    },
+    {
+      "id": 3,
+      "hypothesis_id": 3,
+      "prompt": "I have seen it already.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0527
+    },
+    {
+      "id": 4,
+      "hypothesis_id": 4,
+      "prompt": "Has she ever considered switching careers?",
+      "result": "INCONCLUSIVE",
+      "activation": 0.75
+    },
+    {
+      "id": 5,
+      "hypothesis_id": 1,
+      "prompt": "I",
+      "result": "INCONCLUSIVE",
+      "activation": 3.2969
+    },
+    {
+      "id": 6,
+      "hypothesis_id": 4,
+      "prompt": "Have they ever visited Rome?",
+      "result": "INCONCLUSIVE",
+      "activation": 1.3438
+    },
+    {
+      "id": 7,
+      "hypothesis_id": 1,
+      "prompt": "It was ever so quiet.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.167
+    },
+    {
+      "id": 8,
+      "hypothesis_id": 4,
+      "prompt": "We have never met.",
+      "result": "INCONCLUSIVE",
+      "activation": 3.375
+    },
+    {
+      "id": 9,
+      "hypothesis_id": 1,
+      "prompt": "Have I ever told you?",
+      "result": "INCONCLUSIVE",
+      "activation": 0.6953
+    },
+    {
+      "id": 10,
+      "hypothesis_id": 2,
+      "prompt": "Ever since we met.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0537
+    },
+    {
+      "id": 11,
+      "hypothesis_id": 3,
+      "prompt": "Everyone was ready.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 12,
+      "hypothesis_id": 3,
+      "prompt": "Forever is enough.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 13,
+      "hypothesis_id": 4,
+      "prompt": "We have never visited Rome.",
+      "result": "INCONCLUSIVE",
+      "activation": 3.375
+    },
+    {
+      "id": 14,
+      "hypothesis_id": 1,
+      "prompt": "She has never tried.",
+      "result": "INCONCLUSIVE",
+      "activation": 3.0469
+    },
+    {
+      "id": 15,
+      "hypothesis_id": 1,
+      "prompt": "I have never, ever tried.",
+      "result": "INCONCLUSIVE",
+      "activation": 3.7344
+    },
+    {
+      "id": 16,
+      "hypothesis_id": 2,
+      "prompt": "Never again please.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 17,
+      "hypothesis_id": 2,
+      "prompt": "Do you ever go?",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 18,
+      "hypothesis_id": 4,
+      "prompt": "Has he ever been there?",
+      "result": "INCONCLUSIVE",
+      "activation": 1.5469
+    },
+    {
+      "id": 19,
+      "hypothesis_id": 1,
+      "prompt": "I had never seen it.",
+      "result": "INCONCLUSIVE",
+      "activation": 3.2969
+    },
+    {
+      "id": 20,
+      "hypothesis_id": 1,
+      "prompt": "He has never once lied.",
+      "result": "INCONCLUSIVE",
+      "activation": 3.5469
+    },
+    {
+      "id": 21,
+      "hypothesis_id": 2,
+      "prompt": "Best ever team.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 22,
+      "hypothesis_id": 2,
+      "prompt": "It hardly ever rains.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.167
+    },
+    {
+      "id": 23,
+      "hypothesis_id": 3,
+      "prompt": "She has finished already.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0137
+    },
+    {
+      "id": 24,
+      "hypothesis_id": 4,
+      "prompt": "Haven",
+      "result": "INCONCLUSIVE",
+      "activation": 1.5391
+    }
+  ],
+  "analysis_history": [
+    "OBSERVATION:\n- Pattern 1: The maximal-activation token is consistently the adverb \u201cever\u201d or \u201cnever.\u201d Examples: \u201c ever\u201d at 9.438 (Exs 1\u20132), 9.250 (Exs 3\u20134), 8.125 (Ex 13), 8.062 (Ex 14); \u201c never\u201d at 9.000 (Exs 5\u20136), 8.688 (Exs 7\u20138), 8.562 (Ex 9), 8.500 (Exs 10\u201311), 8.312 (Ex 12), 7.938 (Ex 15).\n- Pattern 2: \u201cever\u201d appears predominantly in the interrogative present perfect frame \u201cHave you ever \u2026\u201d (Exs 1\u20134, 13, 14). \u201cnever\u201d appears predominantly in declarative present perfect frames \u201cI have/I\u2019ve never \u2026\u201d (Exs 5\u20136, 9\u201312, 15) and in emphasis \u201cnever, ever\u201d (Exs 7\u20138).\n- Pattern 3: Present perfect structure proximity: \u201chave/\u2019ve\u201d immediately precedes \u201cever/never\u201d in most cases (e.g., \u201cHave you ever \u2026\u201d, \u201cI\u2019ve never \u2026\u201d, \u201cI have never \u2026\u201d).\n- Pattern 4: Activation magnitudes: \u201cever\u201d in \u201cHave you ever \u2026\u201d tops at 9.438\u20139.250; \u201cnever\u201d in \u201cI\u2019ve/I have never \u2026\u201d is slightly lower on average (9.000\u20137.938), with \u201cnever, ever\u201d at 8.688.\n- Common elements: English adverbs \u201cever/never\u201d; present perfect auxiliaries (have/\u2019ve); experiential/negation semantics; frequent pronouns I/you; punctuation/quotes do not prevent activation.\n\n[HYPOTHESIS LIST]:\nHypothesis_1: This feature detects the tokens \u201c ever\u201d and \u201c never\u201d as experiential/polarity adverbs, with strongest activation when they appear in present perfect constructions (e.g., \u201cHave you ever \u2026\u201d, \u201cI have/I\u2019ve never \u2026\u201d). Predicted strong positives: \u201cHave you ever tried sushi?\u201d (high on \u201c ever\u201d); \u201cI\u2019ve never been to Paris.\u201d (high on \u201c never\u201d).\n\nHypothesis_2: The detector is primarily lexical for the standalone tokens \u201c ever\u201d/\u201c never\u201d and will also activate outside present perfect (e.g., \u201cever since I moved\u2026\u201d, \u201cIt was ever so quiet\u201d), but with slightly lower activation than the canonical \u201cHave you ever \u2026\u201d/\u201cI have never \u2026\u201d frames.\n\nHypothesis_3: Negative control: Present perfect sentences lacking \u201cever/never\u201d (e.g., \u201cI have seen it already.\u201d, \u201cShe has finished.\u201d) will show low activation on all tokens. Also words that contain the substring but are different tokens (e.g., \u201cevery\u201d, \u201cforever\u201d if tokenized as a single token) will not strongly activate.\n\nHypothesis_4: The feature is sensitive to the \u201cHave you ever \u2026\u201d interrogative template and yields higher activations for that pattern than for declarative \u201cI\u2019ve/I have never \u2026\u201d statements (consistent with ~9.4 vs ~9.0 maxima). Edge prediction: \u201cHas she ever considered\u2026?\u201d > \u201cWe have never considered\u2026\u201d in activation on the \u201c ever/ never\u201d token respectively.",
+    "ANALYSIS:\nSummary activation: 2.2500\nBOS activation: 0.0000\nTop non-BOS tokens: ' ever'=2.2500, 'Have'=0.0000, ' you'=0.0000\n\nINTERPRETATION:\nREFINES the hypothesis. The max activation occurs on the target token ' ever' (2.2500), consistent with detection in a present perfect interrogative (\u201cHave you ever ...\u201d), but the magnitude is lower than the \u201cstrong\u201d activation suggested by corpus exemplars. Compared to expectation of a high response, actual activation is moderate with all other tokens at 0.0000.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: REFINED\nEvidence: The feature selectively activates on ' ever' in a present perfect question (2.2500 on ' ever'), but not strongly; refine to: it detects ' ever'/' never' in present perfect contexts, yet activation strength varies and may be moderate rather than uniformly high.",
+    "ANALYSIS:\nSummary activation: 0.1670\nBOS activation: 0.0000\nTop non-BOS tokens: 'It'=0.1670, ' was'=0.0000, ' ever'=0.0000\n\nINTERPRETATION:\nREFUTES the hypothesis. H2 predicted lexical activation on ' ever' outside present perfect with at least moderate strength, but the token ' ever' shows 0.0000 while the max is on 'It' (0.1670), indicating no lexical firing on ' ever' here.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: REFUTED\nEvidence: In \"It was ever so quiet.\", ' ever'=0.0000 contradicts the claim of lexical activation outside present perfect; activation appears not driven by the standalone ' ever' token in such contexts.",
+    "ANALYSIS:\nSummary activation: 0.0527\nBOS activation: 0.0000\nTop non-BOS tokens: 'I'=0.0527, ' have'=0.0000, ' seen'=0.0000\n\nINTERPRETATION:\nCONFIRMS the hypothesis. The present perfect sentence without ' ever'/' never' shows only minimal activation (max 0.0527 on 'I') and 0.0000 on all relevant tokens (' have', ' seen', ' already'), matching the predicted low activation.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: In \"I have seen it already.\", all tokens exhibit low activation (max 0.0527, others 0.0000), consistent with the negative control prediction for present perfect without ' ever'/' never'.",
+    "ANALYSIS:\nSummary activation: 0.7500\nBOS activation: 0.0000\nTop non-BOS tokens: ' ever'=0.7500, 'Has'=0.0000, ' she'=0.0000\n\nINTERPRETATION:\nREFINES the hypothesis. The interrogative present perfect prompt yields targeted activation on ' ever' (0.7500), indicating sensitivity to the template, but the magnitude is modest rather than clearly \u201chigher\u201d than declarative cases. Other tokens are 0.0000.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: REFINED\nEvidence: Activation appears on ' ever' in an interrogative present perfect context (0.7500), supporting sensitivity, but strength is low and the relative \u201chigher than declarative \u2018never\u2019\u201d claim remains unverified; refine to allow variable magnitude and require comparative testing.",
+    "HYPOTHESIS UPDATES:\n- H1 (STATUS): REFINED\n  Refined version: The feature targets the tokens ' ever'/' never' in present perfect constructions, but observed activation strength can be moderate rather than uniformly high; in \u201cHave you ever \u2026\u201d the token ' ever' activated at 2.250 while surrounding tokens were 0.000, indicating selectivity with variable magnitude.\n\nSTATUS ASSESSMENT:\nCurrent Status: REFINED\nReason: The test \u201cHave you ever tried sushi?\u201d produced targeted activation on ' ever'=2.250 (others 0.000), supporting selectivity for ' ever' in the present perfect interrogative but not the expected high magnitude implied by corpus maxima (~9.4). Corpus coverage check: no corpus tokens \u226510.0 (max 9.438), so coverage is trivially satisfied; however, evidence is insufficient to conclude (only 1 test). Critical missing tests: positive ' never' case (\u201cI\u2019ve never \u2026\u201d), additional present perfect variants, and comparative strength across contexts.",
+    "HYPOTHESIS UPDATES:\n- H2 (STATUS): REFUTED\n  Reason: In the test \"It was ever so quiet.\", the target token ' ever' showed 0.0000 activation while the max was 0.1670 on 'It', contradicting the claim of lexical activation on ' ever' outside present perfect.\n\nSTATUS ASSESSMENT:\nCurrent Status: REFUTED\nReason: The hypothesis predicted at least moderate activation on standalone ' ever' outside present perfect; the observed activation was 0.0000 on ' ever' with max 0.1670 on 'It', directly opposing the claim. Corpus coverage check: No corpus tokens \u226510.0 (exemplars range 7.938\u20139.438), so coverage threshold is trivially satisfied. Can we draw conclusions now? Yes, for H2\u2019s specific claim (lexical activation outside present perfect) this single targeted test contradicts it. Critical missing tests for completeness: 'never' outside present perfect (e.g., \u201cNever again\u201d), \u201cever since \u2026\u201d, and tokenization checks like \u201cfor ever\u201d vs \u201cforever\u201d, but current evidence refutes H2 as stated.",
+    "HYPOTHESIS UPDATES:\n- H3 (STATUS): CONFIRMED\n  Evidence: The present perfect negative control \"I have seen it already.\" produced max activation 0.0527 at 'I' with 0.0000 on ' have', ' seen', and ' already', confirming low activation when ' ever'/' never' are absent.\n\nSTATUS ASSESSMENT:\nCurrent Status: CONFIRMED\nReason: Results match the prediction for present perfect without ' ever'/' never'\u2014all tokens are very low (max 0.0527, all others 0.0000), satisfying the \u201cclear low activation (<0.5)\u201d criterion. Corpus coverage check: No corpus tokens \u226510.0 (exemplars max 9.438), so coverage threshold is trivially satisfied. Critical missing tests: substring forms ('every', 'forever') remain untested, but current evidence confirms the negative-control component of H3.",
+    "HYPOTHESIS UPDATES:\n- H4 (STATUS): REFINED\n  Refined version: The feature selectively activates on the token ' ever' in interrogative present perfect templates (e.g., \"Has/Have [pronoun] ever ...\"), but the activation magnitude is modest; the claim that interrogatives are higher than declarative 'never' cases remains unverified.\n\nSTATUS ASSESSMENT:\nCurrent Status: REFINED\nReason: The test \"Has she ever considered switching careers?\" produced targeted activation on ' ever'=0.7500 (others 0.0000), showing sensitivity to the interrogative present perfect but not a strong response and without the required comparative evidence versus declarative 'never'. Corpus coverage: no \u226510.0 tokens in exemplars (max ~9.438), so that threshold is not applicable; critical missing tests include a matched declarative control (e.g., \"We have never considered...\") to assess the \"higher-than-declarative\" claim.",
+    "ANALYSIS:\nSummary activation: 3.2969\nBOS activation: 0.0000\nTop non-BOS tokens: ' never'=3.2969, 'I'=0.0527, ''ve'=0.0000\n\nINTERPRETATION:\nCONFIRMS the hypothesis. In the present perfect declarative \u201cI\u2019ve never \u2026\u201d, the target token ' never' is the clear maximum (3.2969) with surrounding tokens at or near 0.0000, matching the prediction of selective, moderate activation on ' never' in present perfect contexts.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: In \u201cI\u2019ve never been to Paris.\u201d, ' never'=3.2969 (others ~0), consistent with the prior \u201cHave you ever \u2026\u201d test where ' ever'=2.250, showing consistent selective activation on ' ever'/' never' within present perfect constructions.",
+    "ANALYSIS:\nSummary activation: 1.3438\nBOS activation: 0.0000\nTop non-BOS tokens: ' ever'=1.3438, 'Have'=0.0000, ' they'=0.0000\n\nINTERPRETATION:\nCONFIRMS the hypothesis. The interrogative present perfect prompt yields selective activation on ' ever' (1.3438) with all other tokens at 0.0000, matching the expectation of modest-magnitude activation localized to ' ever' in this template.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: In \"Have they ever visited Rome?\", ' ever'=1.3438 (others 0.0000), consistent with prior interrogative test (\"Has she ever \u2026\": ' ever'=0.7500), demonstrating repeated selective, modest activation on ' ever' in interrogative present perfect templates.",
+    "HYPOTHESIS UPDATES:\n- H1 (STATUS): CONFIRMED\n  Evidence: \u201cHave you ever tried sushi?\u201d \u2192 max on ' ever'=2.2500 (others 0.0000); \u201cI\u2019ve never been to Paris.\u201d \u2192 max on ' never'=3.2969 (others \u22480). Both show selective, moderate activation on ' ever'/' never' in present perfect contexts as predicted.\n\nSTATUS ASSESSMENT:\nCurrent Status: CONFIRMED\nReason: Two tests in present perfect frames consistently place the maximum on the target adverbs with moderate magnitudes (2.2500, 3.2969) and near-zero elsewhere, matching H1\u2019s claim of selective, variable-strength activation. Corpus coverage: exemplars\u2019 maxima are <10.0 (7.938\u20139.438), so no \u226510.0 tokens to cover; Can conclude: YES. Remaining gaps (not blocking): probe additional auxiliaries/contracted forms to quantify variance.",
+    "HYPOTHESIS UPDATES:\n- H4 (STATUS): CONFIRMED\n  Evidence: Interrogative present perfect tests show selective, modest activation on ' ever' with other tokens at ~0: \u201cHas she ever considered \u2026?\u201d \u2192 ' ever'=0.7500; \u201cHave they ever visited Rome?\u201d \u2192 ' ever'=1.3438.\n\nSTATUS ASSESSMENT:\nCurrent Status: CONFIRMED\nReason: Two independent interrogative present perfect prompts both place the maximum on ' ever' with modest magnitudes (0.7500 and 1.3438) and near-zero elsewhere, matching the hypothesis that activation is selective and modest in this template. Corpus coverage check: no corpus tokens \u226510.0 (exemplar max ~9.438), so coverage threshold is trivially satisfied. Can we draw conclusions now? YES (\u22652 consistent tests). Critical remaining gap: a matched declarative \u201cnever\u201d control is needed to evaluate the comparative \u201cinterrogatives higher than declaratives\u201d claim (currently noted as unverified).",
+    "REVIEW SUMMARY:\n- H1: Confirmed. Selective activation on ' ever'/' never' in present perfect; moderate magnitudes (2.2500 on ' ever'; 3.2969 on ' never').\n- H2: Refuted. No lexical activation on ' ever' outside present perfect (\"It was ever so quiet.\" \u2192 ' ever'=0.0000).\n- H3: Confirmed. Present perfect without ' ever'/' never' shows low activation (max 0.0527).\n- H4: Confirmed. Interrogative present perfect yields selective, modest activation on ' ever' (0.7500; 1.3438).\n\nASSESSMENT:\n- Adequacy: Partial. H1/H4 have 2 tests each; H2/H3 have only 1 test each. Important edge cases (substring forms like \"every\"/\"forever\") and comparative interrogative vs declarative strength remain under-tested.\n- Gaps: \n  - H2: Only one non-present-perfect 'ever' case; need additional non-PP contexts and 'never' outside PP.\n  - H3: Substring negatives (\"every\", \"forever\") untested.\n  - H4: Matched declarative control for direct comparison with interrogatives is missing.\n  - H1: Additional PP variants (different subjects/aux contractions) would strengthen generality.\n- Contradictions: None. H1 and H4 are consistent; H2\u2019s refutation complements them by limiting activation to PP contexts.\n\nDECISION:\nNeed more testing: YES\n- H1: \"We have never met.\"\n- H1: \"Have I ever told you?\"\n- H2: \"Ever since we met.\"\n- H2: \"Never again.\"\n- H3: \"Everyone was ready.\"\n- H3: \"Forever is enough.\"\n- H4: \"We have never visited Rome.\"",
+    "REVIEW SUMMARY:\n- H1: Confirmed. Selective activation on ' ever'/' never' in present perfect; moderate magnitudes (e.g., ' ever'=2.2500; ' never'=3.2969).\n- H2: Refuted. No lexical activation outside present perfect; ' ever' in non-PP contexts near zero (0.0000\u20130.0537).\n- H3: Confirmed. Present perfect without ' ever'/' never' and substring forms ('Everyone', 'Forever') show near-zero activation.\n- H4: Confirmed (template sensitivity). Interrogative present perfect yields modest activation on ' ever' (0.7500; 1.3438). Comparative note: declarative ' never' is stronger (~3.3750) than interrogative ' ever' in our tests.\n\nASSESSMENT:\n- Adequacy: Mostly adequate. H1 and H4 have multiple positives; H2 has two negatives supporting refutation; H3 has three negatives confirming low activation. \n- Gaps:\n  - H1: Test additional present perfect variants and the emphasized pattern \u201cnever, ever\u201d.\n  - H2: Add more outside-PP controls, especially standalone \u201cnever\u201d and non-PP interrogatives with \u201cever\u201d.\n  - H4: Further quantify interrogatives vs declaratives; current evidence suggests declaratives > interrogatives.\n- Contradictions: None between hypotheses; however, data contradicts the original claim that interrogatives > declaratives\u2014observed pattern is the reverse.\n\nDECISION:\nNeed more testing: YES\n- H1: \"She has never tried.\"\n- H1: \"I have never, ever tried.\"\n- H2: \"Never again please.\"\n- H2: \"Do you ever go?\"\n- H4: \"Has he ever been there?\"",
+    "REVIEW SUMMARY:\n- H1: Confirmed. Consistent, selective activation on ' ever'/' never' in perfect constructions; ' never' ~3.0\u20133.7, ' ever' modest ~0.7\u20132.25; 'ever' outside perfect \u22480.\n- H2: Refuted. Multiple non\u2013present perfect uses of 'ever'/'never' yield \u22480 activation (0.0000\u20130.0537).\n- H3: Confirmed. Present perfect without ' ever'/' never' and substring forms ('Everyone', 'Forever') are near zero.\n- H4: Confirmed (template sensitivity). Interrogative present perfect shows modest activation on ' ever' (0.75\u20131.55), while declarative ' never' is stronger (~3.38).\n\nASSESSMENT:\n- Adequately tested: Largely yes for H1, H4; H2 and H3 also have multiple negatives supporting conclusions.\n- Gaps:\n  - H1: Generalization beyond present perfect (e.g., past perfect with 'never'; collocation \u201cnever once\u201d).\n  - H2: Additional non-PP contexts (\u201chardly ever\u201d, evaluative \u201cbest ever\u201d).\n  - H3: Another present perfect negative control to solidify baseline.\n  - H4: Interrogative with contraction (\u201cHaven\u2019t you ever \u2026\u201d) to test robustness.\n- Contradictions: None; data collectively indicates strongest activation on ' never' in (present) perfect declaratives and modest activation on ' ever' in interrogative perfects; no evidence for lexical activation outside perfect.\n\nDECISION:\nNeed more testing: YES\n- H1: \"I had never seen it.\"\n- H1: \"He has never once lied.\"\n- H2: \"Best ever team.\"\n- H2: \"It hardly ever rains.\"\n- H3: \"She has finished already.\"\n- H4: \"Haven't you ever tried?\"",
+    "REVIEW SUMMARY:\n- H1: Confirmed. Feature targets ' ever'/' never' in perfect constructions; ' never' activates moderately-strongly (~3.0\u20133.7), ' ever' modestly (~0.7\u20132.25); outside perfect ' ever' \u22480.\n- H2: Refuted. Non\u2013present perfect uses of 'ever'/'never' consistently near zero (0.0000\u20130.1670; target tokens 0.0000\u20130.0537).\n- H3: Confirmed. Present perfect without ' ever'/' never' and substring forms ('Everyone', 'Forever') show near-zero activation (max 0.0527).\n- H4: Confirmed (template sensitivity). Interrogative perfect yields selective, modest activation on ' ever' (0.7500\u20131.5469); declarative ' never' stronger (~3.3750).\n\nASSESSMENT:\n- Adequately tested: Yes. H1 (8 tests), H2 (6 tests), H3 (4 tests), H4 (6 tests) provide consistent, convergent evidence.\n- Gaps: Minor only (e.g., wider variety of interrogative contexts, additional emphatic forms), not critical to core conclusions.\n- Contradictions: None. Results coherently indicate the feature focuses on present/perfect polarity/experiential adverbs, with higher response to ' never' than ' ever'.\n\nDECISION:\nNeed more testing: NO\nExplanation: Current evidence is sufficient for final conclusions\u2014multiple tests per hypothesis show consistent activation patterns: selective activation on ' ever'/' never' in perfect constructions (H1/H4), absence of lexical activation outside perfect (H2), and low baselines without these adverbs (H3).",
+    "[DESCRIPTION]: \nFeature 15411 (Layer 7) detects English perfect-construction polarity/experiential adverbs, strongly preferring ' never' in declarative perfects and modestly activating on ' ever' in interrogative perfects. Across tests, ' never' in perfect contexts activates ~3.0469\u20133.7344, while ' ever' in interrogative perfects activates ~0.6953\u20132.2500; present perfect without these adverbs and non-perfect/idiomatic uses of 'ever/never' are near-zero (0.0000\u20130.1670). No evidence of lexical activation for 'ever/never' outside perfect constructions; substrings ('Everyone', 'Forever') do not activate.\n\n[EVIDENCE]:\n- Test 1: 'Have you ever tried sushi?' \u2192 activation 2.2500 on ' ever' (supports H1/H4)\n- Test 2: 'It was ever so quiet.' \u2192 max 0.1670 on 'It'; ' ever'=0.0000 (supports H2 refuted)\n- Test 3: 'I have seen it already.' \u2192 max 0.0527 (supports H3)\n- Test 4: 'Has she ever considered switching careers?' \u2192 ' ever'=0.7500 (supports H4)\n- Test 5: \"I've never been to Paris.\" \u2192 ' never'=3.2969 (supports H1)\n- Test 6: 'Have they ever visited Rome?' \u2192 ' ever'=1.3438 (supports H4)\n- Test 8: 'We have never met.' \u2192 ' never'=3.3750 (supports H1/H4 comparison)\n- Test 9: 'Have I ever told you?' \u2192 ' ever'=0.6953 (supports H4)\n- Test 10: 'Ever since we met.' \u2192 'Ever'=0.0537 (supports H2 refuted)\n- Test 11: 'Everyone was ready.' \u2192 0.0000 (supports H3 substring control)\n- Test 12: 'Forever is enough.' \u2192 0.0000 (supports H3 substring control)\n- Test 14: 'She has never tried.' \u2192 ' never'=3.0469 (supports H1)\n- Test 15: 'I have never, ever tried.' \u2192 ' never'=3.7344; ' ever'=0.0000 (supports H1; shows preference for ' never')\n- Test 17: 'Do you ever go?' \u2192 ' ever'=0.0000 (supports H2 refuted; non-perfect interrogative)\n- Test 18: 'Has he ever been there?' \u2192 ' ever'=1.5469 (supports H4)\n- Test 19: 'I had never seen it.' \u2192 ' never'=3.2969 (supports H1; past perfect)\n- Test 20: 'He has never once lied.' \u2192 ' never'=3.5469 (supports H1)\n- Test 22: 'It hardly ever rains.' \u2192 max 0.1670 on 'It'; ' ever'=0.0000 (supports H2 refuted)\n- Test 24: \"Haven't you ever tried?\" \u2192 ' ever'=1.5391 (supports H4; contraction robust)\n\n[LABEL 1]: English perfect-construction polarity/experiential adverbs: strong on ' never' (declarative perfect), modest on ' ever' (interrogative perfect); near-zero outside perfect or in substrings"
+  ],
+  "state_info": {
+    "state": "\u5b8c\u6210",
+    "round": 12,
+    "max_rounds": 30,
+    "hypotheses_count": 4,
+    "tests_count": 24,
+    "exemplars_count": 15,
+    "should_conclude": true
+  },
+  "execution_time_seconds": 936.375349521637
+}

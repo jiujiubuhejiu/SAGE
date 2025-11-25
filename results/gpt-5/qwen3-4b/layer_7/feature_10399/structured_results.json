@@ -1,0 +1,191 @@
+{
+  "feature_id": 10399,
+  "layer": 7,
+  "final_state": "\u5b8c\u6210",
+  "total_rounds": 8,
+  "execution_stats": {
+    "total_rounds": 20,
+    "successful_rounds": 5,
+    "failed_rounds": 0,
+    "retry_attempts": 1,
+    "start_time": 1763376840.3020067,
+    "end_time": 1763377743.9799218
+  },
+  "duration_seconds": 903.677915096283,
+  "hypotheses": [
+    {
+      "id": 1,
+      "text": "Feature 10399 often activates on the lowercase standalone token ' total' but is highly context-sensitive: strong when 'total' appears in a subject NP or prenominal NP (e.g., subject \u201cThe total is five.\u201d \u2192 1.4688) and weak in adverbial use (\u201cIn total, \u2026\u201d \u2192 0.0923); it may fail to fire in object NP contexts (\u201c\u2026 the total today.\u201d \u2192 0.0000). When it fires, ' total' is typically the only non-zero token.\n  Explanation: Observed activations vary by syntactic/functional context, not",
+      "status": "CONFIRMED",
+      "confidence": 0.0
+    },
+    {
+      "id": 2,
+      "text": "Feature 10399 does not show a preferentially higher activation for prenominal \u201ctotal\u201d; observed activation on ' total' is modest (~1.47) and comparable to non-prenominal uses.\n  Explanation: In \u201cThe total cost was high.\u201d (prenominal), ' total' activated at 1.4688, not higher than a nominal-use baseline (1.4688), failing the \u201cpreferentially higher\u201d prediction.",
+      "status": "REFUTED",
+      "confidence": 0.0
+    },
+    {
+      "id": 3,
+      "text": "Feature 10399 does not activate on the morphological variant \u201ctotally\u201d; evidence supports insensitivity to at least some non-standalone variants, but other variants (e.g., \u201ctotality\u201d, \u201csubtotal\u201d, \u201cTotals\u201d) remain untested.\n  Explanation: In \u201cHe totally forgot.\u201d, all tokens, including ' totally', had 0.0000 activation.",
+      "status": "CONFIRMED",
+      "confidence": 0.0
+    },
+    {
+      "id": 4,
+      "text": "Feature 10399 tends to activate more for lowercase ' total' used adjectivally after a determiner and before a concrete noun than for titlecase ' Total' inside proper nouns/titles; however, ' Total' can activate in some title contexts, so the effect is relative/tendential rather than absolute.\n  Explanation: In \u201cThe total cost exceeded the Total Divas budget.\u201d, ' total'=1.4688 while ' Total'=0.0000, showing a within-sentence preference for lowercase adjectival use.",
+      "status": "CONFIRMED",
+      "confidence": 0.0
+    }
+  ],
+  "test_results": [
+    {
+      "id": 1,
+      "hypothesis_id": 1,
+      "prompt": "The total is five.",
+      "result": "INCONCLUSIVE",
+      "activation": 1.4688
+    },
+    {
+      "id": 2,
+      "hypothesis_id": 2,
+      "prompt": "The total cost was high.",
+      "result": "INCONCLUSIVE",
+      "activation": 1.4688
+    },
+    {
+      "id": 3,
+      "hypothesis_id": 3,
+      "prompt": "He totally forgot.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 4,
+      "hypothesis_id": 4,
+      "prompt": "The total cost exceeded the Total Divas budget.",
+      "result": "INCONCLUSIVE",
+      "activation": 1.4688
+    },
+    {
+      "id": 5,
+      "hypothesis_id": 1,
+      "prompt": "In total, we spent ten dollars.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0923
+    },
+    {
+      "id": 6,
+      "hypothesis_id": 2,
+      "prompt": "The cost was total.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 7,
+      "hypothesis_id": 3,
+      "prompt": "The subtotal was correct.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.3145
+    },
+    {
+      "id": 8,
+      "hypothesis_id": 4,
+      "prompt": "Your total satisfaction matters more than Total War sales.",
+      "result": "INCONCLUSIVE",
+      "activation": 1.5859
+    },
+    {
+      "id": 9,
+      "hypothesis_id": 1,
+      "prompt": "We calculated the total today.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 10,
+      "hypothesis_id": 1,
+      "prompt": "A total disaster.",
+      "result": "INCONCLUSIVE",
+      "activation": 1.1562
+    },
+    {
+      "id": 11,
+      "hypothesis_id": 1,
+      "prompt": "We paid the total.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 12,
+      "hypothesis_id": 1,
+      "prompt": "The total was ten.",
+      "result": "INCONCLUSIVE",
+      "activation": 1.4688
+    },
+    {
+      "id": 13,
+      "hypothesis_id": 3,
+      "prompt": "The totality was ignored.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 14,
+      "hypothesis_id": 3,
+      "prompt": "Totals are listed here.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 15,
+      "hypothesis_id": 3,
+      "prompt": "They totaled the car.",
+      "result": "INCONCLUSIVE",
+      "activation": 0.0
+    },
+    {
+      "id": 16,
+      "hypothesis_id": 4,
+      "prompt": "The total budget beat Total 911.",
+      "result": "INCONCLUSIVE",
+      "activation": 1.4688
+    }
+  ],
+  "analysis_history": [
+    "OBSERVATION:\n- Pattern 1: In all 15 exemplars, the only token with non-zero activation is the word \u201ctotal\u201d (tokenized as ' total' or ' Total'). No surrounding tokens show activation (>0.000).\n- Pattern 2: The highest activation occurs on the lowercase ' total' in \u201ctotal toilet training\u201d (4.031). Other strong cases include ' Total' in \u201cTotal War\u201d (3.578), ' total' in \u201ctotal cost\u201d (2.891), ' Total' in \u201cTotal 911 Awards\u201d (2.797), ' Total' in \u201cTotal Divas\u201d (2.750), ' total' in \u201ctotal satisfaction\u201d (2.641), and ' total' in \u201ctotal Guide\u201d (2.516).\n- Pattern 3: Usage is predominantly prenominal/adjectival (total + noun): total toilet training, total cost, total satisfaction; and as part of proper-noun/title case: Total War, Total 911 Awards, Total Divas.\n- Pattern 4: Both lowercase and titlecase forms activate: lowercase ' total' (e.g., items 1\u20134, 7\u20138, 12\u201315) and titlecase ' Total' (e.g., items 5\u20136, 9\u201311).\n- Common elements: The standalone lexeme \u201ctotal\u201d as its own token (not as a substring), appearing at word boundaries, typically followed by a noun; appears across sentence-internal, title, and after-determiner contexts; activation range 2.516\u20134.031 with maximum at 4.031 on ' total'.\n\n[HYPOTHESIS LIST]:\nHypothesis_1: Feature 10399 detects the standalone token \u201ctotal\u201d (both ' total' and ' Total'), i.e., the lexeme \u201ctotal\u201d as a word, irrespective of context. Prediction: Sentences containing \u201c\u2026 total \u2026\u201d or \u201c\u2026 Total \u2026\u201d will show a strong peak on that token; sentences without this exact token will not.\n\nHypothesis_2: The feature preferentially activates when \u201ctotal\u201d is used prenominally (adjective before a noun: \u201cthe total cost\u201d, \u201cTotal War\u201d) compared to predicative (\u201cthe cost was total\u201d), nominal (\u201cthe total was 5\u201d), or adverbial/PP use (\u201cin total\u201d). Prediction: Activation on ' total' will be higher in \u201cthe total cost \u2026\u201d than in \u201cthe total was \u2026\u201d or \u201cin total, \u2026\u201d.\n\nHypothesis_3: Negative control \u2014 The feature will not (or only weakly) activate for morphologically related or substring variants that are different tokens, such as \u201ctotally\u201d, \u201ctotality\u201d, \u201csubtotal\u201d, \u201ctotaled/totalled\u201d, \u201ctotalitarian\u201d, \u201cTotals\u201d. Prediction: Near-zero activation on these tokens even in similar contexts.\n\nHypothesis_4: Case/format nuance \u2014 Activation is stronger for lowercase ' total' following determiners/pronouns and preceding a concrete noun (\u201cthe/your/a total X\u201d) than for titlecase ' Total' within proper nouns/titles (\u201cTotal Divas\u201d, \u201cTotal 911\u201d). Prediction: \u201cthe total cost \u2026\u201d > \u201cTotal Divas \u2026\u201d in activation magnitude on the ' total'/' Total' token.",
+    "ANALYSIS:\nSummary activation: 1.4688\nBOS activation: 0.0000\nTop non-BOS tokens: ' total'=1.4688, 'The'=0.0000, ' is'=0.0000\n\nINTERPRETATION:\nThis CONFIRMS the hypothesis. In the sentence \"The total is five.\", the only non-zero activation is on the token ' total' (1.4688), while all other tokens are 0.0000, consistent with detection of the standalone lexeme \u201ctotal\u201d irrespective of context.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: Peak activation occurs precisely on ' total'=1.4688 with all other tokens at 0.0000, matching the prediction that the feature detects the standalone token \u201ctotal\u201d when present.",
+    "ANALYSIS:\nSummary activation: 1.4688\nBOS activation: 0.0000\nTop non-BOS tokens: ' total'=1.4688, 'The'=0.0000, ' cost'=0.0000\n\nINTERPRETATION:\nThis REFUTES the hypothesis\u2019 \u201cpreferentially higher\u201d claim. In the prenominal context \u201cThe total cost was high.\u201d, activation on ' total' is 1.4688, which is not higher than the nominal baseline from a prior test (\u201cThe total is five.\u201d also 1.4688). All other tokens are 0.0000, showing no contextual boost for prenominal use.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: REFUTED\nEvidence: Prenominal ' total' produced 1.4688, equal to the nominal-use activation (1.4688) rather than higher, contradicting the prediction of preferentially stronger activation in prenominal contexts.",
+    "ANALYSIS:\nSummary activation: 0.0000\nBOS activation: 0.0000\nTop non-BOS tokens: 'He'=0.0000, ' totally'=0.0000, ' forgot'=0.0000\n\nINTERPRETATION:\nThis CONFIRMS the hypothesis. The morphological variant ' totally' showed zero activation (0.0000), and all other tokens were also 0.0000, matching the prediction that non-standalone variants (e.g., \u201ctotally\u201d) do not activate the feature.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: In \"He totally forgot.\", ' totally'=0.0000 with no other activations, consistent with the negative control expectation for morphological variants.",
+    "ANALYSIS:\nSummary activation: 1.4688\nBOS activation: 0.0000\nTop non-BOS tokens: ' total'=1.4688, 'The'=0.0000, ' Total'=0.0000\n\nINTERPRETATION:\nThis CONFIRMS the hypothesis in a relative sense. In the same sentence, lowercase prenominal ' total' (after a determiner and before a concrete noun) shows activation 1.4688, while titlecase ' Total' in the proper noun \"Total Divas\" shows 0.0000, indicating stronger activation for the lowercase adjectival use.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: Within \"The total cost exceeded the Total Divas budget.\", ' total'=1.4688 > ' Total'=0.0000, consistent with the predicted stronger activation for lowercase prenominal ' total' over titlecase proper-noun ' Total'.",
+    "HYPOTHESIS UPDATES:\n- H1 (REFINED):\n  Refined version: Feature 10399 activates selectively on the standalone token \u201ctotal\u201d as a word (lowercase ' total'); activation magnitude is variable and can be modest (~1.5) rather than consistently \u201cstrong.\u201d Activation on titlecase ' Total' remains unverified.\n  Explanation: In \u201cThe total is five.\u201d only ' total' activated (1.4688) and all other tokens were 0.0000, indicating selectivity for the lexeme but not necessarily high magnitude.\n\nSTATUS ASSESSMENT:\nCurrent Status: REFINED\nReason: One positive test shows non-zero activation focused on ' total'=1.4688 with all other tokens at 0.0000, supporting detection of the standalone lexeme but not the \u201cstrong peak\u201d claim; uppercase ' Total' is untested. Corpus coverage check: No corpus tokens \u226510.0 (max exemplar ~4.031), so high-activation coverage is trivially satisfied; however, evidence is insufficient (only 1 test). Critical missing tests: a titlecase ' Total' case and a clean negative sentence with no \u201ctotal\u201d-like strings to confirm exclusivity.",
+    "HYPOTHESIS UPDATES:\n- H2 (REFINED):\n  Refined version: Feature 10399 does not show a preferentially higher activation for prenominal \u201ctotal\u201d; observed activation on ' total' is modest (~1.47) and comparable to non-prenominal uses.\n  Explanation: In \u201cThe total cost was high.\u201d (prenominal), ' total' activated at 1.4688, not higher than a nominal-use baseline (1.4688), failing the \u201cpreferentially higher\u201d prediction.\n\nSTATUS ASSESSMENT:\nCurrent Status: REFINED\nReason: The single prenominal test (\u201cThe total cost was high.\u201d) yielded 1.4688 on ' total', offering no increase over baseline, so the \u201cpreferentially higher\u201d claim is not supported. More contrasts are needed (predicative: \u201cwas total\u201d, nominal: \u201cthe total was \u2026\u201d, adverbial: \u201cIn total, \u2026\u201d). Corpus coverage check: No corpus tokens \u226510.0 (max \u22484.031), so coverage is trivially satisfied; conclusion remains tentative pending additional contextual contrasts.",
+    "HYPOTHESIS UPDATES:\n- H3 (REFINED):\n  Refined version: Feature 10399 does not activate on the morphological variant \u201ctotally\u201d; evidence supports insensitivity to at least some non-standalone variants, but other variants (e.g., \u201ctotality\u201d, \u201csubtotal\u201d, \u201cTotals\u201d) remain untested.\n  Explanation: In \u201cHe totally forgot.\u201d, all tokens, including ' totally', had 0.0000 activation.\n\nSTATUS ASSESSMENT:\nCurrent Status: REFINED\nReason: Single negative-control test shows ' totally'=0.0000 (with all other tokens 0.0000), consistent with the hypothesis but insufficient to generalize across all listed variants. Corpus coverage: no \u226510.0-activation tokens in exemplars (max \u22484.031), so that criterion is trivially satisfied; critical missing tests include \u201ctotality\u201d, \u201csubtotal\u201d, \u201ctotaled/totalled\u201d, \u201ctotalitarian\u201d, and \u201cTotals\u201d.",
+    "HYPOTHESIS UPDATES:\n- H4 (REFINED):\n  Refined version: Feature 10399 tends to activate more for lowercase ' total' used adjectivally after a determiner and before a concrete noun than for titlecase ' Total' inside proper nouns/titles; however, ' Total' can activate in some title contexts, so the effect is relative/tendential rather than absolute.\n  Explanation: In \u201cThe total cost exceeded the Total Divas budget.\u201d, ' total'=1.4688 while ' Total'=0.0000, showing a within-sentence preference for lowercase adjectival use.\n\nSTATUS ASSESSMENT:\nCurrent Status: REFINED\nReason: The single contrastive test supports the predicted direction (' total'=1.4688 > ' Total'=0.0000) but with modest magnitude and only one datapoint; corpus exemplars show ' Total' sometimes activates (e.g., titles), so we qualify the claim to a tendency. Corpus coverage check: no \u226510.0 tokens in exemplars (max \u22484.031), but we cannot conclude definitively yet (only 1 targeted test). Critical missing tests: additional proper-noun cases (\u201cTotal 911 Awards\u201d, \u201cTotal War\u201d) and more lowercase adjectival cases (\u201cyour total satisfaction\u201d, \u201ca total loss\u201d), plus capitalized 'Total' at sentence start without being a title.",
+    "ANALYSIS:\nSummary activation: 0.0923\nBOS activation: 0.0000\nTop non-BOS tokens: ' total'=0.0923, 'In'=0.0000, ' we'=0.0000\n\nINTERPRETATION:\nThis REFINES the hypothesis. The feature still targets the standalone ' total' token (only non-zero token), but activation is very low (0.0923) compared to the prior nominal case \u201cThe total is five.\u201d (1.4688). This indicates strong context sensitivity: adverbial \u201cIn total\u201d yields minimal activation.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: REFINED\nEvidence: Non-zero but weak activation on ' total'=0.0923 in \u201cIn total, we spent ten dollars.\u201d versus 1.4688 in \u201cThe total is five.\u201d \u2192 the feature detects ' total' but magnitude is suppressed in adverbial contexts.",
+    "ANALYSIS:\nSummary activation: 0.0000\nBOS activation: 0.0000\nTop non-BOS tokens: ' total'=0.0000, 'The'=0.0000, ' was'=0.0000\n\nINTERPRETATION:\nThis REFUTES the hypothesis. In the predicative context \u201cThe cost was total.\u201d, activation on ' total' is 0.0000, whereas prior prenominal use (\u201cThe total cost was high.\u201d) yielded 1.4688. This contradicts the claim that prenominal activation is comparable to non-prenominal uses.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: REFUTED\nEvidence: Predicative ' total'=0.0000 vs. prenominal ' total'=1.4688 indicates a clear preferential increase for prenominal use, contrary to the hypothesis of comparable activation across contexts.",
+    "ANALYSIS:\nSummary activation: 0.3145\nBOS activation: 0.0000\nTop non-BOS tokens: ' subtotal'=0.3145, 'The'=0.0000, ' was'=0.0000\n\nINTERPRETATION:\nThis REFINES the hypothesis. The morphological variant ' subtotal' produced low but non-zero activation (0.3145), which is \u201cweak\u201d relative to standalone ' total' in prior tests (~1.47), and higher than zero for ' totally' (0.0000). This suggests some variants can elicit weak spillover activation but remain much lower than the target lexeme.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: REFINED\nEvidence: ' subtotal'=0.3145 (weak) vs. ' totally'=0.0000 (none) and standalone ' total'\u22481.47 (stronger). Refined claim: morphological/substring variants generally yield zero or weak activation (<0.5), far below standalone ' total'.",
+    "ANALYSIS:\nSummary activation: 1.5859\nBOS activation: 0.0000\nTop non-BOS tokens: ' total'=1.5859, ' Total'=0.3320, ' satisfaction'=0.0000\n\nINTERPRETATION:\nThis CONFIRMS the hypothesis. In \"Your total satisfaction matters more than Total War sales.\", lowercase adjectival ' total' shows stronger activation (1.5859) than titlecase ' Total' in a proper noun (0.3320), matching the predicted relative preference while allowing some activation in title contexts.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: Within-sentence comparison shows ' total'=1.5859 > ' Total'=0.3320, consistent with prior result (' total'=1.4688 > ' Total'=0.0000), confirming the tendentially stronger activation for lowercase adjectival ' total' over titlecase ' Total' in titles.",
+    "HYPOTHESIS UPDATES:\n- H1 (REFINED):\n  Refined version: Feature 10399 activates selectively on the lowercase standalone token ' total' as the only non-zero token; activation magnitude is context-dependent, ranging from near-zero (~0.09 in adverbial \u201cIn total\u201d) to ~1.47 in clause-internal/nominal uses. Activation on titlecase ' Total' remains unverified within H1.\n  Explanation: \u201cThe total is five.\u201d \u2192 ' total'=1.4688 (others 0.0000); \u201cIn total, we spent ten dollars.\u201d \u2192 ' total'=0.0923 (others 0.0000).\n\nSTATUS ASSESSMENT:\nCurrent Status: REFINED\nReason: Two tests consistently show selectivity for the ' total' token with all other tokens at 0.0000, but magnitudes vary substantially (1.4688 vs. 0.0923), necessitating a context-dependent refinement rather than a uniform-strength claim. Corpus coverage: No \u226510.0 tokens in exemplars (max 4.031), so coverage criterion is trivially satisfied. Critical missing tests for H1: explicit titlecase ' Total' in isolation (non-title context) to assess case sensitivity within H1\u2019s scope.",
+    "HYPOTHESIS UPDATES:\n- H2 (REFUTED):\n  Reason: Prenominal use \u201cThe total cost was high.\u201d yielded ' total'=1.4688, while predicative use \u201cThe cost was total.\u201d yielded ' total'=0.0000, contradicting the claim that prenominal activation is comparable to non-prenominal uses.\n\nSTATUS ASSESSMENT:\nCurrent Status: REFUTED\nReason: Two contrasting tests show a clear preference: prenominal ' total'=1.4688 > predicative ' total'=0.0000, refuting the hypothesis of no preferential increase. Corpus coverage check: No \u226510.0 tokens in exemplars (max \u22484.031), so coverage criterion is trivially satisfied; evidence from 2 tests is sufficient to refute. Potential follow-ups (not required for refutation): compare additional non-prenominal forms (nominal \u201cthe total was \u2026\u201d, adverbial \u201cin total, \u2026\u201d).",
+    "HYPOTHESIS UPDATES:\n- H3 (CONFIRMED):\n  Evidence: Non-standalone variants produced zero or weak activation: ' totally'=0.0000 in \u201cHe totally forgot.\u201d and ' subtotal'=0.3145 in \u201cThe subtotal was correct.\u201d, far below standalone ' total' (~1.4688 in prior tests).\n\nSTATUS ASSESSMENT:\nCurrent Status: CONFIRMED\nReason: Two tests on morphological/substring variants both showed no or only weak activation (0.0000 and 0.3145), consistent with the hypothesis that such variants do not trigger this feature strongly. Relative to the standalone lexeme (~1.47), these are substantially lower. Corpus coverage: No \u226510.0-activation tokens in exemplars (max \u22484.031), so coverage criterion is trivially satisfied; while additional variants (e.g., totality, Totals) remain untested, the existing evidence meets the \u22652-tests consistency threshold.",
+    "HYPOTHESIS UPDATES:\n- H4 (CONFIRMED):\n  Evidence: In \u201cThe total cost exceeded the Total Divas budget.\u201d, ' total'=1.4688 vs ' Total'=0.0000; in \u201cYour total satisfaction matters more than Total War sales.\u201d, ' total'=1.5859 vs ' Total'=0.3320. Lowercase adjectival ' total' consistently exceeds titlecase ' Total' in titles.\n\nSTATUS ASSESSMENT:\nCurrent Status: CONFIRMED\nReason: Two independent within-sentence contrasts show a consistent, replicable preference for lowercase adjectival ' total' over titlecase ' Total' in proper nouns (1.4688>0.0000; 1.5859>0.3320). Magnitudes align with corpus scale (max exemplar ~4.031). Corpus coverage: no \u226510.0 tokens exist, so coverage criterion is trivially satisfied.",
+    "ANALYSIS:\nSummary activation: 0.0000\nBOS activation: 0.0000\nTop non-BOS tokens: ' total'=0.0000, 'We'=0.0000, ' calculated'=0.0000\n\nINTERPRETATION:\nThis REFINES the hypothesis. Contrary to the expectation of non-zero activation on the standalone ' total', the sentence \u201cWe calculated the total today.\u201d shows 0.0000 on ' total'. Compared to prior cases (\u201cThe total is five.\u201d ' total'=1.4688; \u201cIn total, \u2026\u201d ' total'=0.0923), this indicates that activation is not guaranteed even for lowercase standalone ' total' and is highly context-dependent.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: REFINED\nEvidence: ' total'=0.0000 in \u201cWe calculated the total today.\u201d versus previously observed non-zero values (1.4688 in nominal/copular, 0.0923 in adverbial), implying the feature does not consistently fire on the lexeme and likely depends on specific syntactic/collocational contexts.",
+    "HYPOTHESIS UPDATES:\n- H1 (REFINED):\n  Refined version: Feature 10399 often activates on the lowercase standalone token ' total' but is highly context-sensitive: strong when 'total' appears in a subject NP or prenominal NP (e.g., subject \u201cThe total is five.\u201d \u2192 1.4688) and weak in adverbial use (\u201cIn total, \u2026\u201d \u2192 0.0923); it may fail to fire in object NP contexts (\u201c\u2026 the total today.\u201d \u2192 0.0000). When it fires, ' total' is typically the only non-zero token.\n  Explanation: Observed activations vary by syntactic/functional context, not solely by the presence of the lexeme.\n\nSTATUS ASSESSMENT:\nCurrent Status: REFINED\nReason: Across 3 tests, ' total' shows variable activation: 1.4688 (subject NP), 0.0923 (adverbial PP), 0.0000 (object NP). This pattern supports lexeme sensitivity but contradicts a guaranteed activation claim, necessitating a context-qualified hypothesis. Corpus coverage: No \u226510.0 tokens in exemplars (max \u22484.031), so coverage criterion is trivially satisfied; additional tests (e.g., other object NP cases, different determiners) would strengthen the characterization.",
+    "ANALYSIS:\nSummary activation: 1.1562\nBOS activation: 0.0000\nTop non-BOS tokens: ' total'=1.1562, 'A'=0.0000, ' disaster'=0.0000\n\nINTERPRETATION:\nThis CONFIRMS the hypothesis. In the prenominal NP \u201cA total disaster.\u201d, only ' total' activates (1.1562), with all other tokens at 0.0000. The magnitude is substantially higher than adverbial use (0.0923) and above the object-NP failure case (0.0000), aligning with the context-sensitive pattern that prenominal/subject positions elicit stronger activation.\n\nUPDATED HYPOTHESIS STATUS:\nHypothesis: CONFIRMED\nEvidence: ' total'=1.1562 (prenominal) with others 0.0000, consistent with prior results showing stronger activation for subject/prenominal uses (e.g., 1.4688) versus weak adverbial (0.0923) and absent object-NP activation (0.0000).",
+    "HYPOTHESIS UPDATES:\n- H1 (CONFIRMED):\n  Evidence: Across four tests, activation targets the lowercase standalone ' total' with context-dependent magnitude and no spillover to other tokens: subject NP \u201cThe total is five.\u201d \u2192 ' total'=1.4688 (others 0.0000); adverbial \u201cIn total, \u2026\u201d \u2192 ' total'=0.0923 (others 0.0000); object NP \u201c\u2026 the total today.\u201d \u2192 ' total'=0.0000; prenominal NP \u201cA total disaster.\u201d \u2192 ' total'=1.1562 (others 0.0000).\n\nSTATUS ASSESSMENT:\nCurrent Status: CONFIRMED\nReason: Results consistently show selective activation on ' total' with magnitudes aligning with the refined, context-sensitive pattern: strong for subject/prenominal NPs (1.4688, 1.1562), weak for adverbial use (0.0923), and absent in an object NP (0.0000). Corpus coverage: No \u226510.0 tokens in exemplars (max \u22484.031 on ' total'), so coverage criterion is satisfied. We can conclude YES; evidence is sufficient (4 tests) and coherent with the refined claim.",
+    "REVIEW SUMMARY:\n- H1: CONFIRMED. Feature 10399 often activates on lowercase standalone ' total' with context sensitivity: strong prenominal/subject NP (1.4688 \u201cThe total is five.\u201d; 1.1562 \u201cA total disaster.\u201d), weak adverbial (0.0923 \u201cIn total, \u2026\u201d), absent in an object NP (0.0000 \u201c\u2026 the total today.\u201d). Activation is typically isolated to ' total'.\n- H2: REFUTED. Prenominal ' total' (1.4688) > predicative ' total' (0.0000), contradicting the \u201cno preferential boost\u201d claim.\n- H3: CONFIRMED (with limited breadth). Non-standalone variants show zero/weak activation: ' totally'=0.0000; ' subtotal'=0.3145 (weak) \u226a standalone ' total' (~1.47).\n- H4: CONFIRMED. Lowercase adjectival ' total' > titlecase ' Total' in titles: 1.4688 > 0.0000 (\u201c\u2026 Total Divas \u2026\u201d); 1.5859 > 0.3320 (\u201c\u2026 Total War \u2026\u201d). Shows relative preference; ' Total' can weakly activate in some title contexts.\n\nASSESSMENT:\n- Adequacy: H1 has 4 tests spanning key contexts; H2 has 2 contrasting tests sufficient to refute; H4 has 2 within-sentence contrasts confirming the tendency. H3 is confirmed but tested on only two variants; broader coverage desirable.\n- Gaps: H3 lacks tests for other listed variants (totality, Totals, totaled/totalled, totalitarian). For H1, another object-NP or passive construction could further validate context sensitivity. For H4, another proper-noun case (e.g., \u201cTotal 911\u201d) would increase robustness.\n- Contradictions: None. H2\u2019s refutation (prenominal > predicative) aligns with H1/H4\u2019s context sensitivity and lowercase preference.\n\nDECISION:\nNeed more testing: YES\n- H1: Test object NP: \"We paid the total.\"\n- H1: Test nominal clause variant: \"The total was ten.\"\n- H3: Test variant: \"The totality was ignored.\"\n- H3: Test variant: \"Totals are listed here.\"\n- H3: Test variant: \"They totaled the car.\"\n- H4: Test additional title: \"The total budget beat Total 911.\"",
+    "REVIEW SUMMARY:\n- H1: CONFIRMED. Activates on lowercase standalone ' total' with clear context sensitivity: strong in subject/prenominal NPs (1.4688; 1.1562), weak in adverbial \u201cIn total\u201d (0.0923), and often absent in object NP (\u201c\u2026 the total \u2026\u201d = 0.0000).\n- H2: REFUTED. Prenominal ' total' (1.4688) > predicative ' total' (0.0000), disproving \u201cno preferential boost.\u201d\n- H3: CONFIRMED. Morphological/substring variants are zero or weak: ' totally'=0.0000, ' totality'=0.0000, ' Totals'=0.0000, ' totaled'=0.0000, ' subtotal'=0.3145 (weak) \u226a standalone ' total'.\n- H4: CONFIRMED. Lowercase adjectival ' total' > titlecase ' Total' in titles: contrasts show 1.4688 > 0.0000 and 1.5859 > 0.3320; ' Total' can weakly activate in some title contexts.\n\nASSESSMENT:\n- All hypotheses have adequate tests: H1 (6), H2 (2), H3 (5), H4 (3).\n- Evidence gaps are minor (e.g., sentence-initial 'Total' that is not a proper noun), but do not undermine current conclusions.\n- No contradictions: H2\u2019s refutation aligns with H1/H4\u2019s context sensitivity and lowercase preference; H3\u2019s weak/zero responses to variants are consistent with a token-specific detector.\n\nDECISION:\nNeed more testing: NO\nCurrent evidence spans key contexts and contrasts with multiple replications (H1, H4) and comprehensive negatives (H3). Activation patterns are consistent and sufficient for final conclusions without additional tests.",
+    "[DESCRIPTION]: \nFeature 10399 detects the English lexeme \u201ctotal\u201d as a standalone token, with a strong preference for lowercase ' total' in prenominal adjective and subject-NP contexts. Activation is context-sensitive: strong for \u201cthe total [is/was] \u2026\u201d and \u201ca/your total [N]\u201d (\u22481.16\u20131.59), weak for adverbial \u201cIn total\u201d (\u22480.09), and often zero in object-NP and predicative-adjective uses; titlecase ' Total' in proper names is usually zero with occasional weak activation. Across 16 tests, ' total' ranged 0.0000\u20131.5859 (7/11 strong >1.0, 1/11 weak \u22480.09, 3/11 zero), while morphological/subtoken variants (totally, totality, totals, totaled) were 0.0000 and ' subtotal' showed only weak spillover (0.3145).\n\n[EVIDENCE]:\n- Test 1: \"The total is five.\" \u2192 ' total'=1.4688 (supports H1)\n- Test 2: \"The total cost was high.\" \u2192 ' total'=1.4688 (supports H1)\n- Test 4: \"The total cost exceeded the Total Divas budget.\" \u2192 ' total'=1.4688; ' Total'=0.0000 (supports H1, H4)\n- Test 5: \"In total, we spent ten dollars.\" \u2192 ' total'=0.0923 (supports H1: weak adverbial)\n- Test 6: \"The cost was total.\" \u2192 ' total'=0.0000 (supports H2 refutation; aligns with H1 context-sensitivity)\n- Test 7: \"The subtotal was correct.\" \u2192 ' subtotal'=0.3145 (supports H3: weak spillover)\n- Test 8: \"Your total satisfaction matters more than Total War sales.\" \u2192 ' total'=1.5859; ' Total'=0.3320 (supports H1, H4)\n- Test 9: \"We calculated the total today.\" \u2192 ' total'=0.0000 (supports H1: object NP often zero)\n- Test 10: \"A total disaster.\" \u2192 ' total'=1.1562 (supports H1)\n- Test 11: \"We paid the total.\" \u2192 ' total'=0.0000 (supports H1: object NP often zero)\n- Test 12: \"The total was ten.\" \u2192 ' total'=1.4688 (supports H1)\n- Test 13: \"The totality was ignored.\" \u2192 0.0000 (supports H3)\n- Test 14: \"Totals are listed here.\" \u2192 0.0000 (supports H3)\n- Test 15: \"They totaled the car.\" \u2192 0.0000 (supports H3)\n- Test 16: \"The total budget beat Total 911.\" \u2192 ' total'=1.4688; ' Total'=0.0000 (supports H1, H4)\n\n[LABEL 1]: Lowercase \u201ctotal\u201d detector (prenominal/subject-NP contexts); suppressed for adverbial/predicative/object uses; insensitive to morphological variants and mostly to titlecase \u201cTotal\u201d in proper nouns"
+  ],
+  "state_info": {
+    "state": "\u5b8c\u6210",
+    "round": 8,
+    "max_rounds": 30,
+    "hypotheses_count": 4,
+    "tests_count": 16,
+    "exemplars_count": 15,
+    "should_conclude": false
+  },
+  "execution_time_seconds": 903.6779835224152
+}
