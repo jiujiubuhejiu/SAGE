@@ -1,1 +1,46 @@
+# Ignore folder for experimental results
 ignore/
+
+# Environment variables and secrets
+.env
+.env.*
+*.env
+saia_config.env
+config.env
+
+# API keys and credentials
+*secret*
+*credential*
+*.key
+*.pem
+*.p12
+api_keys.txt
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Results and cache (if they contain sensitive data)
+results/
+cache/
