@@ -27,7 +27,7 @@ SAGE uses a 3-layer architecture:
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd sga
+
 
 # Install dependencies
 pip install -r requirements.txt
