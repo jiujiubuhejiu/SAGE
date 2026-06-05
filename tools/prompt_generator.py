@@ -594,27 +594,9 @@ Must be specific and complete. Include activation ranges and statistical evidenc
 - Do not create labels for untested hypotheses (even if they were in the hypothesis list)
 - Do not create separate labels for every hypothesis - group related ones together
 
-**LABEL Comprehensiveness Requirements** (CRITICAL):
-- **LABEL must be a COMPLETE, STANDALONE summary** that captures ALL key information from DESCRIPTION and EVIDENCE
-- **LABEL must be information-rich and self-sufficient** - someone reading ONLY the label should understand:
-  * WHAT the feature detects (specific tokens, patterns, or constructions)
-  * KEY CONSTRAINTS (e.g., case sensitivity, position requirements, context dependencies)
-  * ACTIVATION CHARACTERISTICS (e.g., typical ranges, what activates vs. what doesn't)
-  * CRITICAL DISTINCTIONS (e.g., "detects X but NOT Y", "requires context A", "sensitive to B")
-
-**LABEL Format Guidelines**:
-- Use concise but information-dense phrasing
-- Use parentheses to add critical details without making label too long
-- Use semicolons to separate multiple aspects within parentheses
-- Include specific examples when they clarify the pattern (e.g., "' hat'/' hats'")
-- Mention activation ranges when they're diagnostic (e.g., "moderate 2-4" vs "high >10")
-- Note key negative controls (e.g., "not 'helmet' or 'cap'")
-
 **Quality Criteria**:
 - Description must cite specific activation values
 - Label must be precise (not "code" but "Python imports")
-- **Label must be COMPREHENSIVE** - capturing all essential information from DESCRIPTION and EVIDENCE
-- **Label must be SELF-SUFFICIENT** - readable as a standalone feature summary
 - Labels should be based on HYPOTHESES: group related hypotheses into one label, separate different features
 - Each label should represent a distinct feature/pattern (not just individual tokens)
 - Must acknowledge any contradictory evidence
